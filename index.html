@@ -3,63 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio – Administrateur Systèmes & DevOps</title>
+  <title>Portfolio – T. Randriamisaina</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <h1>RANDRIAMISAINA Fanomezana</h1>
-      <h2>Administrateur Systèmes, Réseaux, Sécurité & DevOps</h2>
-      <p>Étudiant en Master 2 Informatique | Spécialisé en infrastructures, sécurité et automatisation</p>
+    <div class="header-container">
+      <img src="photo.jpg" alt="Photo de profil" class="profile-photo">
+      <div class="header-text">
+        <h1>T. Randriamisaina</h1>
+        <h2>Administrateur Systèmes, Réseaux, Sécurité & DevOps</h2>
+        <p>Étudiant M2 Informatique | Passionné par la sécurité, réseaux et automatisation</p>
+      </div>
     </div>
+    <nav>
+      <ul>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="container">
+    
+    <!-- Compétences -->
     <section id="skills">
-      <h2>💻 Compétences Techniques</h2>
-      <div class="grid">
-        <div class="card"><h3>Systèmes</h3><p>Windows Server, Linux, AD, DNS, DHCP, VMware, Proxmox, PowerShell, Bash</p></div>
-        <div class="card"><h3>Réseaux</h3><p>Cisco, Fortinet, VLAN, VPN, NAT, Wireshark, Zabbix, Nagios, Centreon</p></div>
-        <div class="card"><h3>Sécurité</h3><p>Firewall, IDS/IPS, SIEM (ELK, Splunk), PRA/PCA, ISO 27001, RGPD</p></div>
-        <div class="card"><h3>DevOps / Cloud</h3><p>Docker, Kubernetes, GitLab CI/CD, Jenkins, Ansible, Terraform, AWS, Azure, Grafana</p></div>
-      </div>
+      <h2>Compétences Techniques</h2>
+      <ul>
+        <li><b>Systèmes :</b> Windows Server, Linux (Ubuntu, CentOS, Debian), Active Directory, DNS, DHCP, GPO, Virtualisation (VMware, Hyper-V, Proxmox), Scripting (PowerShell, Bash, Python)</li>
+        <li><b>Réseaux :</b> TCP/IP, VLAN, VPN, NAT, Routage & Switching (Cisco, Fortinet, Juniper), Wireshark, Supervision (Nagios, Zabbix, Centreon, PRTG)</li>
+        <li><b>Sécurité :</b> Pare-feu, IDS/IPS, Proxy, Gestion des accès (LDAP, Kerberos, MFA), SIEM (Splunk, ELK), Durcissement systèmes, PRA/PCA, Conformité (ISO 27001, RGPD, ITIL)</li>
+        <li><b>DevOps/Cloud :</b> Docker, Kubernetes, CI/CD (Jenkins, GitLab CI/CD, GitHub Actions), Infrastructure as Code (Terraform, Ansible, Puppet), Cloud (AWS, Azure, OVH), Monitoring (Prometheus, Grafana, ELK Stack), Git</li>
+      </ul>
     </section>
 
+    <!-- Projets avec filtres -->
     <section id="projects">
-      <h2>🚀 Projets Réalisés</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Active Directory & GPO</h3>
-          <p>Déploiement d’un domaine Windows Server, gestion des utilisateurs et stratégies de sécurité centralisées.</p>
+      <h2>Projets Réalisés</h2>
+      <div class="filters">
+        <button data-filter="all">Tous</button>
+        <button data-filter="web">Développement Web</button>
+        <button data-filter="cyber">Cybersécurité</button>
+        <button data-filter="school">Projets Académiques</button>
+        <button data-filter="mobile">Mobile / Android</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project" data-category="web">
+          <h3>Site e-commerce</h3>
+          <p>Création d’un site de vente en ligne en PHP/MySQL.</p>
         </div>
-        <div class="card">
-          <h3>Infrastructure Réseau Sécurisée</h3>
-          <p>Configuration VLAN, routage inter-VLAN, VPN site-to-site et firewall pfSense.</p>
+
+        <div class="project" data-category="cyber">
+          <h3>Audit sécurité</h3>
+          <p>Analyse de vulnérabilités et recommandations pour une infrastructure réseau.</p>
         </div>
-        <div class="card">
-          <h3>CI/CD avec GitLab</h3>
-          <p>Pipeline automatisé pour tests, build et déploiement sur Docker/Kubernetes.</p>
+
+        <div class="project" data-category="school">
+          <h3>Projet Java distribué</h3>
+          <p>Système distribué développé en Java (POO & RMI) pour un TP de Master 2.</p>
         </div>
-        <div class="card">
-          <h3>Supervision avec Zabbix</h3>
-          <p>Monitoring réseau et serveurs, dashboards Grafana avec alertes automatisées.</p>
+
+        <div class="project" data-category="mobile">
+          <h3>Application Agenda</h3>
+          <p>Application Android avec calendrier interactif et gestion des événements.</p>
         </div>
+
+        <div class="project" data-category="web">
+          <h3>API REST Symfony</h3>
+          <p>Développement d’une API pour la gestion d’événements avec base de données MySQL.</p>
+        </div>
+
+        <div class="project" data-category="cyber">
+          <h3>SIEM ELK Stack</h3>
+          <p>Collecte et analyse centralisée des logs pour détection d’incidents de sécurité.</p>
+        </div>
+
+        <div class="project" data-category="web">
+          <h3>Dashboard Monitoring</h3>
+          <p>Tableau de bord réseau et serveurs avec Zabbix et Grafana.</p>
+        </div>
+
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
-      <h2>📬 Contact</h2>
+      <h2>Contact</h2>
       <ul>
         <li>Email : <a href="mailto:fano.randriamisaina@gmail.com">fano.randriamisaina@gmail.com</a></li>
         <li>LinkedIn : <a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank">linkedin.com/in/t-fanomezana-r</a></li>
         <li>GitHub : <a href="https://github.com/2Randi" target="_blank">github.com/2Randi</a></li>
       </ul>
     </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 – RANDRIAMISAINA Fanomezana | Portfolio DevOps</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

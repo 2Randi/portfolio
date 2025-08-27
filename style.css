@@ -48,11 +48,11 @@ body {
 /* Competences */
 /* Pour que les compétences aient le même style que les projets */
 #skills {
-  max-width: 1000px;      /* même largeur que les projets */
-  margin: 40px auto;      /* centré avec marges gauche/droite */
-  padding: 0 20px;        /* petit padding intérieur */
-}
+  max-width: 1000px;    
+  margin: 40px auto;      
+  padding: 0 20px;       
 
+  
 #skills h2 {
   font-size: 28px;
   color: #003366;

@@ -10,23 +10,23 @@ body {
 /*header*/
 .header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 40px 20px;
   background: #003366;
   color: white;
   gap: 20px;
 }
 
+/* Colonnes */
 .header-left, .header-right {
   flex: 1;
 }
 
-/* Séparateur vertical */
-.header::after {
-  content: "";
-  width: 1px;
-  background: white;
+/* Séparateur vertical réel */
+.separator {
+  width: 2px;
+  background-color: white;
   margin: 0 20px;
 }
 
@@ -38,10 +38,10 @@ body {
   object-fit: cover;
   border: 3px solid white;
   display: block;
-  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
-/* Texte dans la partie droite */
+/* Texte partie droite */
 .header-right h2 {
   font-size: 28px;
   font-weight: bold;

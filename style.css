@@ -68,6 +68,16 @@ body {
 }
 
 
+.contact a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+
 /*version 1
 .header {
   text-align: center;

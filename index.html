@@ -3,106 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RANDRIAMISAINA Tsiory</title>
+  <title>Fanomezana RANDRIAMISAINA – Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <div class="header-container">
-      <img src="photo.jpg" alt="Photo de profil" class="profile-photo">
-      <div class="header-text">
-        <h1>Tsiory Fanomezana RANDRIAMISAINA</h1>
-        <h2>DevOps junior</h2>
-        <p>Administrateur système et réseau, à l’aise sur Windows et Linux, avec un intérêt marqué pour la cybersécurité, la virtualisation et les pratiques DevOps</p>
-      </div>
+  <!-- HEADER -->
+  <header class="header">
+    <img src="photo.jpg" alt="Photo de profil" class="profile-photo">
+    <h1>Tsiory Fanomezana RANDRIAMISAINA</h1>
+    <h2>DevOps Junior | Administrateur Systèmes, Réseaux & Sécurité</h2>
+    <p>Passionné par la cybersécurité, la virtualisation et les pratiques DevOps.</p>
+
+    <div class="contact-header">
+      <a href="mailto:fano.randriamisaina@gmail.com">📧 Email</a> |
+      <a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank">🔗 LinkedIn</a> |
+      <a href="https://github.com/2Randi" target="_blank">🐙 GitHub</a> |
+      <a href="cv.pdf" target="_blank">📄 Mon CV</a>
     </div>
-  
   </header>
 
-  <main class="container">
-    
-    <!-- Compétences -->
-    <section id="skills">
-      <h2>Compétences Techniques</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Systèmes</h3>
-          <p>Linux Debian avancé (multi-serveurs, Bash, Ansible), Windows Server, Active Directory, DNS, DHCP, GPO, Virtualisation (VMware, Hyper-V, Proxmox)</p>
-        </div>
-        <div class="skill-card">
-          <h3>Réseaux</h3>
-          <p>TCP/IP, VLAN, VPN site-to-site, NAT, Routage & Switching (Cisco, Fortinet, Juniper), firewall pfSense, Wireshark</p>
-        </div>
-        <div class="skill-card">
-          <h3>Sécurité</h3>
-          <p>Durcissement systèmes, firewall, IDS/IPS, SIEM (ELK), gestion des accès (LDAP, Kerberos, MFA), PRA/PCA, ISO 27001, RGPD</p>
-        </div>
-        <div class="skill-card">
-          <h3>DevOps / Cloud</h3>
-          <p>Docker, Kubernetes, CI/CD GitLab & Jenkins, Terraform, Ansible, Puppet, Cloud (AWS, Azure, OVH), Monitoring Prometheus & Grafana</p>
-        </div>
+  <!-- COMPETENCES -->
+  <section id="skills">
+    <h2>Compétences Techniques</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Systèmes</h3>
+        <p>Windows Server, Linux (Ubuntu, CentOS, RedHat, Debian), Active Directory, DNS, DHCP, GPO, Virtualisation (VMware, Hyper-V, Proxmox), Scripting (PowerShell, Bash, Python)</p>
       </div>
-    </section>
-
-    <!-- Projets -->
-    <section id="projects">
-      <h2>Projets réalisés</h2>
-      <div class="filters">
-        <button data-filter="all">Tous</button>
-        <button data-filter="system">Systèmes</button>
-        <button data-filter="network">Réseaux</button>
-        <button data-filter="devops">DevOps</button>
-        <button data-filter="monitoring">Supervision</button>
+      <div class="skill-card">
+        <h3>Réseaux</h3>
+        <p>TCP/IP, VLAN, VPN, NAT, Routage & Switching (Cisco, Fortinet, Juniper), Wireshark, Supervision (Nagios, Zabbix, Centreon, PRTG)</p>
       </div>
-      
-      <div class="projects-grid">
-
-        <div class="project scroll-animate" data-category="system">
-          <h3>Application android e-commerce</h3>
-          <p>Création d’une application de vente en ligne en Java/XML</p>
-        </div>
-
-        <div class="project scroll-animate" data-category="system">
-          <img src="img/ad-gpo.jpg" alt="Active Directory & GPO">
-          <h3>Active Directory & GPO</h3>
-          <p>Mise en place d’un domaine Windows Server, gestion des utilisateurs et politiques de sécurité centralisées</p>
-        </div>
-        
-
-        <div class="project scroll-animate" data-category="network">
-          <h3>Infrastructure réseau sécurisée</h3>
-          <p>Configuration VLAN, routage inter-VLAN</p>
-          <p>Mise en place de VPN</p>
-          <p>Mise en place de firewall pfSense</p>
-        </div>
-        
-        <div class="project scroll-animate" data-category="devops">
-          <h3>CI/CD avec GitLab</h3>
-          <p>Pipeline automatisé pour tests</p>
-          <p>Déploiement sur Docker/Kubernetes</p>
-        </div>
-        
-        <div class="project scroll-animate" data-category="monitoring">
-          <h3>Supervision avec Zabbix</h3>
-          <p>Monitoring en temps réel, configuration des alertes</p>
-        </div>
-
-
+      <div class="skill-card">
+        <h3>Sécurité</h3>
+        <p>Pare-feu, IDS/IPS, Proxy, Gestion des accès (LDAP, Kerberos, MFA), SIEM (Splunk, ELK), Durcissement systèmes, PRA/PCA, Conformité (ISO 27001, RGPD, ITIL)</p>
       </div>
-    </section>
+      <div class="skill-card">
+        <h3>DevOps / Cloud</h3>
+        <p>Docker, Kubernetes, CI/CD (Jenkins, GitLab CI/CD, GitHub Actions), Infrastructure as Code (Terraform, Ansible, Puppet), Cloud (AWS, Azure, OVH), Monitoring (Prometheus, Grafana, ELK Stack), Git</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>Email : <a href="mailto:fano.randriamisaina@gmail.com">fano.randriamisaina@gmail.com</a></li>
-        <li>LinkedIn : <a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank">linkedin.com/in/t-fanomezana-r</a></li>
-        <li>GitHub : <a href="https://github.com/2Randi" target="_blank">github.com/2Randi</a></li>
-      </ul>
-    </section>
+  <!-- PROJETS -->
+  <section id="projects">
+    <h2>Projets Réalisés</h2>
 
-  </main>
+    <div class="filters">
+      <button data-filter="all">Tous</button>
+      <button data-filter="dev">Développement</button>
+      <button data-filter="system">Systèmes & Réseaux</button>
+      <button data-filter="devops">DevOps</button>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Exemple projets Systèmes & Réseaux -->
+      <div class="project-card scroll-animate" data-category="system">
+        <img src="img/ad-gpo.jpg" alt="Active Directory & GPO">
+        <h3>Active Directory & GPO</h3>
+        <p>Mise en place d’un domaine Windows Server et gestion des politiques centralisées</p>
+      </div>
+
+      <div class="project-card scroll-animate" data-category="system">
+        <img src="img/linux.jpg" alt="Linux Administration">
+        <h3>Administration Linux</h3>
+        <p>Debian, Ubuntu, CentOS – Scripting Bash et Python, automatisation avec Ansible</p>
+      </div>
+
+      <div class="project-card scroll-animate" data-category="system">
+        <img src="img/network.jpg" alt="Infrastructure Réseau">
+        <h3>Infrastructure Réseau Sécurisée</h3>
+        <p>VLAN, routage inter-VLAN, VPN, firewall pfSense</p>
+      </div>
+
+      <!-- Exemple projets DevOps -->
+      <div class="project-card scroll-animate" data-category="devops">
+        <img src="img/ci-cd.jpg" alt="CI/CD">
+        <h3>CI/CD GitLab & Jenkins</h3>
+        <p>Pipeline automatisé pour tests et déploiement Docker/Kubernetes</p>
+      </div>
+
+      <div class="project-card scroll-animate" data-category="devops">
+        <img src="img/monitoring.jpg" alt="Monitoring">
+        <h3>Monitoring</h3>
+        <p>Zabbix, Grafana et Prometheus – Supervision et alertes temps réel</p>
+      </div>
+
+      <!-- Exemple projets Dev -->
+      <div class="project-card scroll-animate" data-category="dev">
+        <img src="img/android-agenda.jpg" alt="Application Android">
+        <h3>Application Agenda Android</h3>
+        <p>Calendrier interactif et gestion complète des événements</p>
+      </div>
+
+      <div class="project-card scroll-animate" data-category="dev">
+        <img src="img/api-symfony.jpg" alt="API REST Symfony">
+        <h3>API REST Symfony</h3>
+        <p>Gestion d’événements avec base MySQL</p>
+      </div>
+
+      <div class="project-card scroll-animate" data-category="devops">
+        <img src="img/siem-elk.jpg" alt="SIEM ELK Stack">
+        <h3>SIEM ELK Stack</h3>
+        <p>Collecte et analyse centralisée des logs pour la détection d’incidents</p>
+      </div>
+
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>

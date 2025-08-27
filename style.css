@@ -10,7 +10,7 @@ body {
 /*header*/
 .header {
   display: flex;
-  max-width: 1000px;
+  max-width: 500px;
   margin: 40px auto;
   background: #003366;
   padding: 20px;

@@ -10,13 +10,13 @@ body {
 /*header*/
 .header {
   display: flex;
-  max-width: 800px;
+  max-width: 500PX;
   margin: 40px auto;
   background: #003366;
   padding: 20px;
   gap: 20px;
-  color: white;
   font-family: Arial, sans-serif;
+  color: white;
 }
 
 .header-left {
@@ -30,9 +30,9 @@ body {
 
 .header-left h1 {
   font-size: 24px;
-  margin-bottom: 15px;
-  color: white;
+  margin-bottom: 10px;
   text-align: center;
+  color: white;
 }
 
 .profile-photo {
@@ -42,7 +42,6 @@ body {
   object-fit: cover;
   border: 3px solid white;
   margin-top: 0;
-  margin-bottom: 0;
 }
 
 .header-left::after {
@@ -59,7 +58,7 @@ body {
   width: 75%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding-left: 20px;
   color: white;
 }

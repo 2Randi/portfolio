@@ -8,6 +8,7 @@ body {
 }
 
 /*header*/
+/*
 .header {
   display: flex;
   max-width: 1000px;
@@ -17,6 +18,17 @@ body {
   color: white;
   font-family: Arial, sans-serif;
 }
+*/
+.header {
+  display: flex;
+  max-width: 900px;   
+  margin: 10px auto;  
+  background: #003366;
+  padding: 15px 5px;  
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
 
 .header-left {
   display: flex;

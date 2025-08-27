@@ -13,7 +13,7 @@ body {
   max-width: 1000px;
   margin: 20px auto;
   background: #003366;
-  padding: 20px;
+  padding: 20px 10px; /* marges horizontales réduites */
   color: white;
   font-family: Arial, sans-serif;
 }
@@ -22,14 +22,20 @@ body {
   width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centre la photo par rapport au nom */
+  align-items: flex-start; /* alignement à gauche */
   position: relative;
   padding-right: 20px;
 }
 
 .header-left h1 {
   margin: 0 0 10px 0;
-  text-align: center;
+}
+
+.header-left .photo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* centré uniquement par rapport au nom */
+  margin-top: 10px;
 }
 
 .profile-photo {
@@ -38,24 +44,17 @@ body {
   border-radius: 50%;
   border: 3px solid white;
   object-fit: cover;
-  display: block;
-  margin: 0 auto 0 auto; /* <-- centrage horizontal par rapport au nom */
 }
 
-
-.header-left::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
+.separator {
   width: 2px;
-  height: 100%;
-  background: white; /* barre verticale toujours visible */
+  background: white;
+  margin: 0 20px;
 }
 
 .header-right {
-  width: 60%;
-  padding-left: 30px;
+  width: 58%; /* ajusté pour que tout tienne dans 100% */
+  padding-left: 0px;
 }
 
 .header-right h2,

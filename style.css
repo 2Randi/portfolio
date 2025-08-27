@@ -7,6 +7,61 @@ body {
   scroll-behavior: smooth;
 }
 
+/*header*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background: #003366;
+  color: white;
+  gap: 20px;
+}
+
+.header-left, .header-right {
+  flex: 1;
+}
+
+/* Séparateur vertical */
+.header::after {
+  content: "";
+  width: 1px;
+  background: white;
+  margin: 0 20px;
+}
+
+/* Photo */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Texte dans la partie droite */
+.header-right h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.header-right p {
+  margin: 0 0 15px 0;
+  max-width: 500px;
+}
+
+.contact-header {
+  margin-top: 10px;
+}
+
+
+
+
+/*version 1
 .header {
   text-align: center;
   padding: 40px 20px;
@@ -44,6 +99,8 @@ body {
 .contact-header a:hover {
   text-decoration: underline;
 }
+*/
+
 
 /* Competences */
 #skills {

@@ -10,45 +10,31 @@ body {
 /*header*/
 .header {
   display: flex;
-  max-width: 1000px;         
-  margin: 40px auto;           
-  padding: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
   background: #003366;
-  color: white;
-  gap: 20px;
   border-radius: 10px;
+  padding: 20px;
+  gap: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
-/* Partie gauche */
 .header-left {
-  flex: 1;                     
+  width: 25%;
   display: flex;
   flex-direction: column;
-  align-items: center;         
-  justify-content: center;
+  align-items: flex-start;
   position: relative;
   padding-right: 20px;
 }
 
-/* Barre verticale */
-.header-left::after {
-  content: "";
-  position: absolute;
-  top: 10%;
-  right: 0;
-  width: 2px;
-  height: 80%;
-  background: white;
-}
-
-/* Nom */
 .header-left h1 {
   font-size: 24px;
-  text-align: center;
   margin-bottom: 15px;
+  color: white;
 }
 
-/* Photo centrée sous le nom */
 .profile-photo {
   width: 150px;
   height: 150px;
@@ -56,48 +42,53 @@ body {
   object-fit: cover;
   border: 3px solid white;
   display: block;
+  margin-left: 0;
+  margin-bottom: 15px;
 }
 
-/* Partie droite */
+.header-left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 2px;
+  height: 100%;
+  background: white;
+}
+
 .header-right {
-  flex: 2;                    
+  width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 20px;
+  color: white;
 }
 
-/* Titre */
 .header-right h2 {
   font-size: 28px;
   font-weight: bold;
   margin: 0 0 10px 0;
-  color: white;               
+  color: white;
 }
 
-/* Accroche */
 .header-right p {
   margin: 0 0 15px 0;
-  color: white;
   line-height: 1.6;
-  max-width: 600px;            
-}
-
-/* Contacts */
-.contact-header {
-  margin-top: 10px;
+  max-width: 600px;
+  color: white;
 }
 
 .contact-header a {
-  color: white;               
+  color: white;
   margin-right: 10px;
   text-decoration: none;
   font-size: 16px;
 }
 
 .contact-header a:hover {
-  text-decoration: underline;  
-  color: white;               
+  text-decoration: underline;
+  color: white;
 }
 
 

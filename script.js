@@ -1,3 +1,4 @@
+/*
 const projects = document.querySelectorAll('.project');
 const filterButtons = document.querySelectorAll('.filters button');
 
@@ -21,4 +22,49 @@ filterProjects('all');
 // Event listeners
 filterButtons.forEach(btn => {
   btn.addEventListener('click', () => filterProjects(btn.dataset.filter));
+});
+*/
+// Filtrage des projets
+const filterButtons = document.querySelectorAll('.filters button');
+const projects = document.querySelectorAll('.project-card');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.dataset.filter;
+    projects.forEach(project => {
+      if(filter === 'all' || project.dataset.category === filter){
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Animation au scroll
+const scrollElements = document.querySelectorAll('.scroll-animate');
+const elementInView = (el, dividend = 1) => {
+  const elementTop = el.getBoundingClientRect().top;
+  return elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend;
+};
+
+const displayScrollElement = (element) => {
+  element.classList.add('show');
+};
+
+const handleScrollAnimation = () => {
+  scrollElements.forEach(el => {
+    if(elementInView(el, 1.25)) {
+      displayScrollElement(el);
+    }
+  });
+};
+
+window.addEventListener('scroll', () => {
+  handleScrollAnimation();
+});
+
+// Animation initiale
+window.addEventListener('load', () => {
+  handleScrollAnimation();
 });

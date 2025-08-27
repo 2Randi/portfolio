@@ -1,77 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RANDRIAMISAINA</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RANDRIAMISAINA Tsiory</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-  <img src="photo.jpg" alt="Photo de profil" class="profile-photo">
-  <h1>Tsiory Fanomezana RANDRIAMISAINA</h1>
-  <h2 class="subtitle">DevOps junior</h2>
-  <p class="tagline">Administrateur système et réseau, à l’aise sur Windows et Linux, avec un intérêt marqué pour la cybersécurité, la virtualisation et les pratiques DevOps</p>
-  <div class="contact-header">
-    <a href="mailto:fano.randriamisaina@gmail.com">📧 Email</a>
-    <a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank">🔗 LinkedIn</a>
-    <a href="https://github.com/2Randi" target="_blank">🐙 GitHub</a>
-    <a href="cv.pdf" target="_blank">📄 CV</a>
-  </div>
-</header>
+  <!-- HEADER -->
+  <header class="header">
+    <img src="photo.jpg" alt="Photo de profil" class="profile-photo">
+    <h1>Tsiory Fanomezana RANDRIAMISAINA</h1>
+    <h2>DevOps junior</h2>
+    <p>Administrateur système et réseau, à l’aise sur Windows et Linux, avec un intérêt marqué pour la cybersécurité, la virtualisation et les pratiques DevOps</p>
+    <div class="contact-header">
+      <a href="mailto:fano.randriamisaina@gmail.com">📧 Email</a>
+      <a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/2Randi" target="_blank">🐙 GitHub</a>
+      <a href="cv.pdf" target="_blank">📄 CV</a>
+    </div>
+  </header>
 
-<section id="skills">
-  <h2>Compétences Techniques</h2>
-  <div class="skills-list">
-    <span><b>Systèmes :</b> Windows Server, Linux (Ubuntu, CentOS, Debian), Active Directory, DNS, DHCP, GPO, Virtualisation, Scripting (PowerShell, Bash, Python)</span>
-    <span><b>Réseaux :</b> TCP/IP, VLAN, VPN, NAT, Routage & Switching, Wireshark, Supervision</span>
-    <span><b>Sécurité :</b> Pare-feu, IDS/IPS, Proxy, Gestion des accès, SIEM, Durcissement systèmes, PRA/PCA, ISO 27001, RGPD</span>
-    <span><b>DevOps / Cloud :</b> Docker, Kubernetes, CI/CD, Terraform, Ansible, Cloud (AWS, Azure, OVH), Monitoring, Git</span>
-  </div>
-</section>
+  <!-- COMPETENCES -->
+  <section id="skills">
+    <h2>Compétences Techniques</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Systèmes</h3>
+        <p>Windows Server, Linux (Ubuntu, CentOS, Debian), Active Directory, DNS, DHCP, GPO, Virtualisation (VMware, Hyper-V, Proxmox), Scripting (PowerShell, Bash, Python)</p>
+      </div>
+      <div class="skill-card">
+        <h3>Réseaux</h3>
+        <p>TCP/IP, VLAN, VPN, NAT, Routage & Switching (Cisco, Fortinet, Juniper), Wireshark, Supervision (Nagios, Zabbix, Centreon, PRTG)</p>
+      </div>
+      <div class="skill-card">
+        <h3>Sécurité</h3>
+        <p>Pare-feu, IDS/IPS, Proxy, Gestion des accès (LDAP, Kerberos, MFA), SIEM (Splunk, ELK), Durcissement systèmes, PRA/PCA, Conformité (ISO 27001, RGPD, ITIL)</p>
+      </div>
+      <div class="skill-card">
+        <h3>DevOps / Cloud</h3>
+        <p>Docker, Kubernetes, CI/CD (Jenkins, GitLab CI/CD, GitHub Actions), IaC (Terraform, Ansible), Cloud (AWS, Azure, OVH), Monitoring (Prometheus, Grafana, Zabbix), Git</p>
+      </div>
+    </div>
+  </section>
 
-<section id="projects">
-  <h2>Projets Réalisés</h2>
-  <div class="filters">
-    <button data-filter="all">Tous</button>
-    <button data-filter="dev">Développement</button>
-    <button data-filter="system">Systèmes & Réseaux</button>
-    <button data-filter="devops">DevOps</button>
-  </div>
+  <!-- PROJETS -->
+  <section id="projects">
+    <h2>Projets Réalisés</h2>
+    <div class="filters">
+      <button data-filter="all" class="active">Tous</button>
+      <button data-filter="dev">Développement</button>
+      <button data-filter="system">Systèmes & Réseaux</button>
+      <button data-filter="devops">DevOps</button>
+    </div>
 
-  <div class="projects-grid">
-    <div class="project-card" data-category="system">
-      <h3>Active Directory & GPO</h3>
-      <p>Mise en place d’un domaine Windows Server et gestion des politiques centralisées</p>
-    </div>
-    <div class="project-card" data-category="system">
-      <h3>Administration Linux</h3>
-      <p>Debian, Ubuntu Scripting Bash et Python, automatisation avec Ansible</p>
-    </div>
-    <div class="project-card" data-category="system">
-      <h3>Infrastructure Réseau Sécurisée</h3>
-      <p>VLAN, routage inter-VLAN, VPN, firewall pfSense</p>
-    </div>
-    <div class="project-card" data-category="devops">
-      <h3>CI/CD GitLab & Jenkins</h3>
-      <p>Pipeline automatisé pour tests et déploiement Docker/Kubernetes</p>
-    </div>
-    <div class="project-card" data-category="devops">
-      <h3>Monitoring</h3>
-      <p>Zabbix, Grafana et Prometheus – Supervision et alertes temps réel</p>
-    </div>
-    <div class="project-card" data-category="dev">
-      <h3>Application E-commerce Android</h3>
-      <p>Application complète de vente en ligne avec gestion des utilisateurs et panier</p>
-    </div>
-    <div class="project-card" data-category="dev">
-      <h3>API REST Symfony</h3>
-      <p>Gestion d’événements avec base MySQL</p>
-    </div>
-  </div>
-</section>
+    <div class="projects-grid">
+      <div class="project-card scroll-animate" data-category="system">
+        <h3>Active Directory & GPO</h3>
+        <p>Mise en place d’un domaine Windows Server et gestion des politiques centralisées</p>
+      </div>
 
-<script src="script.js"></script>
+      <div class="project-card scroll-animate" data-category="system">
+        <h3>Administration Linux</h3>
+        <p>Debian, Ubuntu Scripting Bash et Python, automatisation avec Ansible</p>
+      </div>
+
+      <div class="project-card scroll-animate" data-category="system">
+        <h3>Infrastructure Réseau Sécurisée</h3>
+        <p>VLAN, routage inter-VLAN, VPN, firewall pfSense</p>
+      </div>
+
+      <div class="project-card scroll-animate" data-category="devops">
+        <h3>CI/CD GitLab & Jenkins</h3>
+        <p>Pipeline automatisé pour tests et déploiement Docker/Kubernetes</p>
+      </div>
+
+      <div class="project-card scroll-animate" data-category="devops">
+        <h3>Monitoring</h3>
+        <p>Zabbix, Grafana et Prometheus – Supervision et alertes temps réel</p>
+      </div>
+
+      <div class="project-card scroll-animate" data-category="dev">
+        <h3>Application E-commerce Android</h3>
+        <p>Application de vente en ligne complète, gestion des produits et commandes</p>
+      </div>
+
+      <div class="project-card scroll-animate" data-category="dev">
+        <h3>API REST Symfony</h3>
+        <p>Gestion d’événements et base MySQL</p>
+      </div>
+
+      <div class="project-card scroll-animate" data-category="devops">
+        <h3>SIEM ELK Stack</h3>
+        <p>Collecte et analyse centralisée des logs pour la détection d’incidents</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>

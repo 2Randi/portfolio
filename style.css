@@ -21,6 +21,7 @@ body {
 .header-left {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative;
   padding-right: 20px;
 }
@@ -70,7 +71,7 @@ body {
 
 .contact-header a {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 .contact-header a:hover {

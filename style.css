@@ -68,12 +68,12 @@ body {
 }
 
 
-.contact a {
+.contact-header a {
   text-decoration: none;
   color: inherit;
 }
 
-.contact a:hover {
+.contact-header a:hover {
   text-decoration: underline;
 }
 

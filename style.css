@@ -8,7 +8,6 @@ body {
 }
 
 /*header*/
-
 .header {
   display: flex;
   align-items: center;
@@ -57,8 +56,6 @@ body {
 .contact-header {
   margin-top: 10px;
 }
-
-
 
 
 /*version 1

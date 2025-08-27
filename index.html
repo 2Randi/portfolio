@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio – T. Randriamisaina</title>
+  <title>Portfolio – Fanomezana</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,14 +12,14 @@
     <div class="header-container">
       <img src="photo.jpg" alt="Photo de profil" class="profile-photo">
       <div class="header-text">
-        <h1>T. Randriamisaina</h1>
-        <h2>Administrateur Systèmes, Réseaux, Sécurité & DevOps</h2>
-        <p>Étudiant M2 Informatique | Passionné par la sécurité, réseaux et automatisation</p>
+        <h1>Fanomezana RANDRIAMISAINA</h1>
+        <h2>DevOps junior</h2>
+        <p>Administrateur système et réseau, à l’aise sur Windows et Linux, avec un intérêt marqué pour la cybersécurité, la virtualisation et les pratiques DevOps</p>
       </div>
     </div>
     <nav>
       <ul>
-        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#skills">Compétences techniques</a></li>
         <li><a href="#projects">Projets</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -39,52 +39,49 @@
       </ul>
     </section>
 
-    <!-- Projets avec filtres -->
+    <!-- Projets -->
     <section id="projects">
-      <h2>Projets Réalisés</h2>
+      <h2>Projets réalisés</h2>
       <div class="filters">
         <button data-filter="all">Tous</button>
-        <button data-filter="web">Développement Web</button>
-        <button data-filter="cyber">Cybersécurité</button>
-        <button data-filter="school">Projets Académiques</button>
-        <button data-filter="mobile">Mobile / Android</button>
+        <button data-filter="system">Systèmes</button>
+        <button data-filter="network">Réseaux</button>
+        <button data-filter="devops">DevOps</button>
+        <button data-filter="monitoring">Supervision</button>
       </div>
-      <div class="projects-grid" id="projects-grid">
+      
+      <div class="projects-grid">
 
-        <div class="project" data-category="web">
-          <h3>Site e-commerce</h3>
-          <p>Création d’un site de vente en ligne en PHP/MySQL.</p>
+        <div class="project scroll-animate" data-category="system">
+          <h3>Application android e-commerce</h3>
+          <p>Création d’une application de vente en ligne en Java/XML</p>
         </div>
 
-        <div class="project" data-category="cyber">
-          <h3>Audit sécurité</h3>
-          <p>Analyse de vulnérabilités et recommandations pour une infrastructure réseau.</p>
+        <div class="project scroll-animate" data-category="system">
+          <img src="img/ad-gpo.jpg" alt="Active Directory & GPO">
+          <h3>Active Directory & GPO</h3>
+          <p>Mise en place d’un domaine Windows Server, gestion des utilisateurs et politiques de sécurité centralisées</p>
+        </div>
+        
+
+        <div class="project scroll-animate" data-category="network">
+          <h3>Infrastructure réseau sécurisée</h3>
+          <p>Configuration VLAN, routage inter-VLAN</p>
+          <p>Mise en place de VPN</p>
+          <p>Mise en place de firewall pfSense</p>
+        </div>
+        
+        <div class="project scroll-animate" data-category="devops">
+          <h3>CI/CD avec GitLab</h3>
+          <p>Pipeline automatisé pour tests</p>
+          <p>Déploiement sur Docker/Kubernetes</p>
+        </div>
+        
+        <div class="project scroll-animate" data-category="monitoring">
+          <h3>Supervision avec Zabbix</h3>
+          <p>Monitoring en temps réel, configuration des alertes</p>
         </div>
 
-        <div class="project" data-category="school">
-          <h3>Projet Java distribué</h3>
-          <p>Système distribué développé en Java (POO & RMI) pour un TP de Master 2.</p>
-        </div>
-
-        <div class="project" data-category="mobile">
-          <h3>Application Agenda</h3>
-          <p>Application Android avec calendrier interactif et gestion des événements.</p>
-        </div>
-
-        <div class="project" data-category="web">
-          <h3>API REST Symfony</h3>
-          <p>Développement d’une API pour la gestion d’événements avec base de données MySQL.</p>
-        </div>
-
-        <div class="project" data-category="cyber">
-          <h3>SIEM ELK Stack</h3>
-          <p>Collecte et analyse centralisée des logs pour détection d’incidents de sécurité.</p>
-        </div>
-
-        <div class="project" data-category="web">
-          <h3>Dashboard Monitoring</h3>
-          <p>Tableau de bord réseau et serveurs avec Zabbix et Grafana.</p>
-        </div>
 
       </div>
     </section>

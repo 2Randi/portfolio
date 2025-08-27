@@ -52,14 +52,14 @@ body {
   padding: 0 20px;        
 }
 
-/*
+
 #skills h2 {
   font-size: 28px;
   color: #003366;
   margin-bottom: 20px;
   text-align: left;       
 }
-*/
+
 
 .skills-card {
   background: white;
@@ -86,6 +86,15 @@ body {
   margin: 40px auto;
   padding: 0 20px;
 }
+
+
+#projects h2 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 20px;
+  text-align: left;       
+}
+
 
 .filters {
   text-align: center;

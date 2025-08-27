@@ -8,54 +8,81 @@ body {
 }
 
 /*header*/
+/* Header séparé en deux parties */
 .header {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 40px 20px;
   background: #003366;
   color: white;
-  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto; /* centré comme les sections */
 }
 
-/* Colonnes */
-.header-left, .header-right {
+/* Partie gauche */
+.header-left {
   flex: 1;
+  display: flex;
+  justify-content: center; /* centrer la photo horizontalement */
+  align-items: center;
 }
 
-/* Séparateur vertical réel */
-.separator {
-  width: 2px;
-  background-color: white;
-  margin: 0 20px;
+/* Partie droite */
+.header-right {
+  flex: 1;
+  padding-left: 30px; /* espace depuis la barre */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Photo */
+/* Photo de profil */
 .profile-photo {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid white;
-  display: block;
-  margin-top: 10px;
 }
 
-/* Texte partie droite */
+/* Barre verticale */
+.header-left::after {
+  content: "";
+  width: 1px;
+  background: white;
+  height: 80%; /* hauteur barre verticale */
+  margin-left: 30px; /* espace depuis la photo */
+}
+
+/* Titre et accroche à droite */
 .header-right h2 {
   font-size: 28px;
   font-weight: bold;
   margin: 0 0 10px 0;
+  color: white; /* même couleur qu’avant */
+  font-family: Arial, sans-serif;
 }
 
 .header-right p {
   margin: 0 0 15px 0;
-  max-width: 500px;
+  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 500px; /* largeur uniforme */
 }
 
-.contact-header {
-  margin-top: 10px;
+.contact-header a {
+  color: white;
+  margin: 0 10px 5px 0;
+  text-decoration: none;
+  font-size: 16px;
 }
+
+.contact-header a:hover {
+  text-decoration: underline;
+}
+
 
 
 /*version 1

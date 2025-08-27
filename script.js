@@ -1,3 +1,20 @@
+const filterButtons = document.querySelectorAll('.filters button');
+const projects = document.querySelectorAll('.project-card');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.dataset.filter;
+    projects.forEach(project => {
+      if(filter === 'all' || project.dataset.category === filter){
+        project.style.display = 'block';
+      } else {
+        project.style.display = 'none';
+      }
+    });
+  });
+});
+
+
 /*
 const projects = document.querySelectorAll('.project');
 const filterButtons = document.querySelectorAll('.filters button');
@@ -23,7 +40,7 @@ filterProjects('all');
 filterButtons.forEach(btn => {
   btn.addEventListener('click', () => filterProjects(btn.dataset.filter));
 });
-*/
+
 // Filtrage des projets
 const filterButtons = document.querySelectorAll('.filters button');
 const projects = document.querySelectorAll('.project-card');
@@ -84,3 +101,4 @@ const handleScrollAnimation = () => {
 
 window.addEventListener('scroll', handleScrollAnimation);
 window.addEventListener('load', handleScrollAnimation);
+*/

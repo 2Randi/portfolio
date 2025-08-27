@@ -41,7 +41,29 @@ filterButtons.forEach(button => {
   });
 });
 
-// Animation au scroll
+const filterButtons = document.querySelectorAll('.filters button');
+const projects = document.querySelectorAll('.project-card');
+
+function filterProjects(category) {
+  projects.forEach(project => {
+    if (category === 'all' || project.dataset.category === category) {
+      project.style.display = 'block';
+      setTimeout(() => project.classList.add('show'), 50);
+    } else {
+      project.style.display = 'none';
+      project.classList.remove('show');
+    }
+  });
+}
+
+// Au chargement, tout afficher
+filterProjects('all');
+
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => filterProjects(btn.dataset.filter));
+});
+
+// Animation scroll
 const scrollElements = document.querySelectorAll('.scroll-animate');
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
@@ -54,17 +76,11 @@ const displayScrollElement = (element) => {
 
 const handleScrollAnimation = () => {
   scrollElements.forEach(el => {
-    if(elementInView(el, 1.25)) {
+    if (elementInView(el, 1.25)) {
       displayScrollElement(el);
     }
   });
 };
 
-window.addEventListener('scroll', () => {
-  handleScrollAnimation();
-});
-
-// Animation initiale
-window.addEventListener('load', () => {
-  handleScrollAnimation();
-});
+window.addEventListener('scroll', handleScrollAnimation);
+window.addEventListener('load', handleScrollAnimation);

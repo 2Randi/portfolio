@@ -29,10 +29,18 @@ body {
   margin: 0 0 10px 0;
 }
 
+/*
 .photo-wrapper {
   display: flex;
-  justify-content: center; /* photo centrée uniquement par rapport au nom */
+  justify-content: center; 
   margin-top: 10px;
+}
+*/
+.photo-wrapper {
+  width: max-content;        
+  margin: 0 auto;            
+  display: flex;
+  justify-content: center;
 }
 
 .profile-photo {

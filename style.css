@@ -20,14 +20,14 @@ body {
 }
 */
 
-.header {
-  display: flex;
-  max-width: 1000px;
-  margin: 10px auto;
-  background: #003366;
-  padding: 20px 5px;
-  color: white;
-  font-family: Arial, sans-serif;
+.header { 
+  display: flex;   
+  max-width: 1000px; 
+  margin: 20px auto; 
+  background: #003366; 
+  padding: 20px 10px; 
+  color: white; 
+  font-family: Arial, sans-serif; 
 }
 
 

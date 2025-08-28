@@ -21,7 +21,7 @@ body {
 */
 .header {
   display: flex;
-  max-width: 900px;   
+  max-width: 1200px;   
   margin: 10px auto;  
   background: #003366;
   padding: 15px 5px;  

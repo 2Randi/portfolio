@@ -22,7 +22,7 @@ body {
 .header {
   display: flex;
   max-width: 1000px;   
-  margin: 20px auto;  
+  margin: 10px auto;  
   background: #003366;
   padding: 30px 5px;  
   color: white;

@@ -21,10 +21,10 @@ body {
 */
 .header {
   display: flex;
-  max-width: 500px;   
-  margin: 10px auto;  
+  max-width: 1000px;   
+  margin: 20px auto;  
   background: #003366;
-  padding: 15px 5px;  
+  padding: 5px 5px;  
   color: white;
   font-family: Arial, sans-serif;
 }

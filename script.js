@@ -294,7 +294,7 @@ const canvas = document.getElementById('cv-canvas');
 const ctx = canvas.getContext('2d');
 const pdfUrl = 'CV.pdf';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.12.313/pdf.worker.min.js';
+//pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.12.313/pdf.worker.min.js';
 
 openCv.onclick = function(e) {
   e.preventDefault();

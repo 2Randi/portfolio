@@ -169,151 +169,152 @@ window.addEventListener("click", function(e) {
 */
 
 /****version 2*****/
+document.addEventListener('DOMContentLoaded', function() {
 
-/* Filtrage des projets */
-const filterButtons = document.querySelectorAll('.filters button');
-const projects = document.querySelectorAll('.project-card');
-
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const filter = button.dataset.filter;
-    projects.forEach(project => {
-      if(filter === 'all' || project.dataset.category === filter){
-        project.style.display = 'block';
-        setTimeout(() => project.classList.add('show'), 50);
-      } else {
-        project.style.display = 'none';
-        project.classList.remove('show');
-      }
+  /* Filtrage des projets */
+  const filterButtons = document.querySelectorAll('.filters button');
+  const projects = document.querySelectorAll('.project-card');
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
+      projects.forEach(project => {
+        if(filter === 'all' || project.dataset.category === filter){
+          project.style.display = 'block';
+          setTimeout(() => project.classList.add('show'), 50);
+        } else {
+          project.style.display = 'none';
+          project.classList.remove('show');
+        }
+      });
     });
   });
-});
-
-/* Animation au scroll */
-const scrollElements = document.querySelectorAll('.scroll-animate');
-const elementInView = (el, dividend = 1) => el.getBoundingClientRect().top <= (window.innerHeight || document.documentElement.clientHeight) / dividend;
-const displayScrollElement = (el) => el.classList.add('show');
-const handleScrollAnimation = () => scrollElements.forEach(el => { if(elementInView(el,1.25)) displayScrollElement(el); });
-window.addEventListener('scroll', handleScrollAnimation);
-window.addEventListener('load', handleScrollAnimation);
-
-/* Modal projets */
-const projectDetails = {
-  "Active Directory & GPO": {
-    description: "Mise en place d’un domaine Windows Server et gestion des politiques centralisées",
-    images: ["./images/ad1.jpg", "./images/ad2.jpg"],
-    links: ["https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/"]
-  },
-  "Administration Linux": {
-    description: "Debian, Ubuntu Scripting Bash et Python, automatisation avec Ansible",
-    images: ["./images/linux1.jpg","./images/linux2.jpg"],
-    links: ["https://www.ansible.com/resources/get-started"]
-  },
-  "Infrastructure Réseau Sécurisée": {
-    description: "VLAN, routage inter-VLAN, VPN, firewall pfSense",
-    images: ["./images/network1.jpg"],
-    links: ["https://www.pfsense.org/"]
-  },
-  "CI/CD GitLab & Jenkins": {
-    description: "Pipeline automatisé pour tests et déploiement Docker/Kubernetes",
-    images: ["./images/cicd1.jpg"],
-    links: ["https://www.jenkins.io/", "https://docs.gitlab.com/ee/ci/"]
-  },
-  "Monitoring": {
-    description: "Zabbix, Grafana et Prometheus – Supervision et alertes temps réel",
-    images: ["./images/monitor1.jpg"],
-    links: ["https://www.zabbix.com/", "https://grafana.com/", "https://prometheus.io/"]
-  },
-  "Application E-commerce Android": {
-    description: "Application de vente en ligne complète, gestion des produits et commandes",
-    images: ["./images/android1.jpg"],
-    links: ["https://github.com/2Randi/ecommerce-android"]
-  },
-  "API REST Symfony": {
-    description: "Gestion d’événements et base MySQL",
-    images: ["./images/symfony1.jpg"],
-    links: ["https://symfony.com/doc/current/index.html"]
-  },
-  "SIEM ELK Stack": {
-    description: "Collecte et analyse centralisée des logs pour la détection d’incidents",
-    images: ["./images/elk1.jpg"],
-    links: ["https://www.elastic.co/what-is/elk-stack"]
-  }
-};
-
-const modal = document.getElementById('project-modal');
-const modalTitle = document.getElementById('modal-title');
-const modalBody = document.getElementById('modal-body');
-const modalImg = document.getElementById('modal-img');
-const prevBtn = document.querySelector('#modal-slider .prev');
-const nextBtn = document.querySelector('#modal-slider .next');
-const closeBtn = modal.querySelector('.close');
-
-let currentImages = [];
-let currentIndex = 0;
-
-projects.forEach(project => {
-  project.addEventListener('click', () => {
-    const title = project.querySelector('h3').textContent;
-    modalTitle.textContent = title;
-
-    const details = projectDetails[title];
-    let html = `<p>${details.description}</p>`;
-    details.links.forEach(link => html += `<p><a href="${link}" target="_blank">${link}</a></p>`);
-    modalBody.innerHTML = html;
-
-    currentImages = details.images;
-    currentIndex = 0;
+  
+  /* Animation au scroll */
+  const scrollElements = document.querySelectorAll('.scroll-animate');
+  const elementInView = (el, dividend = 1) => el.getBoundingClientRect().top <= (window.innerHeight || document.documentElement.clientHeight) / dividend;
+  const displayScrollElement = (el) => el.classList.add('show');
+  const handleScrollAnimation = () => scrollElements.forEach(el => { if(elementInView(el,1.25)) displayScrollElement(el); });
+  window.addEventListener('scroll', handleScrollAnimation);
+  window.addEventListener('load', handleScrollAnimation);
+  
+  /* Modal projets */
+  const projectDetails = {
+    "Active Directory & GPO": {
+      description: "Mise en place d’un domaine Windows Server et gestion des politiques centralisées",
+      images: ["./images/ad1.jpg", "./images/ad2.jpg"],
+      links: ["https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/"]
+    },
+    "Administration Linux": {
+      description: "Debian, Ubuntu Scripting Bash et Python, automatisation avec Ansible",
+      images: ["./images/linux1.jpg","./images/linux2.jpg"],
+      links: ["https://www.ansible.com/resources/get-started"]
+    },
+    "Infrastructure Réseau Sécurisée": {
+      description: "VLAN, routage inter-VLAN, VPN, firewall pfSense",
+      images: ["./images/network1.jpg"],
+      links: ["https://www.pfsense.org/"]
+    },
+    "CI/CD GitLab & Jenkins": {
+      description: "Pipeline automatisé pour tests et déploiement Docker/Kubernetes",
+      images: ["./images/cicd1.jpg"],
+      links: ["https://www.jenkins.io/", "https://docs.gitlab.com/ee/ci/"]
+    },
+    "Monitoring": {
+      description: "Zabbix, Grafana et Prometheus – Supervision et alertes temps réel",
+      images: ["./images/monitor1.jpg"],
+      links: ["https://www.zabbix.com/", "https://grafana.com/", "https://prometheus.io/"]
+    },
+    "Application E-commerce Android": {
+      description: "Application de vente en ligne complète, gestion des produits et commandes",
+      images: ["./images/android1.jpg"],
+      links: ["https://github.com/2Randi/ecommerce-android"]
+    },
+    "API REST Symfony": {
+      description: "Gestion d’événements et base MySQL",
+      images: ["./images/symfony1.jpg"],
+      links: ["https://symfony.com/doc/current/index.html"]
+    },
+    "SIEM ELK Stack": {
+      description: "Collecte et analyse centralisée des logs pour la détection d’incidents",
+      images: ["./images/elk1.jpg"],
+      links: ["https://www.elastic.co/what-is/elk-stack"]
+    }
+  };
+  
+  const modal = document.getElementById('project-modal');
+  const modalTitle = document.getElementById('modal-title');
+  const modalBody = document.getElementById('modal-body');
+  const modalImg = document.getElementById('modal-img');
+  const prevBtn = document.querySelector('#modal-slider .prev');
+  const nextBtn = document.querySelector('#modal-slider .next');
+  const closeBtn = modal.querySelector('.close');
+  
+  let currentImages = [];
+  let currentIndex = 0;
+  
+  projects.forEach(project => {
+    project.addEventListener('click', () => {
+      const title = project.querySelector('h3').textContent;
+      modalTitle.textContent = title;
+  
+      const details = projectDetails[title];
+      let html = `<p>${details.description}</p>`;
+      details.links.forEach(link => html += `<p><a href="${link}" target="_blank">${link}</a></p>`);
+      modalBody.innerHTML = html;
+  
+      currentImages = details.images;
+      currentIndex = 0;
+      modalImg.src = currentImages[currentIndex];
+      modalImg.alt = title;
+  
+      modal.style.display = 'flex';
+    });
+  });
+  
+  prevBtn.addEventListener('click', () => {
+    if(currentImages.length === 0) return;
+    currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
     modalImg.src = currentImages[currentIndex];
-    modalImg.alt = title;
-
-    modal.style.display = 'flex';
   });
-});
-
-prevBtn.addEventListener('click', () => {
-  if(currentImages.length === 0) return;
-  currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
-  modalImg.src = currentImages[currentIndex];
-});
-
-nextBtn.addEventListener('click', () => {
-  if(currentImages.length === 0) return;
-  currentIndex = (currentIndex + 1) % currentImages.length;
-  modalImg.src = currentImages[currentIndex];
-});
-
-closeBtn.addEventListener('click', () => modal.style.display = 'none');
-window.addEventListener('click', (e) => { if(e.target === modal) modal.style.display = 'none'; });
-
-/* --- Modal CV avec canvas PDF --- */
-const cvModal = document.getElementById("cv-modal");
-const openCv = document.getElementById("open-cv");
-const closeCv = document.getElementById("close-cv");
-const canvas = document.getElementById('cv-canvas');
-const ctx = canvas.getContext('2d');
-const pdfUrl = 'CV.pdf';
-
-//pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.12.313/pdf.worker.min.js';
-
-openCv.onclick = function(e) {
-  e.preventDefault();
-  cvModal.style.display = "flex";
-
-  pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
-    pdf.getPage(1).then(page => {
-      const viewport = page.getViewport({ scale: 1.5 });
-      canvas.width = viewport.width;
-      canvas.height = viewport.height;
-      page.render({ canvasContext: ctx, viewport: viewport });
+  
+  nextBtn.addEventListener('click', () => {
+    if(currentImages.length === 0) return;
+    currentIndex = (currentIndex + 1) % currentImages.length;
+    modalImg.src = currentImages[currentIndex];
+  });
+  
+  closeBtn.addEventListener('click', () => modal.style.display = 'none');
+  window.addEventListener('click', (e) => { if(e.target === modal) modal.style.display = 'none'; });
+  
+  /* --- Modal CV avec canvas PDF --- */
+  const cvModal = document.getElementById("cv-modal");
+  const openCv = document.getElementById("open-cv");
+  const closeCv = document.getElementById("close-cv");
+  const canvas = document.getElementById('cv-canvas');
+  const ctx = canvas.getContext('2d');
+  const pdfUrl = 'CV.pdf';
+  
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.12.313/pdf.worker.min.js';
+  
+  openCv.onclick = function(e) {
+    e.preventDefault();
+    cvModal.style.display = "flex";
+  
+    pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
+      pdf.getPage(1).then(page => {
+        const viewport = page.getViewport({ scale: 1.5 });
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        page.render({ canvasContext: ctx, viewport: viewport });
+      });
     });
-  });
-}
+  }
+  
+  closeCv.onclick = function() { cvModal.style.display = "none"; }
+  window.addEventListener("click", function(e) { if (e.target === cvModal) cvModal.style.display = "none"; });
 
-closeCv.onclick = function() { cvModal.style.display = "none"; }
-window.addEventListener("click", function(e) { if (e.target === cvModal) cvModal.style.display = "none"; });
-
-
+});
 
 
 

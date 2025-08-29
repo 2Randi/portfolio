@@ -282,12 +282,34 @@ body {
 }
 
 /* iframe dans le modal CV */
+/*
 #cv-modal iframe {
   border: none;                 
   border-radius: 10px;          
   box-shadow: 0 4px 20px rgba(0,0,0,0.2); 
   background-color: #fff;      
+}*/
+/* Bouton télécharger dans le modal CV en haut à gauche */
+#cv-modal .download-btn {
+  position: absolute;   /* position absolue dans le modal */
+  top: 10px;            /* distance du haut */
+  left: 15px;           /* distance de la gauche */
+  z-index: 10;          /* au-dessus de l'image */
+  padding: 8px 16px;
+  background: #0073e6;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
 }
+
+/* Hover : changement de couleur et léger mouvement */
+#cv-modal .download-btn:hover {
+  background: #005bb5;
+  transform: translateY(-2px);
+}
+
 
 /* --- Animation au hover sur les projets --- */
 .project-card {

@@ -1,4 +1,4 @@
-/*
+
 // Filtrage des projets
 const filterButtons = document.querySelectorAll('.filters button');
 const projects = document.querySelectorAll('.project-card');
@@ -166,7 +166,7 @@ window.addEventListener("click", function(e) {
                     
 );
 
-*/
+
 
 /*222222*/
 /*
@@ -237,33 +237,6 @@ window.addEventListener('click', (e) => {
 
 */
 /**33333333*/
-// === MODAL PROJETS ===
-const projectModal = document.getElementById('project-modal');
-const closeProjectBtn = projectModal.querySelector('.close');
-const projectImages = document.getElementById('modal-img');
-
-function closeProjectModal() {
-  projectModal.style.display = 'none';
-  projectImages.src = '';
-}
-
-closeProjectBtn.addEventListener('click', closeProjectModal);
-window.addEventListener('click', (e) => { if(e.target === projectModal) closeProjectModal(); });
-
-// === MODAL CV ===
-const cvModal = document.getElementById('cv-modal');
-const openCvBtn = document.getElementById('open-cv');
-const closeCvBtn = document.getElementById('close-cv');
-
-openCvBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  cvModal.style.display = 'flex';
-});
-
-closeCvBtn.addEventListener('click', () => cvModal.style.display = 'none');
-window.addEventListener('click', (e) => { if(e.target === cvModal) cvModal.style.display = 'none'; });
-
-
 
 
 

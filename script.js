@@ -20,7 +20,7 @@ filterButtons.forEach(button => {
 // Animation au scroll
 const scrollElements = document.querySelectorAll('.scroll-animate');
 const elementInView = (el, dividend = 1) => {
-  const elementTop = el.getBoundingClientRect().top;
+const elementTop = el.getBoundingClientRect().top;
   return elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend;
 };
 
@@ -92,7 +92,7 @@ const modalBody = document.getElementById('modal-body');
 const modalImg = document.getElementById('modal-img');
 const prevBtn = document.querySelector('#modal-slider .prev');
 const nextBtn = document.querySelector('#modal-slider .next');
-const closeBtn = document.querySelector('.close');
+const closeBtn = modal.querySelector('.close');
 
 let currentImages = [];
 let currentIndex = 0;
@@ -156,11 +156,14 @@ closeCv.onclick = function() {
   cvModal.style.display = "none";
 }
 
+
 window.addEventListener("click", function(e) {
   if (e.target === cvModal) {
     cvModal.style.display = "none";
   }
-});
+}
+                    
+);
 
 
 

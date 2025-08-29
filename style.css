@@ -340,6 +340,15 @@ body {
   transition: background 0.3s;
 }
 
+/* iframe dans le modal CV */
+#cv-modal iframe {
+  border: none;                 
+  border-radius: 10px;          
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2); 
+  background-color: #fff;      
+}
+
+
 .download-btn:hover {
   background: #005bb5;
 }

@@ -238,7 +238,11 @@ body {
 
 
 /*pop op*/
-/* Modal overlay centré + flou arrière-plan */
+/* -------------------- */
+/* Modal Popup CSS final */
+/* -------------------- */
+
+/* Overlay modal centré + flou arrière-plan */
 .modal {
   display: none;
   position: fixed;
@@ -257,14 +261,14 @@ body {
 /* Card pop-up */
 .modal-content {
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 15px;      /* coins arrondis sur toute la card */
   padding: 20px;
   width: 80%;
   max-width: 700px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.4);
   position: relative;
   max-height: 90vh;
-  overflow-y: auto;
+  overflow-y: auto;         /* scroll si contenu trop long */
   transition: all 0.3s ease;
 }
 
@@ -292,7 +296,8 @@ body {
 
 #modal-slider img {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 15px;      /* coins arrondis sur l'image pour ne pas casser les coins de la card */
+  object-fit: cover;
 }
 
 #modal-slider button.prev,

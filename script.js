@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeCv = document.getElementById("close-cv");
   const canvas = document.getElementById('cv-canvas');
   const ctx = canvas.getContext('2d');
-  const pdfUrl = 'https://raw.githubusercontent.com/ton-utilisateur/ton-repo/main/CV.pdf';
+  const pdfUrl = 'https://raw.githubusercontent.com/2Randi/portfolio/main/CV.pdf';
   
   
   openCv.onclick = function(e) {

@@ -142,6 +142,28 @@ window.addEventListener('click', (e) => {
 });
 
 
+// --- Modal CV ---
+const cvModal = document.getElementById("cv-modal");
+const openCv = document.getElementById("open-cv");
+const closeCv = document.getElementById("close-cv");
+
+openCv.onclick = function(e) {
+  e.preventDefault();
+  cvModal.style.display = "flex";
+}
+
+closeCv.onclick = function() {
+  cvModal.style.display = "none";
+}
+
+window.addEventListener("click", function(e) {
+  if (e.target === cvModal) {
+    cvModal.style.display = "none";
+  }
+});
+
+
+
 
 /*const filterButtons = document.querySelectorAll('.filters button');
 const projects = document.querySelectorAll('.project-card');

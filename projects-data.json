@@ -1,1 +1,43 @@
+{
+  "Active Directory & GPO": {
+    "description": "Mise en place d’un domaine Windows Server et gestion des politiques centralisées",
+    "images": ["./images/ad1.jpg", "./images/ad2.jpg"],
+    "links": ["https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/"]
+  },
+  "Administration Linux": {
+    "description": "Debian, Ubuntu Scripting Bash et Python, automatisation avec Ansible",
+    "images": ["./images/linux1.jpg","./images/linux2.jpg"],
+    "links": ["https://www.ansible.com/resources/get-started"]
+  },
+  "Infrastructure Réseau Sécurisée": {
+    "description": "VLAN, routage inter-VLAN, VPN, firewall pfSense",
+    "images": ["./images/network1.jpg"],
+    "links": ["https://www.pfsense.org/"]
+  },
+  "CI/CD GitLab & Jenkins": {
+    "description": "Pipeline automatisé pour tests et déploiement Docker/Kubernetes",
+    "images": ["./images/cicd1.jpg"],
+    "links": ["https://www.jenkins.io/", "https://docs.gitlab.com/ee/ci/"]
+  },
+  "Monitoring": {
+    "description": "Zabbix, Grafana et Prometheus – Supervision et alertes temps réel",
+    "images": ["./images/monitor1.jpg"],
+    "links": ["https://www.zabbix.com/", "https://grafana.com/", "https://prometheus.io/"]
+  },
+  "Application E-commerce Android": {
+    "description": "Application de vente en ligne complète, gestion des produits et commandes",
+    "images": ["./images/android1.jpg"],
+    "links": ["https://github.com/2Randi/ecommerce-android"]
+  },
+  "API REST Symfony": {
+    "description": "Gestion d’événements et base MySQL",
+    "images": ["./images/symfony1.jpg"],
+    "links": ["https://symfony.com/doc/current/index.html"]
+  },
+  "SIEM ELK Stack": {
+    "description": "Collecte et analyse centralisée des logs pour la détection d’incidents",
+    "images": ["./images/elk1.jpg"],
+    "links": ["https://www.elastic.co/what-is/elk-stack"]
+  }
+}
 

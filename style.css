@@ -9,17 +9,6 @@ body {
 }
 
 /*header*/
-/*
-.header {
-  display: flex;
-  max-width: 1000px;
-  margin: 20px auto;
-  background: #003366;
-  padding: 20px 10px;
-  color: white;
-  font-family: Arial, sans-serif;
-}
-*/
 
 .header { 
   display: flex;   
@@ -44,13 +33,6 @@ body {
   margin: 0 0 10px 0;
 }
 
-/*
-.photo-wrapper {
-  display: flex;
-  justify-content: center; 
-  margin-top: 10px;
-}
-*/
 .photo-wrapper {
   width: max-content;        
   margin: 0 auto;            
@@ -91,47 +73,7 @@ body {
 .contact-header a:hover {
   text-decoration: underline;
 }
-
-
-/*version 1
-.header {
-  text-align: center;
-  padding: 40px 20px;
-  background: #003366;
-  color: white;
-}
-
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid white;
-  margin: 15px 0;
-}
-
-.header h2 {
-  font-size: 28px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.accroche {
-  max-width: 800px;
-  margin: 0 auto 15px auto;
-}
-
-.contact-header a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.contact-header a:hover {
-  text-decoration: underline;
-}
-*/
+/********/
 
 
 /* Competences */

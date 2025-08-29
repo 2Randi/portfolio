@@ -362,3 +362,15 @@ body {
   background: #005bb5;
 }
 
+/* Option pulsation alternative */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* Si tu veux remplacer le hover ci-dessus par une pulsation */
+.project-card.hover-pulse:hover {
+  animation: pulse 0.6s ease-in-out 1;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}

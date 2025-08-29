@@ -238,7 +238,7 @@ body {
 
 
 /*pop op*/
-/* Modal */
+/* Modal overlay centré + flou arrière-plan */
 .modal {
   display: none;
   position: fixed;
@@ -247,24 +247,25 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px); /* flou de l'arrière-plan */
-  background-color: rgba(0,0,0,0.5); /* sombre semi-transparent */
+  backdrop-filter: blur(5px);
+  background-color: rgba(0,0,0,0.5);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;  /* centre horizontalement */
+  align-items: center;      /* centre verticalement */
 }
 
-/* Card du pop-up */
+/* Card pop-up */
 .modal-content {
   background-color: #fff;
-  border-radius: 15px; /* coins arrondis */
+  border-radius: 15px;
   padding: 20px;
   width: 80%;
   max-width: 700px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.4); /* ombre pour effet "card" */
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
   position: relative;
-  max-height: 90vh; /* pour ne pas dépasser l'écran */
-  overflow-y: auto; /* scroll si contenu trop long */
+  max-height: 90vh;
+  overflow-y: auto;
+  transition: all 0.3s ease;
 }
 
 /* Bouton fermer */
@@ -320,7 +321,4 @@ body {
 /* Contenu texte */
 #modal-body {
   margin: 15px 0;
-}
-
-  color: #000;
 }

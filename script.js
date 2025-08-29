@@ -1,3 +1,4 @@
+/*
 // Filtrage des projets
 const filterButtons = document.querySelectorAll('.filters button');
 const projects = document.querySelectorAll('.project-card');
@@ -164,6 +165,79 @@ window.addEventListener("click", function(e) {
 }
                     
 );
+
+*/
+
+/*222222*/
+
+// Modal projet
+const modal = document.getElementById('project-modal');
+const modalTitle = document.getElementById('modal-title');
+const modalBody = document.getElementById('modal-body');
+const modalImg = document.getElementById('modal-img');
+const prevBtn = document.querySelector('#modal-slider .prev');
+const nextBtn = document.querySelector('#modal-slider .next');
+const closeBtn = modal.querySelector('.close');
+
+let currentImages = [];
+let currentIndex = 0;
+
+// Ouvrir modal projet
+const projects = document.querySelectorAll('.project-card');
+projects.forEach(project => {
+  project.addEventListener('click', () => {
+    const title = project.querySelector('h3').textContent;
+    modalTitle.textContent = title;
+
+    const details = projectDetails[title];
+
+    // Description + liens
+    let html = `<p>${details.description}</p>`;
+    details.links.forEach(link => {
+      html += `<p><a href="${link}" target="_blank">${link}</a></p>`;
+    });
+    modalBody.innerHTML = html;
+
+    // Slider images
+    currentImages = details.images;
+    currentIndex = 0;
+    modalImg.src = currentImages[currentIndex];
+    modalImg.alt = title;
+
+    modal.style.display = 'flex'; // ouvre la modale
+  });
+});
+
+// Slider images
+prevBtn.addEventListener('click', () => {
+  if(currentImages.length === 0) return;
+  currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+  modalImg.src = currentImages[currentIndex];
+});
+nextBtn.addEventListener('click', () => {
+  if(currentImages.length === 0) return;
+  currentIndex = (currentIndex + 1) % currentImages.length;
+  modalImg.src = currentImages[currentIndex];
+});
+
+// **FERMETURE MODALE CORRIGÉE**
+function closeModal() {
+  modal.style.display = 'none';
+  currentImages = [];
+  currentIndex = 0;
+  modalImg.src = '';
+}
+
+closeBtn.addEventListener('click', closeModal);
+
+// Clic sur le fond pour fermer
+window.addEventListener('click', (e) => {
+  if (e.target === modal) closeModal();
+});
+
+
+/***/
+
 
 
 

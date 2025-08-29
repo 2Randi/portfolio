@@ -170,14 +170,10 @@ window.addEventListener("click", function(e) {
 
 /****version 2*****/
 
-
-
-  /**LEO BE ZAH*//
-
 document.addEventListener('DOMContentLoaded', function() {
 
   /* --- Filtrage des projets --- */
-  const filterButtons = document.querySelectorAll('.filters button');
+ const filterButtons = document.querySelectorAll('.filters button');
   const projects = document.querySelectorAll('.project-card');
   
   filterButtons.forEach(button => {
@@ -227,17 +223,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
       projects.forEach(project => {
         project.addEventListener('click', () => {
-          const title = project.querySelector('h3').textContent.trim();
-          const details = projectDetails[title];
-
-          if(!details){
-            console.error('Projet non trouvé dans JSON :', title);
-            return;
-          }
-
+          const title = project.querySelector('h3').textContent;
           modalTitle.textContent = title;
-          modalBody.innerHTML = `<p>${details.description}</p>` +
-            details.links.map(link => `<p><a href="${link}" target="_blank">${link}</a></p>`).join('');
+
+          const details = projectDetails[title];
+          let html = `<p>${details.description}</p>`;
+          details.links.forEach(link => html += `<p><a href="${link}" target="_blank">${link}</a></p>`);
+          modalBody.innerHTML = html;
 
           currentImages = details.images;
           currentIndex = 0;
@@ -284,7 +276,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (e.target === cvModal) cvModal.style.display = "none"; 
   });
 
-});
+ });
+
 
 
   

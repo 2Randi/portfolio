@@ -5,6 +5,7 @@ body {
   background: #cce6ff;
   color: #000;
   scroll-behavior: smooth;
+  line-height: 1.35;
 }
 
 /*header*/

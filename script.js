@@ -39,6 +39,7 @@ const handleScrollAnimation = () => {
 window.addEventListener('scroll', handleScrollAnimation);
 window.addEventListener('load', handleScrollAnimation);
 
+
 //pop up
 // Contenu détaillé pour chaque projet
 const projectDetails = {
@@ -96,7 +97,7 @@ const closeBtn = document.querySelector('.close');
 let currentImages = [];
 let currentIndex = 0;
 
-// Ouvrir modal avec slider
+// Ouvrir modal
 projects.forEach(project => {
   project.addEventListener('click', () => {
     const title = project.querySelector('h3').textContent;
@@ -104,24 +105,24 @@ projects.forEach(project => {
 
     const details = projectDetails[title];
 
-    // description + liens
+    // Description + liens
     let html = `<p>${details.description}</p>`;
     details.links.forEach(link => {
       html += `<p><a href="${link}" target="_blank">${link}</a></p>`;
     });
     modalBody.innerHTML = html;
 
-    // slider images
+    // Slider images
     currentImages = details.images;
     currentIndex = 0;
     modalImg.src = currentImages[currentIndex];
     modalImg.alt = title;
 
-    modal.style.display = 'block';
+    modal.style.display = 'flex'; // garde toujours centré
   });
 });
 
-// Slider
+// Slider images
 prevBtn.addEventListener('click', () => {
   if(currentImages.length === 0) return;
   currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
@@ -139,7 +140,6 @@ closeBtn.addEventListener('click', () => modal.style.display = 'none');
 window.addEventListener('click', (e) => {
   if (e.target === modal) modal.style.display = 'none';
 });
-
 
 
 

@@ -290,17 +290,22 @@ body {
   background-color: #fff;      
 }*/
 /* Bouton télécharger dans le modal CV en haut à gauche */
-#cv-modal iframe {
-  border: none;                 
-  border-radius: 10px;          
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2); 
-  background-color: #fff;      
-  
+#cv-modal .download-btn {
   position: absolute;   
-  top: 10px;           
+  top: 10px;            
   left: 10px;          
-  width: 300px;         
-  height: 400px;       
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0073e6;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+  z-index: 10;          
+}
+
+#cv-modal .download-btn:hover {
+  background: #005bb5;
 }
 
 

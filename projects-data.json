@@ -25,10 +25,7 @@
     "links": ["https://www.zabbix.com/", "https://grafana.com/", "https://prometheus.io/"]
   },
   "Application Android ECommerce": {
-    "description": "L'application ”ECommerce” est une plateforme intuitive qui permet aux utilisateurs, qu'ils 
-    soient clients ou fournisseurs, d'interagir avec les fonctionnalités d'un système de commerce 
-    électronique. Cette application prend en charge deux langues : le français et l'anglais, selon la 
-    langue du système de l'utilisateur.",
+    "description": "L'application ”ECommerce” est une plateforme intuitive qui permet aux utilisateurs, qu'ils soient clients ou fournisseurs, d'interagir avec les fonctionnalités d'un système de commerce électronique. Cette application prend en charge deux langues : le français et l'anglais, selon la langue du système de l'utilisateur.",
     "images": ["./images/dev/android1.jpg", "./images/dev/android2.jpg", "./images/dev/android3.jpg", 
     "./images/dev/android4.jpg", "./images/dev/android5.jpg", "./images/dev/android6.jpg", 
     "./images/dev/android7.jpg", "./images/dev/android8.jpg", "./images/dev/android9.jpg", 

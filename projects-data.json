@@ -40,10 +40,11 @@
     "./images/dev/um10.png", "./images/dev/um11.png", "./images/dev/um12.png"],
     "links": ["https://github.com/2Randi/JEE-project"]
   },
-  "API REST Symfony": {
-    "description": "Gestion d’événements et base MySQL",
-    "images": ["./images/symfony1.jpg"],
-    "links": ["https://symfony.com/doc/current/index.html"]
+  "Fake news detection": {
+    "description": "Ce projet s’inscrit dans le cadre de l’apprentissage supervisé appliqué à un problème de binary et multi-class classification. Le dataset utilisé contient des articles de presse labellisés (real, fake, mixture, other). Le preprocessing a consisté en plusieurs étapes : tokenization, stopword removal, stemming/lemmatization, puis feature extraction avec TF-IDF vectorization et bag of words. Sur ces données transformées, différents classifiers ont été entraînés et comparés, notamment Naive Bayes, Decision Tree, Logistic Regression, Support Vector Machine (SVM) et Random Forest. L’évaluation des modèles a été réalisée à l’aide de quatre métriques : Accuracy, Precision, Recall et F1-Score. Les résultats ont permis d’identifier le modèle le plus performant, mettant en évidence sa capacité à généraliser efficacement pour la tâche de fake news detection.",
+    "images": ["./images/dev/ML1.jpg", "./images/dev/ML2.jpg", "./images/dev/ML3.jpg",
+    "./images/dev/ML4.jpg", "./images/dev/ML5.jpg", "./images/dev/ML6.jpg"],
+    "links": ["https://colab.research.google.com/drive/1RQz8Qlx4SWVqqvRFqB-NIp1RrWqkb7MP#scrollTo=P9c4QKyUrCRi"]
   },
   "Transmission optique sans fil": {
     "description": "Collecte et analyse centralisée des logs pour la détection d’incidents",

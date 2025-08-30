@@ -69,22 +69,26 @@ body {
   padding: 20px 10px;
   color: white;
   font-family: Arial, sans-serif;
-  flex-wrap: wrap; /* permet aux sections de se réduire ou de passer à la ligne si besoin */
+  flex-wrap: wrap; /* permet de passer en vertical si très petit */
 }
 
 .header-left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 1 40%;  /* flexible, prend 40% de la largeur mais peut rétrécir */
-  min-width: 200px; /* largeur minimale pour ne pas écraser le contenu */
+  flex: 0 1 40%;  
+  min-width: 150px; /* largeur minimale pour ne pas écraser la photo et le texte */
   box-sizing: border-box;
+  padding-right: 10px; /* réduit un peu le padding pour la version PC */
 }
 
 .header-right {
-  flex: 1 1 60%;  /* flexible, prend 60% de la largeur mais peut rétrécir */
-  min-width: 200px; /* largeur minimale */
+  flex: 1 1 60%; 
+  min-width: 250px; 
+  box-sizing: border-box;
+  padding-left: 10px;
 }
+
 
 
 

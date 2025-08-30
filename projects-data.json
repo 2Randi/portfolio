@@ -51,7 +51,7 @@
     "images": ["./images/elk1.jpg"],
     "links": ["https://www.elastic.co/what-is/elk-stack"]
   },
-  "La VoIP": {
+  "La Voix sur IP": {
     "description": "Collecte et analyse centralisée des logs pour la détection d’incidents",
     "images": ["./images/elk1.jpg"],
     "links": ["https://www.elastic.co/what-is/elk-stack"]

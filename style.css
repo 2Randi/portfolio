@@ -50,7 +50,7 @@ body {
 }
 
 .profile-photo:hover {
-  transform: scale(1.75); 
+  transform: scale(2.25); 
   box-shadow: 0 8px 20px rgba(0,0,0,0.3); 
 }
 

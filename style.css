@@ -37,6 +37,7 @@ body {
 
 
 /*header PC*/
+/*
 .header { 
   display: flex;   
   max-width: 1000px; 
@@ -59,6 +60,34 @@ body {
 .header-left h1 {
   margin: 0 0 10px 0;
 }
+*/
+.header {
+  display: flex;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #003366;
+  padding: 20px 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap; /* permet aux sections de se réduire ou de passer à la ligne si besoin */
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 40%;  /* flexible, prend 40% de la largeur mais peut rétrécir */
+  min-width: 200px; /* largeur minimale pour ne pas écraser le contenu */
+  box-sizing: border-box;
+}
+
+.header-right {
+  flex: 1 1 60%;  /* flexible, prend 60% de la largeur mais peut rétrécir */
+  min-width: 200px; /* largeur minimale */
+}
+
+
+
 
 .photo-wrapper {
   width: max-content;        

@@ -221,14 +221,23 @@ body {
   overflow-y: auto;         /* scroll si contenu trop long */
   transition: all 0.3s ease;
 }
-
+/*
 #modal-slider img {
-  width: 400px;       /* largeur fixe souhaitée */
-  height: 300px;      /* hauteur fixe souhaitée */
-  object-fit: cover;  /* remplit la zone, peut recadrer légèrement */
+  width: 400px;      
+  height: 300px;      
+  object-fit: cover;  
+  display: block;
+  margin: 0 auto;     
+  border-radius: 10px; 
+}
+*/
+#modal-slider img {
+  max-width: 600px;   /* largeur max du conteneur */
+  max-height: 400px;  /* hauteur max du conteneur */
+  width: auto;        /* conserve le ratio */
+  height: auto;       /* conserve le ratio */
   display: block;
   margin: 0 auto;     /* centre horizontalement */
-  border-radius: 10px; /* garde l'arrondi si nécessaire */
 }
 
 

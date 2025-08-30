@@ -270,6 +270,7 @@ body {
 }
 
 /* Bouton télécharger dans la modale */
+/*
 .download-btn {
   position: absolute;
   top: 15px;
@@ -282,8 +283,7 @@ body {
   transition: background 0.3s;
 }
 
-/* iframe dans le modal CV */
-/*
+
 #cv-modal iframe {
   border: none;                 
   border-radius: 10px;          
@@ -291,24 +291,27 @@ body {
   background-color: #fff;      
 }*/
 /* Bouton télécharger dans le modal CV en haut à gauche */
+/* Style normal de l'iframe */
 #cv-modal iframe {
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  border: none;                 
+  border-radius: 10px;          
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2); 
   background-color: #fff;
+  width: 80%;
+  height: 90%;
+}
+
+/* Bouton télécharger en haut à gauche */
+#cv-modal .download-btn {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: auto;
-  height: auto;
-}
-
-#cv-modal .download-btn:hover {
-  background: #005bb5;
-}
-
-.modal-content {
-  position: relative;
+  top: 15px;
+  left: 15px;
+  padding: 10px 20px;
+  background: #0073e6;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
 /* --- Animation au hover sur les projets --- */

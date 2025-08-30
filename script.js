@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   /* --- Charger projets depuis JSON --- */
   let projectDetails = {};
-  fetch('./projects.json')
+  fetch('./projects-data.json')
     .then(response => response.json())
     .then(data => {
       projectDetails = data;

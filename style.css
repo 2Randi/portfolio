@@ -46,7 +46,14 @@ body {
   border-radius: 50%;
   border: 3px solid white;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.profile-photo:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); 
+}
+
 
 .separator {
   width: 2px;

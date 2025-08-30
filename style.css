@@ -50,7 +50,7 @@ body {
 }
 
 .profile-photo:hover {
-  transform: scale(2); 
+  transform: scale(1.8); 
   box-shadow: 0 8px 20px rgba(0,0,0,0.3); 
 }
 
@@ -75,11 +75,11 @@ body {
 .contact-header a {
   text-decoration: none;
   display: inline-block;
-  transition: transform 2s ease;
+  transition: transform 0.3s ease;
 }
 
 .contact-header a:hover {
-  transform: scale(2); 
+  transform: scale(1.3); 
 }
 
 /********/

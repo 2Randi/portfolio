@@ -10,6 +10,33 @@ body {
 
 /*header*/
 
+/* --- Header responsive pour mobile --- */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column; /* empile header-left et header-right verticalement */
+    align-items: center;    /* centre tout horizontalement */
+    padding: 20px 10px;
+  }
+
+  .header-left,
+  .header-right {
+    width: 100%;            /* prennent toute la largeur */
+    padding: 10px 0;        /* espace vertical */
+    text-align: center;     /* centre texte et liens */
+  }
+
+  .separator {
+    display: none;          /* cache le séparateur vertical */
+  }
+
+  .contact-header a {
+    margin: 5px;            /* espace entre liens */
+    display: inline-block;
+  }
+}
+
+
+/*header PC*/
 .header { 
   display: flex;   
   max-width: 1000px; 

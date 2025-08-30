@@ -45,7 +45,7 @@
     "images": ["./images/symfony1.jpg"],
     "links": ["https://symfony.com/doc/current/index.html"]
   },
-  "SIEM ELK Stack": {
+  "Transmission optique sans fil": {
     "description": "Collecte et analyse centralisée des logs pour la détection d’incidents",
     "images": ["./images/elk1.jpg"],
     "links": ["https://www.elastic.co/what-is/elk-stack"]

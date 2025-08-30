@@ -25,7 +25,7 @@
     "links": ["https://www.zabbix.com/", "https://grafana.com/", "https://prometheus.io/"]
   },
   "Application Android ECommerce": {
-    "description": "L'application ”ECommerce” est une plateforme intuitive qui permet aux utilisateurs, qu'ils soient clients ou fournisseurs, d'interagir avec les fonctionnalités d'un système de commerce électronique. Cette application prend en charge deux langues : le français et l'anglais, selon la langue du système de l'utilisateur.",
+    "description": "L'application ”ECommerce” est une plateforme intuitive qui permet aux utilisateurs, qu'ils soient clients ou fournisseurs, d'interagir avec les fonctionnalités d'un système de commerce électronique. Cette application prend en charge deux langues : le français et l'anglais, selon la langue du système de l'utilisateur. Elle combine Java, Room Database, RecyclerView et l'architecture MVVM pour offrir une application robuste, performante et évolutive. Les entités, DAO, adaptateurs et autres composants garantissent une gestion efficace des données et une interface utilisateur intuitive.",
     "images": ["./images/dev/android1.png", "./images/dev/android2.png", "./images/dev/android3.png", 
     "./images/dev/android4.png", "./images/dev/android5.png", "./images/dev/android6.png", 
     "./images/dev/android7.png", "./images/dev/android8.png", "./images/dev/android9.png", 

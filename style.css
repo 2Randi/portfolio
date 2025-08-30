@@ -75,11 +75,13 @@ body {
 .contact-header a {
   text-decoration: none;
   color: white;
+  transition: transform 0.3s ease;
 }
 
 .contact-header a:hover {
-  text-decoration: underline;
+  transform: scale(1.3); 
 }
+
 /********/
 
 

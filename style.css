@@ -222,16 +222,15 @@ body {
   transition: all 0.3s ease;
 }
 
-.modal-content img {
-  max-width: 100%;      /* ne dépasse jamais la largeur de la card */
-  max-height: 500px;    /* limite la hauteur à 500px, à adapter selon ton besoin */
-  width: auto;           /* conserve le ratio */
-  height: auto;          /* conserve le ratio */
+#modal-slider img {
+  width: 400px;       /* largeur fixe souhaitée */
+  height: 300px;      /* hauteur fixe souhaitée */
+  object-fit: cover;  /* remplit la zone, peut recadrer légèrement */
   display: block;
-  margin: 0 auto;       /* centre horizontalement */
-  border-radius: 10px;  /* si tu veux garder l'arrondi */
-  object-fit: contain;  /* s'assure que l'image est contenue sans être déformée */
+  margin: 0 auto;     /* centre horizontalement */
+  border-radius: 10px; /* garde l'arrondi si nécessaire */
 }
+
 
 /* Bouton fermer */
 .close {
@@ -289,27 +288,6 @@ body {
   margin: 15px 0;
 }
 
-/* Bouton télécharger dans la modale */
-/*
-.download-btn {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  padding: 10px 20px;
-  background: #0073e6;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-
-#cv-modal iframe {
-  border: none;                 
-  border-radius: 10px;          
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2); 
-  background-color: #fff;      
-}*/
 /* Bouton télécharger dans le modal CV en haut à gauche */
 /* Style normal de l'iframe */
 #cv-modal iframe {

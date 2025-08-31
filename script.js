@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       projects.forEach(project => {
         project.addEventListener('click', () => {
-          const title = project.querySelector('h3').textContent;
+          const title = project.querySelector('h4').textContent;
           modalTitle.textContent = title;
 
           const details = projectDetails[title];

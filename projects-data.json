@@ -18,7 +18,7 @@
     "description": "Déploiement et configuration de GLPI (Gestion Libre de Parc Informatique) pour centraliser la gestion des actifs IT et des tickets d’assistance. Le projet a consisté à inventorier le parc matériel et logiciel, mettre en place un système de helpdesk pour le suivi des demandes utilisateurs, et automatiser la gestion des incidents et des changements. Des plugins complémentaires ont été intégrés pour améliorer le reporting et le suivi des licences. Cette solution a permis d’optimiser la visibilité sur les ressources informatiques, de professionnaliser le support technique et d’améliorer la traçabilité des interventions au sein de l’entreprise.",
     "images": ["./images/sys/glpi1.png", "./images/sys/glpi2.png", "./images/sys/glpi3.png", 
     "./images/sys/glpi4.png", "./images/sys/glpi5.png", "./images/sys/glpi6.png"],
-    "links": ["https://www.jenkins.io/", "https://docs.gitlab.com/ee/ci/"]
+    "links": []
   },
   "Sécurisation des réseaux": {
     "description": "Mise en place d’une solution de firewall basée sur IPCop pour sécuriser un réseau local d’entreprise. Le projet a consisté à segmenter le réseau en zones (Green pour le LAN interne, Red pour l’accès Internet, Orange pour la DMZ, Blue pour le Wi-Fi), à configurer un firewall iptables avec filtrage des flux, du NAT et un proxy Squid pour contrôler la navigation web. Des VPN (IPSec / OpenVPN) ont été déployés pour sécuriser les connexions distantes, et un IDS/IPS Snort a été intégré pour la détection d’intrusions. Cette architecture a permis de renforcer la sécurité réseau tout en assurant une gestion simple via l’interface web d’IPCop, offrant une solution fiable et adaptée aux besoins d’une PME.",

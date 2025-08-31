@@ -14,9 +14,10 @@
     "images": ["./images/network1.jpg"],
     "links": ["https://www.pfsense.org/"]
   },
-  "CI/CD GitLab & Jenkins": {
-    "description": "Pipeline automatisé pour tests et déploiement Docker/Kubernetes",
-    "images": ["./images/cicd1.jpg"],
+  "Gestion de parc informatique": {
+    "description": "Déploiement et configuration de GLPI (Gestion Libre de Parc Informatique) pour centraliser la gestion des actifs IT et des tickets d’assistance. Le projet a consisté à inventorier le parc matériel et logiciel, mettre en place un système de helpdesk pour le suivi des demandes utilisateurs, et automatiser la gestion des incidents et des changements. Des plugins complémentaires ont été intégrés pour améliorer le reporting et le suivi des licences. Cette solution a permis d’optimiser la visibilité sur les ressources informatiques, de professionnaliser le support technique et d’améliorer la traçabilité des interventions au sein de l’entreprise.",
+    "images": ["./images/sys/glpi1.png", "./images/sys/glpi2.png", "./images/sys/glpi3.png", 
+    "./images/sys/glpi4.png", "./images/sys/glpi5.png", "./images/sys/glpi6.png"],
     "links": ["https://www.jenkins.io/", "https://docs.gitlab.com/ee/ci/"]
   },
   "Sécurisation des réseaux": {

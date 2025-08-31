@@ -19,10 +19,11 @@
     "images": ["./images/cicd1.jpg"],
     "links": ["https://www.jenkins.io/", "https://docs.gitlab.com/ee/ci/"]
   },
-  "Monitoring": {
-    "description": "Zabbix, Grafana et Prometheus – Supervision et alertes temps réel",
-    "images": ["./images/monitor1.jpg"],
-    "links": ["https://www.zabbix.com/", "https://grafana.com/", "https://prometheus.io/"]
+  "Sécurisation des réseaux": {
+    "description": "Mise en place d’une solution de firewall basée sur IPCop pour sécuriser un réseau local d’entreprise. Le projet a consisté à segmenter le réseau en zones (Green pour le LAN interne, Red pour l’accès Internet, Orange pour la DMZ, Blue pour le Wi-Fi), à configurer un firewall iptables avec filtrage des flux, du NAT et un proxy Squid pour contrôler la navigation web. Des VPN (IPSec / OpenVPN) ont été déployés pour sécuriser les connexions distantes, et un IDS/IPS Snort a été intégré pour la détection d’intrusions. Cette architecture a permis de renforcer la sécurité réseau tout en assurant une gestion simple via l’interface web d’IPCop, offrant une solution fiable et adaptée aux besoins d’une PME.",
+    "images": ["./images/sys/ipcop1.jpg", "./images/sys/ipcop2.jpg", "./images/sys/ipcop3.jpg",
+    "./images/sys/ipcop4.jpg", "./images/sys/ipcop5.jpg", "./images/sys/ipcop6.jpg", "./images/sys/ipcop7.jpg"],
+    "links": ["https:biblio.univ-antananarivo.mg/theses2/"]
   },
   "Application Android ECommerce": {
     "description": "L'application ”ECommerce” est une plateforme intuitive qui permet aux utilisateurs, qu'ils soient clients ou fournisseurs, d'interagir avec les fonctionnalités d'un système de commerce électronique. Cette application prend en charge deux langues : le français et l'anglais, selon la langue du système de l'utilisateur. Elle combine Java, Room Database, RecyclerView et l'architecture MVVM pour offrir une application robuste, performante et évolutive. Les entités, DAO, adaptateurs et autres composants garantissent une gestion efficace des données et une interface utilisateur intuitive.",
@@ -47,9 +48,10 @@
     "links": ["https://colab.research.google.com/drive/1RQz8Qlx4SWVqqvRFqB-NIp1RrWqkb7MP#scrollTo=P9c4QKyUrCRi"]
   },
   "Transmission optique sans fil": {
-    "description": "Collecte et analyse centralisée des logs pour la détection d’incidents",
-    "images": ["./images/elk1.jpg"],
-    "links": ["https://www.elastic.co/what-is/elk-stack"]
+    "description": "L’évolution des systèmes de télécommunication tend vers une augmentation des capacités de transmission. La transmission optique en espace libre utilise des sources lumineuses comme le laser ou LED. Le support utilisé est l’air libre. Le signal électrique est transformé en signal optique pour qu’il s’adapte au système sans fil, par la modulation optique. Libre licence, haute sécurité, facile à installer, débit binaire élevé sont ses principaux avantages. La brume et le brouillard sont des facteurs qui influencent le système FSO. L'utilisation du système à émetteur/récepteur multiple a augmenté l'efficacité des systèmes soumis à différentes perturbations. Le taux d'erreur binaire et le facteur de qualité sont les indicateurs qui permettent de qualifier la performance de la transmission. Le système à émetteur/récepteur multiple possède un taux d’erreur faible et un facteur de qualitéélevé d’après la simulation sous le logiciel OptiSystem. Mots clés : modulation optique, lumière, espace libre, TEB et facteur de Qualité.",
+    "images": ["./images/telecom/fso1.jpg", "./images/telecom/fso2.jpg", "./images/telecom/fso3.jpg",
+    "./images/telecom/fso4.jpg", "./images/telecom/fso5.jpg", "./images/telecom/fso6.jpg", "./images/telecom/fso7.jpg"],
+    "links": ["https:biblio.univ-antananarivo.mg/theses2/"]
   },
   "La Voix sur IP": {
     "description": "Collecte et analyse centralisée des logs pour la détection d’incidents",

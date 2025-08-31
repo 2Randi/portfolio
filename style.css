@@ -49,6 +49,10 @@ body {
   flex-wrap: wrap; /* permet de passer en vertical si très petit */
 }
 
+.header-right p {
+  text-align: justify;
+}
+
 .header-left {
   display: flex;
   text-align: center;
@@ -246,7 +250,7 @@ body {
 /* Card pop-up */
 .modal-content {
   background-color: #fff;
-  border-radius: 15px;      /* coins arrondis sur toute la card */
+  border-radius: 10px;      /* coins arrondis sur toute la card */
   padding: 20px;
   width: 80%;
   max-width: 700px;

@@ -111,6 +111,8 @@ body {
 
 .header-right h2,
 .contact-header a {
+  margin: 6px;
+  display: inline-block;
   color: white;
 }
 

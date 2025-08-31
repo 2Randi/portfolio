@@ -20,18 +20,23 @@ body {
 
   .header-left,
   .header-right {
-    width: 100%;            /* prennent toute la largeur */
-    padding: 10px 0;        /* espace vertical */
-    text-align: center;     /* centre texte et liens */
+    width: 100%;            
+    padding: 10px 0;        
+    text-align: center;     
   }
 
   .separator {
     display: none;          /* cache le séparateur vertical */
   }
 
+  .header-right p{
+     font-family: Lato, sans-serif;
+  } 
+  
   .contact-header a {
-    margin: 5px;            /* espace entre liens */
+    margin: 6px;            
     display: inline-block;
+    font-family: Lato, sans-serif;
   }
 }
 
@@ -105,13 +110,17 @@ body {
 }
 
 .header-right h2,
-.header-right p,
 .contact-header a {
   color: white;
 }
 
+.header-right p{
+  font-family: Lato, sans-serif;
+  color: white;
+} 
 
 .contact-header a {
+  font-family: Lato, sans-serif;
   text-decoration: none;
   display: inline-block;
   transition: transform 0.3s ease;
@@ -360,7 +369,7 @@ body {
 /* --- Animation au hover sur les projets --- */
 .project-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer; /* Indique que c'est cliquable */
+  cursor: pointer; 
 }
 
 .project-card:hover {

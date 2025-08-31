@@ -45,7 +45,7 @@ body {
   background: #003366;
   padding: 20px 10px;
   color: white;
-  font-family: Poppins, sans-serif;
+  font-family: Montserrat, sans-serif;
   flex-wrap: wrap; /* permet de passer en vertical si très petit */
 }
 

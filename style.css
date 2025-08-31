@@ -128,7 +128,7 @@ body {
 }
 
 
-#skills h2 {
+#skills h3 {
   font-size: 28px;
   color: #003366;
   margin-bottom: 20px;
@@ -144,8 +144,8 @@ body {
 }
 
 .skills-card p {
-  margin-bottom: 13px;
-  font-size: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
   color: #000;
 }
 
@@ -162,7 +162,7 @@ body {
 }
 
 
-#projects h2 {
+#projects h3 {
   font-size: 28px;
   color: #003366;
   margin-bottom: 20px;

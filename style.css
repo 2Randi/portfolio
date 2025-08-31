@@ -267,6 +267,11 @@ body {
   margin: 0 auto;     /* centre horizontalement */
 }
 
+/* Texte justifié dans le contenu du modal projets */
+#modal-body {
+  margin: 15px 0;
+  text-align: justify;
+}
 
 /* Bouton fermer */
 .close {

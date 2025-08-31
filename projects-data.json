@@ -54,7 +54,7 @@
     "./images/telecom/fso4.jpg", "./images/telecom/fso5.jpg", "./images/telecom/fso6.jpg", "./images/telecom/fso7.jpg"],
     "links": ["https://biblio.univ-antananarivo.mg/theses2/"]
   },
-  "La Voix sur IP": {
+  "Voice over Internet Protocol": {
     "description": "Collecte et analyse centralisée des logs pour la détection d’incidents",
     "images": ["./images/elk1.jpg"],
     "links": ["https://www.elastic.co/what-is/elk-stack"]

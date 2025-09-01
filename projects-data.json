@@ -9,6 +9,11 @@
     "images": ["./images/linux1.jpg","./images/linux2.jpg"],
     "links": []
   },
+  "Analyse du flux audio VoIP avec Wireshark": {
+    "description": "Identification et résolution d’un problème de One-Way Audio sur une infrastructure VoIP. Capture et inspection des paquets SIP et RTP avec Wireshark pour détecter les flux audio manquants ou asymétriques. Analyse des échanges SIP (INVITE, 200 OK, ACK) pour vérifier la négociation des codecs et la configuration des adresses/ports RTP. Diagnostic des problèmes liés au NAT, pare-feu ou ACL pouvant bloquer le flux RTP entrant. Mise en évidence des pertes de paquets et des débits incorrects impactant la qualité audio. Préconisations appliquées : configuration correcte du NAT et du firewall, ajustement des paramètres RTP et tests de connectivité, assurant la restauration de la communication audio bidirectionnelle.",
+    "images": ["./images/sys/wire1.jpg","./images/sys/wire2.png", "./images/sys/wire3.png", "./images/sys/wire4.png"],
+    "links": []
+  },
   "Sécurisation et gestion réseau": {
     "description": "Mise en place et configuration d’un pare-feu pfSense pour protéger et gérer un réseau d’entreprise. Création de règles de filtrage et de NAT afin de contrôler les flux entrants et sortants. Déploiement de VPN (OpenVPN / IPSec) pour sécuriser les connexions distantes. Mise en place d’un portail captif avec authentification des utilisateurs pour réguler l’accès au réseau local. Configuration du DHCP et DNS interne pour automatiser l’attribution d’adresses IP et améliorer la résolution des noms. Paramétrage de la QoS afin de prioriser les flux critiques (visioconférence, VoIP). Enfin, mise en œuvre de l’équilibrage de charge et de la haute disponibilité entre plusieurs liaisons Internet pour garantir la continuité de service.",
     "images": ["./images/sys/pfsense1.png", "./images/sys/pfsense2.png", "./images/sys/pfsense3.png",

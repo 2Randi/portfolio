@@ -9,7 +9,7 @@
     "images": ["./images/linux1.jpg","./images/linux2.jpg"],
     "links": []
   },
-  "Analyse du flux audio VoIP avec Wireshark": {
+  "Analyse du flux audio VoIP": {
     "description": "Identification et résolution d’un problème de One-Way Audio sur une infrastructure VoIP. Capture et inspection des paquets SIP et RTP avec Wireshark pour détecter les flux audio manquants ou asymétriques. Analyse des échanges SIP (INVITE, 200 OK, ACK) pour vérifier la négociation des codecs et la configuration des adresses/ports RTP. Diagnostic des problèmes liés au NAT, pare-feu ou ACL pouvant bloquer le flux RTP entrant. Mise en évidence des pertes de paquets et des débits incorrects impactant la qualité audio. Préconisations appliquées : configuration correcte du NAT et du firewall, ajustement des paramètres RTP et tests de connectivité, assurant la restauration de la communication audio bidirectionnelle.",
     "images": ["./images/sys/wire1.jpg","./images/sys/wire2.png", "./images/sys/wire3.png", "./images/sys/wire4.png"],
     "links": []

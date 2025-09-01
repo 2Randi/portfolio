@@ -1,12 +1,12 @@
 {
   "Active Directory & GPO": {
-    "description": "Mise en place d’un domaine Windows Server et gestion des politiques centralisées",
-    "images": ["./images/ad1.jpg", "./images/ad2.jpg"],
+    "description": "Installation et configuration de DHCP et DNS pour la gestion du réseau, déploiement d’Active Directory et création de contrôleurs de domaine. Gestion centralisée des utilisateurs, groupes et permissions, création de profils et stratégies de sécurité. Déploiement automatisé de logiciels essentiels pour les utilisateurs via GPO et scripts VBS/PowerShell (GLPI Agent, Zoiper, Thunderbird). Configuration et gestion des imprimantes réseau, postes clients, redirections de dossiers et partages réseau. Mise en place de quotas disque, stratégies de mot de passe, délégation de permissions, planification de tâches automatiques, et supervision de l’infrastructure avec rapports réguliers. Optimisation des politiques de groupe et contrôle des accès pour assurer sécurité et standardisation.",
+    "images": ["./images/sys/ad1.jpg", "./images/sys/ad2.jpg"],
     "links": []
   },
   "Administration Linux": {
-    "description": "Debian, Ubuntu Scripting Bash et Python, automatisation avec Ansible",
-    "images": ["./images/linux1.jpg","./images/linux2.jpg"],
+    "description": "Installation et configuration d’un serveur NAS sous Debian 12 : configuration des volumes en RAID matériel et du système de fichiers, création des deux comptes utilisateurs avec jails pour isolation, et affectation du serveur à un VLAN dédié. Mise en place des partages réseau et des points de montage pour le déport manuel des backups depuis les serveurs applicatifs, définition des permissions et quotas sur les partages. Accès administratifs sécurisés configurés : SSH pour l’administration distante et SFTP pour les transferts de fichiers. Tests d’intégrité, procédures et validation du déport des backups (tests de lecture/écriture et restauration). Documentation des procédures d’accès et de maintenance.",
+    "images": ["./images/sys/linux1.jpg","./images/sys/linux2.jpg"],
     "links": []
   },
   "Analyse du flux audio VoIP": {

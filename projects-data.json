@@ -63,7 +63,7 @@
   "Voice over Internet Protocol": {
     "description": "Déploiement et configuration de Wazo Platform pour mettre en place une solution de téléphonie IP complète. Installation du serveur et intégration avec le réseau local pour gérer les communications internes et externes. Création et administration de comptes SIP pour les utilisateurs, configuration des trunks SIP pour la liaison avec l’opérateur téléphonique OVH, et mise en place de dialplan personnalisés. Mise en œuvre de fonctionnalités avancées telles que messagerie vocale, transferts d’appel, files d’attente et conférence audio. Intégration avec l’annuaire d’entreprise LDAP pour simplifier la gestion des utilisateurs. Migration du serveur dans le OVH Cloud. Enfin, supervision et suivi des appels (CDR, enregistrements, rapports) via l’interface d’administration Wazo.",
     "images": ["./images/telecom/wazo1.png", "./images/telecom/wazo2.png", "./images/telecom/wazo3.png",
-    "./images/telecom/wazo4.png", "./images/telecom/wazo5.png", "./images/telecom/wazo6.jpg", ],
+    "./images/telecom/wazo4.png", "./images/telecom/wazo5.png", "./images/telecom/wazo6.jpg"],
     "links": ["https://www.elastic.co/what-is/elk-stack"]
   }
 }

@@ -1,4 +1,10 @@
 {
+   "Monitoring": {
+    "description": "Déploiement et configuration d’un serveur Zabbix sur Linux pour la supervision centralisée de plusieurs serveurs. Mise en place de la base de données (MariaDB) et du frontend web. Installation et configuration des agents Zabbix sur les serveurs supervisés afin de remonter des métriques détaillées (CPU, mémoire, espace disque, charge réseau). Intégration du protocole SNMP pour superviser certains équipements réseau. Création de tableaux de bord personnalisés et de graphiques pour le suivi en temps réel. Configuration d’alertes par e-mail et par Slack afin de prévenir en cas de panne ou de dépassement de seuil critique.",
+    "images": ["./images/sys/monitor1.jpg","./images/sys/monitor1.jpg","./images/sys/monitor1.jpg",
+    "./images/sys/monitor1.jpg","./images/sys/monitor1.jpg","./images/sys/monitor1.jpg"],
+    "links": []
+  },
   "Active Directory & GPO": {
     "description": "Installation et configuration de DHCP et DNS pour la gestion du réseau, déploiement d’Active Directory et création de contrôleurs de domaine.\n Gestion centralisée des utilisateurs, groupes et permissions, création de profils et stratégies de sécurité.\n Déploiement automatisé de logiciels essentiels pour les utilisateurs via GPO et scripts VBS/PowerShell (GLPI Agent, Zoiper, Thunderbird, ...).\n Configuration et gestion des imprimantes réseau, postes clients, redirections de dossiers et partages réseau.\n Mise en place de quotas disque, stratégies de mot de passe, délégation de permissions, planification de tâches automatiques, et supervision de l’infrastructure avec rapports réguliers.\n Optimisation des politiques de groupe et contrôle des accès pour assurer sécurité et standardisation.",
     "images": ["./images/sys/ad1.jpg", "./images/sys/ad2.jpg"],

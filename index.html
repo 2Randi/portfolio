@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Fanomezana Randriamisaina – Ingénieur télécom et DevOps junior spécialisé en systèmes et réseaux, virtualisation et cloud hybride.">
-  <title>Portfolio - Fanomezana RANDRIAMISAINA</title>
+  <title>Portfolio - Accueil</title>
   <link rel="apple-touch-icon" href="images/favicon.png">
   <link rel="icon" href="images/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -42,129 +42,35 @@
         
       </div>
     </div>
+
+    <!-- Barre de navigation fixe en bas -->
+    <nav class="bottom-nav">
+      <ul>
+        <li><a href="index.html" class="active"><i class="fas fa-home"></i><span>Accueil</span></a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i><span>Profil</span></a></li>
+        <li><a href="skills.html"><i class="fas fa-code"></i><span>Skills</span></a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+        <li><a href="projects.html"><i class="fas fa-folder"></i><span>Projets</span></a></li>
+      </ul>
+    </nav>
   </header>
 
-
-  <!-- COMPETENCES -->
- <section id="skills"> 
-   <h3>Compétences techniques</h3> 
-    <div class="skills-card"> 
-        <div class="skills-paragraphs"> 
-          <p><b>💻 Systèmes :</b><br> Windows, Linux (Ubuntu, Debian, RedHat), Virtualisation (VMware, Hyper-V, Proxmox), Scripting (PowerShell, Bash) </p> 
-          <p><b>🌐 Réseaux :</b><br> TCP/IP, VLAN, VPN, NAT, Routage & Switching (Cisco, Fortinet), Wireshark </p> 
-          <p><b>🔒 Sécurité :</b><br> Pare-feu, IDS/IPS, Proxy, Gestion des accès (LDAP, Kerberos, MFA), PRA/PCA, Conformité (ISO 27001, RGPD, ITIL) </p> 
-          <p><b>☁️ DevOps / Cloud :</b><br> Docker, Kubernetes, CI/CD (Jenkins, GitLab CI/CD), Infrastructure as Code (Terraform, Ansible), Cloud (OVH), Monitoring (Prometheus, Grafana, Zabbix), Git </p>
-          <p><b>📋 Base des données :</b><br> Oracle, PostgreSQL, MySQL/MariaDB, Neo4j, MongoDB </p> 
-          <p><b>🖥️ Langages / Frameworks :</b><br> Java, Python, PHP, JavaScript, PL/SQL, Cypher, Spring, Symfony, Angular </p> 
-          <p><b>📡 Télécom :</b><br> Réseaux mobiles, ToIP, QoS, MPLS, Sécurité télécom (SRTP, IPSec)</p>
-          <p><b>🖥️ Pyhton :</b></br> Numpy, Pandas, scikit-learn, TensorFlow, Keras, NLTK, spaCy, Transformers, Flask, BeautyfulSoup, Scrapy</p>
-        </div> 
-     </div> 
- </section>
-
-
-  <!-- PROJETS -->
-  <section id="projects">
-    <h3>Projets réalisés</h3>
-    <div class="filters">
-      <button data-filter="all" class="active">Tous</button>
-      <button data-filter="dev">Programmation</button>
-      <button data-filter="system">Systèmes & Réseaux</button>
-      <button data-filter="devops">DevOps</button>
-      <button data-filter="telecom">Télécom</button>
-    </div>
-
-    <div class="projects-grid">
-
-      <div class="project-card scroll-animate" data-category="system">
-        <h4>Monitoring</h4>
-        <p>Supervision des serveurs avec Zabbix</p> 
-        <p><b>Technologies & outils</b> Zabbix Server, Zabbix Agent, MariaDB, Debian, SNMP</p>
+  <!--  -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Bonjour, je suis <span class="animate-text">RANDRIAMISAINA Tsiory Fanomezana</span></h1>
+        <h2>Ingénieur systèmes et réseaux</h2>
+        <p>Administration Linux/Windows, virtualisation, conteneurs et CI/CD</p>
+        <a href="about.html" class="btn pulse">À propos de moi</a>
       </div>
-      
-      <div class="project-card scroll-animate" data-category="telecom">
-        <h4>Voice over Internet Protocol</h4>
-        <p>Etude et déploiement d'une solution de VoIP avec Wazo platform</p> 
-        <p><b>Tecnologies :</b> Debian, Ansible, Nginx, PostgreSQL</p>
+      <div class="hero-image">
+        <img src="images/me.jpg" alt="me.jpg">
       </div>
-
-      <div class="project-card scroll-animate" data-category="system">
-        <h4>Analyse du flux audio VoIP</h4>
-        <p>Analyse pour résoudre le problème one way audio</p>
-        <p><b>Tecnologies & outils :</b> Wireshark, SIP, RTP, NAT, firewall, VoIP</p>
-      </div>
-
-      <div class="project-card scroll-animate" data-category="system">
-        <h4>Sécurisation et gestion réseau</h4>
-        <p>Mise en place et configuration d’un firewall pfSense</p>
-        <p><b>Tecnologies :</b> FreeBSD</p>
-      </div>
-
-      <div class="project-card scroll-animate" data-category="system">
-        <h4>Sécurisation des réseaux</h4>
-        <p>Mise en place d’une solution de firewall basée sur IPCop</p>
-         <p><b>Tecnologies :</b> Ubuntu, iptables, NAT, VPN (IPSec / OpenVPN) , Squid, Snort</p>
-      </div>
-
-      <div class="project-card scroll-animate" data-category="system">
-        <h4>Gestion de parc informatique</h4>
-        <p>Déploiement et configuration de GLPI</p>
-        <p><b>Tecnologies :</b> Debian, MariaDB, PHP, Nginx, LDAP, GlpiInventory</p>
-      </div>
-
-      <div class="project-card scroll-animate" data-category="dev">
-        <h4>Application Android ECommerce</h4>
-        <p>Application de vente en ligne complète, gestion des produits et commandes</p>
-        <p><b>Tecnologies :</b> Java, XML</p>
-      </div>
-
-      <div class="project-card scroll-animate" data-category="dev">
-        <h4>Gestion des campus de l'UM</h4>
-        <p>Application web qui permet de se familiariser avec les concepts clés de Spring </p>
-        <p><b>Tecnologies :</b> Java, Spring, Spring Boot, Spring Security, HTML/CSS, Bootstrap, Hibernate, MySQL</p>
-      </div>
-      
-      <div class="project-card scroll-animate" data-category="dev">
-        <h4>Fake news detection</h4>
-        <p>Apprentissage supervisé</p>
-        <p><b>Tecnologies :</b> Python</p>
-      </div>
-
-      <div class="project-card scroll-animate" data-category="system">
-        <h4>Active Directory & GPO</h4>
-        <p>Mise en place et administration complète d’un environnement Windows Server 2022</p>
-        <p><b>Tecnologies :</b> Active Directory, DHCP, DNS, GPO, script (VBS/PowerShell)</p>
-      </div>
-
-      <div class="project-card scroll-animate" data-category="system">
-        <h4>Administration Linux</h4>
-        <p>Mise en place d'un serveur de backup Debian 12</p>
-        <p><b>Tecnologies :</b> Debian, RAID, VLAN, SSH, SFTP</p>
-      </div>
-
-      <div class="project-card scroll-animate" data-category="telecom">
-        <h4>Transmission optique sans fil</h4>
-        <p>Free Space Optique performance</p> 
-        <p><b>Outils : </b>OptiSystem</p>
-      </div>
-
     </div>
   </section>
 
-  <!-- Modal Popup -->
-  <div id="project-modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h3 id="modal-title"></h3>
-      <div id="modal-body"></div>
-      <div id="modal-slider">
-        <button class="prev">&#10094;</button>
-        <img id="modal-img" src="" alt="">
-        <button class="next">&#10095;</button>
-      </div>
-    </div>
-  </div>
-  
+ 
   <script src="script.js"></script>
 </body>
 </html>

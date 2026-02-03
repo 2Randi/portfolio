@@ -124,7 +124,7 @@ header {
     color: var(--dark-color);
 }
 
-.hero-content h1 span {
+.hero-content h2 span {
     color: var(--primary-color);
 }
 

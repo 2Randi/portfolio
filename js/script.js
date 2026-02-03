@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       statusElement.className = 'status loading';
       statusElement.style.display = 'block';
 
-      fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      fetch('https://formspree.io/f/mdadlqrg', {
         method: 'POST',
         body: new FormData(contactForm),
         headers: { 'Accept': 'application/json' }

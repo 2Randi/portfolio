@@ -321,12 +321,12 @@ header {
     gap: 30px;
     max-width: 900px;      
     margin: 0 auto;        
-    padding: 0 30px; 
+    padding: 0 20px; 
 }
 
 .contact-info, .contact-form {
     background: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     width: 100%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);

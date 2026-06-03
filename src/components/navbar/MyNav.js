@@ -46,7 +46,7 @@ export default function MyNav() {
                 color: "#fbd9ad",
               }}
             >
-              RANDRIAMISAINA
+              RANDRIAMISAINA Tsiory
             </h5>
           </div>
         </Navbar.Brand>

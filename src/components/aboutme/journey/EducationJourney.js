@@ -31,6 +31,7 @@ function EducationJourney() {
         </Flip>
       </div>
       <VerticalTimeline>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
@@ -50,6 +51,7 @@ function EducationJourney() {
             and Python-based data analysis.
           </p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
@@ -66,6 +68,7 @@ function EducationJourney() {
           </h4>
          
         </VerticalTimelineElement>
+        
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}

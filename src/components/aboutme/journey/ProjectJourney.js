@@ -33,156 +33,90 @@ function ProjectJourney() {
           <h1>Project Journey</h1>
         </Flip>
       </div>
+
       <VerticalTimeline>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<JavascriptIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Shoppy Ecommerce Website
-          </h3>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<JavascriptIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Amazing Meal System
-          </h3>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<JavascriptIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Academia Learning Website
-          </h3>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<JavascriptIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Personal Portfolio
-          </h3>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<CssIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Online Payroll management System
-          </h3>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<HtmlIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            New Year CountDown
-          </h3>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
+          contentArrowStyle={{ borderRight: "7px solid rgb(78 22 112)" }}
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<CodeIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Heart Disease Prediction
+            Automated Operating System Deployment with FOG Project
           </h3>
+          <p>
+            Deployment and management of system images for automated workstation provisioning.
+          </p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<CssIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Dual Mode Calendar
-          </h3>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<CssIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Dual Mode Calculator
-          </h3>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<CssIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Digital Clock
-          </h3>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<JavascriptIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Age Calculator
-          </h3>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
+          contentArrowStyle={{ borderRight: "7px solid rgb(78 22 112)" }}
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<CodeIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Student Information Management System
+            Linux Infrastructure Services Deployment
           </h3>
+          <p>
+            Installation and administration of Asterisk, OpenVPN, GLPI and Zabbix services.
+          </p>
         </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          contentArrowStyle={{ borderRight: "7px solid rgb(78 22 112)" }}
+          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          icon={<CodeIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Virtual Machine Backup and Migration
+          </h3>
+          <p>
+            Backup, restoration and migration of virtual machines in a Proxmox environment.
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          contentArrowStyle={{ borderRight: "7px solid rgb(78 22 112)" }}
+          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          icon={<CodeIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Retrieval-Augmented Generation (RAG) System
+          </h3>
+          <p>
+            Development of a RAG solution using Python and semantic data sources.
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          contentArrowStyle={{ borderRight: "7px solid rgb(78 22 112)" }}
+          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          icon={<CodeIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Knowledge Graph Exploration and Querying
+          </h3>
+          <p>
+            RDF/SKOS graph indexing and querying with Python in a research environment.
+          </p>
+        </VerticalTimelineElement>
+
         <VerticalTimelineElement
           iconStyle={{ background: "#fbd9ad", color: "rgb(78 22 112)" }}
           icon={<StarIcon />}
         />
       </VerticalTimeline>
+
     </div>
   );
 }

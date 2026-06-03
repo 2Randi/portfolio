@@ -2,17 +2,15 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import ucsc from "../../images/ucsc.png";
-import ufm from "../../images/ufm.png";
-import cbta from "../../images/CBT&A.pdf";
-import { Link } from "react-router-dom";
-import { HiArrowRight } from "react-icons/hi";
+
+import phpCert from "../../images/skill.png";
 
 export default function Certification() {
   return (
     <div>
       <Container fluid className="certificate-section" id="about">
         <Container>
+
           <Row>
             <Col
               md={12}
@@ -22,149 +20,67 @@ export default function Certification() {
                 <h1 className="aboutme-heading">Certification</h1>
               </Zoom>
             </Col>
-            <Col ms={12} className="mt-3">
+
+            <Col md={12} className="mt-3">
               <Row className="g-5">
+
+                {/* TOSA PHP */}
                 <Col md={4}>
                   <Fade bottom duration={2000} distance="20px">
                     <div className="cert-card">
+
                       <div className="content">
                         <a
-                          href="https://www.hackerrank.com/certificates/3573ea1a35bb"
+                          href="https://www.tosa.org/FR/Index?param=VFVQY3g5RFRMVUZhKytPam44ZzViYnI5Y2lJalRCTmdGQzZnVW1HUDh2RmY5VDRjQWdqa1pPY1dML1FjZUVTOVNpZFFjOE9rZkdQQ0RvbXZmenhJMkE9PTo6vwGm1XSI7p1twn0DpOjL7w"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           <div className="content-overlay"></div>
+
                           <div
                             className="cert-header"
                             style={{ backgroundColor: "white" }}
                           >
-                            {<img className="logo_img" src={ucsc} alt={ucsc} />}
+                            <img
+                              className="logo_img"
+                              src={phpCert}
+                              alt="TOSA PHP"
+                            />
                           </div>
+
                           <div className="content-details fadeIn-top">
-                            <h3
-                              className="content-title"
-                              style={{ color: "black" }}
-                            >
+                            <h3 style={{ color: "black" }}>
                               Certificate
                             </h3>
                           </div>
                         </a>
                       </div>
+
                       <div className="cert-body">
                         <h2
                           className="cert-body-title"
                           style={{ fontWeight: 700, color: "#fbd9ad" }}
                         >
-                          Problem Solving Basic : Programming Fundamentals
+                          TOSA PHP
                         </h2>
+
                         <h3
                           className="cert-body-subtitle"
-                          style={{ color: "#eb90ff", marginBottom: "0px" }}
+                          style={{ color: "#eb90ff" }}
                         >
-                          - HackerRank
+                          Certification PHP (niveau TOSA)
                         </h3>
                       </div>
+
                     </div>
                   </Fade>
                 </Col>
-                <Col md={4}>
-                  <Fade bottom duration={2000} distance="20px">
-                    <div className="cert-card">
-                      <div className="content">
-                        <a
-                          href={cbta}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <div className="content-overlay"></div>
-                          <div
-                            className="cert-header"
-                            style={{ backgroundColor: "white" }}
-                          >
-                            {<img className="logo_img" src={ufm} alt={ufm} />}
-                          </div>
-                          <div className="content-details fadeIn-top">
-                            <h3
-                              className="content-title"
-                              style={{ color: "black" }}
-                            >
-                              Certificate
-                            </h3>
-                          </div>
-                        </a>
-                      </div>
-                      <div className="cert-body">
-                        <h2
-                          className="cert-body-title"
-                          style={{ fontWeight: 700, color: "#fbd9ad" }}
-                        >
-                          Basic Computer Application for Everyone: IT Support
-                          Technician level-1
-                        </h2>
-                        <h3
-                          className="cert-body-subtitle"
-                          style={{ color: "#eb90ff", marginBottom: "0px" }}
-                        >
-                          - Bangladesh Technical Education Board
-                        </h3>
-                      </div>
-                    </div>
-                  </Fade>
-                </Col>
-                <Col md={4}>
-                  <Fade bottom duration={2000} distance="20px">
-                    <div className="cert-card">
-                      <div className="content">
-                        <a
-                          href="https://www.hackerrank.com/certificates/af66a6615aad"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <div className="content-overlay"></div>
-                          <div
-                            className="cert-header"
-                            style={{ backgroundColor: "white" }}
-                          >
-                            {<img className="logo_img" src={ucsc} alt={ucsc} />}
-                          </div>
-                          <div className="content-details fadeIn-top">
-                            <h3
-                              className="content-title"
-                              style={{ color: "black" }}
-                            >
-                              Certificate
-                            </h3>
-                          </div>
-                        </a>
-                      </div>
-                      <div className="cert-body">
-                        <h2
-                          className="cert-body-title"
-                          style={{ fontWeight: 700, color: "#fbd9ad" }}
-                        >
-                          Python Basic for : Programming Fundamentals
-                        </h2>
-                        <h3
-                          className="cert-body-subtitle"
-                          style={{ color: "#eb90ff", marginBottom: "0px" }}
-                        >
-                          - HackerRank
-                        </h3>
-                      </div>
-                    </div>
-                  </Fade>
-                </Col>
+
               </Row>
             </Col>
+
           </Row>
-          <div className="blog--viewAll">
-            <Link to="/certificatepage">
-              <button className="btn btn-primary">
-                View All
-                <HiArrowRight className="viewArr" />
-              </button>
-            </Link>
-          </div>
+
         </Container>
       </Container>
     </div>

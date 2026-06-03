@@ -1,279 +1,180 @@
 import React, { useContext } from "react";
+import Particle from "../../Particle";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import nyc from "../../images/nyc.png";
-import ci from "../../images/onboarding.png";
-import hd from "../../images/hd.png";
-import pp from "../../images/portfolio.png";
+import LanguageContext from "../../LanguageContext";
+import fog from "../../images/home-bg.jpg";
+import linux from "../../images/pc.png";
+import proxmox from "../../images/pm.png";
+import rag from "../../images/pg.png";
+import rdf from "../../images/skill.png";
 import { FaCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
-import LanguageContext from "../../LanguageContext";
 
 export default function Projects() {
   const { t } = useContext(LanguageContext);
+
   return (
     <div>
       <Container fluid className="certificate-section" id="about">
         <Container>
+
           <Row>
-            <Col
-              md={12}
-              className="certificate-description d-flex justify-content-start"
-            >
+            <Col md={12} className="d-flex justify-content-start">
               <Zoom left cascade>
                 <h1 className="aboutme-heading">{t.projects.title}</h1>
               </Zoom>
             </Col>
+
+            {/* FOG PROJECT */}
             <Col md={3}>
               <Fade bottom>
-                <div
-                  key={1}
-                  className="singleProject"
-                  style={{
-                    backgroundColor: "rgb(142 70 186 / 31%)",
-                    border: "1px solid",
-                  }}
-                >
+                <div className="singleProject" style={{ backgroundColor: "rgb(142 70 186 / 31%)", border: "1px solid" }}>
                   <div className="projectContent">
-                    <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      New Year CountDown
+                    <h5 style={{ color: "#fbd9ad" }}>
+                      Déploiement automatisé (FOG Project)
                     </h5>
-                    <img src={nyc} alt={nyc} />
+
+                    <img src={fog} alt="fog" />
+
                     <div className="project--showcaseBtn">
-                      <a
-                        href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Web_Programming/tree/main/New-Year-Countdown"
-                        }
-                        target="_blank"
-                        rel="noreferrer"
-                        className={"iconBtn"}
-                        aria-labelledby={`code`}
-                      >
-                        <FaCode
-                          id={`code`}
-                          className={"icon"}
-                          aria-label="Code"
-                        />
+                      <a href="https://github.com/2Randi" target="_blank" rel="noreferrer">
+                        <FaCode />
                       </a>
                     </div>
                   </div>
-                  <h6>
-                    <p
-                      className="project--desc"
-                      style={{
-                        background: "#fbd9ad",
-                        color: "#b061df",
-                        fontWeight: 600,
-                      }}
-                    >
-                      The New Year Countdown Project is more than just a
-                      celebration; it's a testament to the human spirit and our
-                      shared aspirations for a brighter future. So, mark your
-                      calendars and get ready to be part of this global
-                      extravaganza as we count down to a new year filled with
-                      endless possibilities.
-                    </p>
-                  </h6>
-                  <div
-                    className="project--lang"
-                    style={{
-                      background: "#fbd9ad",
-                      color: "#b061df",
-                      fontWeight: 600,
-                    }}
-                  >
-                    HTML, CSS, JavaScript
+
+                  <p className="project--desc" style={{ background: "#fbd9ad", color: "#b061df" }}>
+                    Automatisation du déploiement d’OS et gestion d’images machines.
+                  </p>
+
+                  <div className="project--lang">
+                    Linux, PXE, FOG Project
                   </div>
                 </div>
               </Fade>
             </Col>
+
+            {/* LINUX SERVICES */}
             <Col md={3}>
               <Fade bottom>
-                <div
-                  key={1}
-                  className="singleProject"
-                  style={{
-                    backgroundColor: "rgb(142 70 186 / 31%)",
-                    border: "1px solid",
-                  }}
-                >
+                <div className="singleProject" style={{ backgroundColor: "rgb(142 70 186 / 31%)", border: "1px solid" }}>
                   <div className="projectContent">
-                    <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Heart Disease Prediction
+                    <h5 style={{ color: "#fbd9ad" }}>
+                      Services infrastructure Linux
                     </h5>
-                    <img src={hd} alt={hd} />
+
+                    <img src={linux} alt="linux" />
+
                     <div className="project--showcaseBtn">
-                      <a
-                        href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Machine_Learning/tree/main/Heart%20Disease%20Prediction"
-                        }
-                        target="_blank"
-                        rel="noreferrer"
-                        className={"iconBtn"}
-                        aria-labelledby={`code`}
-                      >
-                        <FaCode
-                          id={`code`}
-                          className={"icon"}
-                          aria-label="Code"
-                        />
+                      <a href="https://github.com/2Randi" target="_blank" rel="noreferrer">
+                        <FaCode />
                       </a>
                     </div>
                   </div>
-                  <h6>
-                    <p
-                      className="project--desc"
-                      style={{
-                        background: "#fbd9ad",
-                        color: "#b061df",
-                        fontWeight: 600,
-                      }}
-                    >
-                      Use of AI and Machine Learning: Artificial intelligence
-                      and machine learning are already being used in healthcare
-                      to help predict heart disease. In the future, these
-                      technologies could become more advanced, enabling more
-                      accurate predictions of heart disease risk.
-                    </p>
-                  </h6>
-                  <div
-                    className="project--lang"
-                    style={{
-                      background: "#fbd9ad",
-                      color: "#b061df",
-                      fontWeight: 600,
-                    }}
-                  >
-                    Pandas, Matplotlib, Scikit-Learn
+
+                  <p className="project--desc" style={{ background: "#fbd9ad", color: "#b061df" }}>
+                    Déploiement et administration Asterisk, OpenVPN, GLPI, Zabbix.
+                  </p>
+
+                  <div className="project--lang">
+                    Linux, Asterisk, OpenVPN, GLPI, Zabbix
                   </div>
                 </div>
               </Fade>
             </Col>
+
+            {/* PROXMOX */}
             <Col md={3}>
               <Fade bottom>
-                <div
-                  key={1}
-                  className="singleProject"
-                  style={{
-                    backgroundColor: "rgb(142 70 186 / 31%)",
-                    border: "1px solid",
-                  }}
-                >
+                <div className="singleProject" style={{ backgroundColor: "rgb(142 70 186 / 31%)", border: "1px solid" }}>
                   <div className="projectContent">
-                    <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Online Payroll Management System
+                    <h5 style={{ color: "#fbd9ad" }}>
+                      Backup & migration Proxmox
                     </h5>
-                    <img src={ci} alt={ci} />
+
+                    <img src={proxmox} alt="proxmox" />
+
                     <div className="project--showcaseBtn">
-                      <a
-                        href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Online-Payroll-Management-System"
-                        }
-                        target="_blank"
-                        rel="noreferrer"
-                        className={"iconBtn"}
-                        aria-labelledby={`code`}
-                      >
-                        <FaCode
-                          id={`code`}
-                          className={"icon"}
-                          aria-label="Code"
-                        />
+                      <a href="https://github.com/2Randi" target="_blank" rel="noreferrer">
+                        <FaCode />
                       </a>
                     </div>
                   </div>
-                  <h6>
-                    <p
-                      className="project--desc"
-                      style={{
-                        background: "#fbd9ad",
-                        color: "#b061df",
-                        fontWeight: 600,
-                      }}
-                    >
-                      A Payroll management System with feature like generate
-                      payslip & reports. It manages salaries, leaves, branches,
-                      employees, designations, shifts, holidays and employee
-                      attendance. It has chat application so internal employees
-                      can use that feature.
-                    </p>
-                  </h6>
-                  <div
-                    className="project--lang"
-                    style={{
-                      background: "#fbd9ad",
-                      color: "#b061df",
-                      fontWeight: 600,
-                    }}
-                  >
-                    CSS, JavaScript, PHP, SCSS
+
+                  <p className="project--desc" style={{ background: "#fbd9ad", color: "#b061df" }}>
+                    Sauvegarde, restauration et migration de machines virtuelles.
+                  </p>
+
+                  <div className="project--lang">
+                    Proxmox, Virtualisation, Linux
                   </div>
                 </div>
               </Fade>
             </Col>
+
+            {/* RAG */}
             <Col md={3}>
               <Fade bottom>
-                <div
-                  key={1}
-                  className="singleProject"
-                  style={{
-                    backgroundColor: "rgb(142 70 186 / 31%)",
-                    border: "1px solid",
-                  }}
-                >
+                <div className="singleProject" style={{ backgroundColor: "rgb(142 70 186 / 31%)", border: "1px solid" }}>
                   <div className="projectContent">
-                    <h5 id={"first"} style={{ color: "#fbd9ad" }}>
-                      Personal Portfolio
+                    <h5 style={{ color: "#fbd9ad" }}>
+                      Système RAG (IA)
                     </h5>
-                    <img src={pp} alt={pp} />
+
+                    <img src={rag} alt="rag" />
+
                     <div className="project--showcaseBtn">
-                      <a
-                        href={
-                          "https://github.com/MD-MAFUJUL-HASAN/Personal-Portfolio"
-                        }
-                        target="_blank"
-                        rel="noreferrer"
-                        className={"iconBtn"}
-                        aria-labelledby={`code`}
-                      >
-                        <FaCode
-                          id={`code`}
-                          className={"icon"}
-                          aria-label="Code"
-                        />
+                      <a href="https://github.com/2Randi" target="_blank" rel="noreferrer">
+                        <FaCode />
                       </a>
                     </div>
                   </div>
-                  <h6>
-                    <p
-                      className="project--desc"
-                      style={{
-                        background: "#fbd9ad",
-                        color: "#b061df",
-                        fontWeight: 600,
-                      }}
-                    >
-                      Welcome to my personal portfolio. Explore my work, skills,
-                      and achievements in a concise and visually appealing
-                      format. Get a glimpse of my expertise and creativity.
-                    </p>
-                  </h6>
-                  <div
-                    className="project--lang"
-                    style={{
-                      background: "#fbd9ad",
-                      color: "#b061df",
-                      fontWeight: 600,
-                    }}
-                  >
-                    HTML, CSS, SCSS, React, JavaScript
+
+                  <p className="project--desc" style={{ background: "#fbd9ad", color: "#b061df" }}>
+                    Système de génération augmentée par récupération avec Python.
+                  </p>
+
+                  <div className="project--lang">
+                    Python, IA, NLP
                   </div>
                 </div>
               </Fade>
             </Col>
+
+            {/* RDF */}
+            <Col md={3}>
+              <Fade bottom>
+                <div className="singleProject" style={{ backgroundColor: "rgb(142 70 186 / 31%)", border: "1px solid" }}>
+                  <div className="projectContent">
+                    <h5 style={{ color: "#fbd9ad" }}>
+                      Graphes RDF / SKOS
+                    </h5>
+
+                    <img src={rdf} alt="rdf" />
+
+                    <div className="project--showcaseBtn">
+                      <a href="https://github.com/2Randi" target="_blank" rel="noreferrer">
+                        <FaCode />
+                      </a>
+                    </div>
+                  </div>
+
+                  <p className="project--desc" style={{ background: "#fbd9ad", color: "#b061df" }}>
+                    Indexation et interrogation de graphes sémantiques.
+                  </p>
+
+                  <div className="project--lang">
+                    Python, RDF, SKOS
+                  </div>
+                </div>
+              </Fade>
+            </Col>
+
           </Row>
+
           <div className="blog--viewAll">
             <Link to="/projectspage">
               <button className="btn btn-primary">
@@ -282,6 +183,7 @@ export default function Projects() {
               </button>
             </Link>
           </div>
+
         </Container>
       </Container>
     </div>

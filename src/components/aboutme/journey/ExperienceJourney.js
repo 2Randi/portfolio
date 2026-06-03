@@ -31,54 +31,82 @@ function ExperienceJourney() {
         </Flip>
       </div>
       <VerticalTimeline>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderLeft: "7px solid  rgb(78 22 112)" }}
-          date="2023 - Continuing"
+          contentArrowStyle={{ borderLeft: "7px solid rgb(78 22 112)" }}
+          date="Apr 2026 - Present"
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<PersonIcon />}
         >
           <h5 className="vertical-timeline-element-title">
-            Study World
+            Development Intern
           </h5>
           <h6 className="vertical-timeline-element-subtitle mt-2">
-            Branch Manager & Student Counsellor
+            IRD - Montpellier, France
           </h6>
-          <p>• Provide Education Counselling to students and guardians for study abroad.</p>
-          <p>• Providing information about Universities/Colleges, Course/Fees, Admissions, Visa procedures etc.</p>
-          <p>• Effective follow-ups with the prospective students/guardians.</p>
-          <p>• Provide daily, Weekly, monthly, and yearly reporting about all operational activities.</p>
-          <p>• Processing student visa applications based on entry requirements and admissions procedures and 
-            enhance their chances of success in interviews by developing their skills.</p>
-          <p>• Preparing applications for admission into different foreign universities.</p>
+            <p>• Development of Retrieval-Augmented Generation (RAG) systems</p>
+            <p>• Indexing and querying RDF/SKOS knowledge graphs using Python</p>
+            <p>• Integration of RAG systems with external APIs and databases</p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date="2021 - 2022"
+          date="Feb 2025 - Jul 2025"
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
           icon={<PersonIcon />}
         >
           <h5 className="vertical-timeline-element-title">
-            Excel Telecom (Pvt.) Limited - (National Distributor of SAMSUNG in Bangladesh)
+            Systems and Network Administrator Intern
           </h5>
           <h6 className="vertical-timeline-element-subtitle mt-2">
-            Management of Information System
+            LundiMatin - Montpellier, France
           </h6>
-          <p>• Proficient in developing, deploying and managing computerized systems that gather, retain, evaluate and exhibit 
-            data to facilitate the achievement of organizational aims and objectives.</p>
-          <p>• Proficient in collecting and organizing data from diverse sources, utilizing statistical techniques and software 
-            tools for data analysis and creating comprehensive reports and presentations that showcase significant insights and trends.</p>
-          <p>• Consistently completed assigned tasks in a timely and efficient manner as directed by management, while maintaining 
-            effective communication between the company and employees.</p>
-          <p>• Proficient in monitoring daily business operation costs, verifying and evaluating accounting transactions updates, 
-            and providing corresponding reports to top management.</p>
-          <p>• Skilled in collecting and compiling monthly reports, conducting inventory analysis for month-end, quarterly, 
-            and year-end closing, and submitting reports in accordance with management requirements.</p>
-          <p>• Proficient in developing and maintaining various reporting dashboard, technical support to end-users, 
-            diagnosing hardware and software issues, and collaborating with IT teams to promptly resolve system-related problems.</p>
+            <p>• Deployment and administration of Linux servers</p>
+            <p>• Management of VoIP and VPN infrastructures</p>
+            <p>• SIP/RTP traffic analysis using Wireshark</p>
+            <p>• Troubleshooting and incident resolution</p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          contentArrowStyle={{ borderLeft: "7px solid rgb(78 22 112)" }}
+          date="Jun 2024 - Aug 2024"
+          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          icon={<PersonIcon />}
+        >
+          <h5 className="vertical-timeline-element-title">
+            Systems, Network and Security Administrator Intern
+          </h5>
+          <h6 className="vertical-timeline-element-subtitle mt-2">
+            VNB-IT - Montpellier, France
+          </h6>
+          <p>• User and access rights management</p>
+          <p>• Deployment and administration of pfSense firewall</p>
+          <p>• Participation in PRA/PCA activities</p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          contentArrowStyle={{ borderRight: "7px solid rgb(78 22 112)" }}
+          date="Sept 2021 - Jul 2023"
+          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          icon={<PersonIcon />}
+        >
+          <h5 className="vertical-timeline-element-title">
+            Network Technician
+          </h5>
+          <h6 className="vertical-timeline-element-subtitle mt-2">
+            Orange Business - Antananarivo, Madagascar
+          </h6>
+          <p>• N1/N2 incident diagnosis and resolution</p>
+          <p>• Network infrastructure monitoring</p>
+          <p>• Operational support for network teams</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement

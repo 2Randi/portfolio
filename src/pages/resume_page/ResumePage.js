@@ -2,15 +2,16 @@ import { Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
 import Particle from "../../Particle";
-import pdf from "../../assets/MD_MAFUJUL_HASAN.pdf";
+import pdf from "../../assets/RANDRIAMISAINA_CV.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import Zoom from "react-reveal/Zoom";
 import React, { useState, useEffect } from "react";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
+{/* lien du CV dans github */}
 const resumeLink =
-  "https://raw.githubusercontent.com/2Randi/portfolio2026/main/src/assets/RANDRIAMISAINA_cv.pdf";
+  "https://github.com/2Randi/portfolio/tree/master/src/assets/RANDRIAMISAINA_CV.pdf";
 
 function Resume() {
   const [width, setWidth] = useState(1200);

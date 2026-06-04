@@ -9,9 +9,9 @@ import Zoom from "react-reveal/Zoom";
 import React, { useState, useEffect } from "react";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-{/* lien du CV dans github */}
-const resumeLink =
-  "https://github.com/2Randi/portfolio/tree/master/src/assets/RANDRIAMISAINA_CV.pdf";
+{/* lien du CV dans github */ }
+// 
+const resumeLink = pdf;
 
 function Resume() {
   const [width, setWidth] = useState(1200);

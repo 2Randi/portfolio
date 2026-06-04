@@ -3,12 +3,12 @@ import Particle from "../../Particle";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
+
 import LanguageContext from "../../LanguageContext";
-import fog from "../../images/home-bg.jpg";
-import linux from "../../images/pc.png";
-import proxmox from "../../images/pm.png";
-import rag from "../../images/pg.png";
-import rdf from "../../images/skill.png";
+import fog from "../../images/fog.png";
+import linux from "../../images/linux.png";
+import proxmox from "../../images/proxmox.png";
+import rag from "../../images/rag.png";
 import { FaCode } from "react-icons/fa";
 
 export default function ProjectPage() {
@@ -22,170 +22,287 @@ export default function ProjectPage() {
 
           <div
             className="d-flex justify-content-center"
+            width="100%"
             style={{ backgroundColor: "#fbd9ad" }}
           >
             <Zoom left cascade>
-              <h1 style={{ color: "rgb(134 61 176)" }}>
-                {t.projects.title}
-              </h1>
+              <h1 style={{ color: "rgb(134 61 176" }}>Projects</h1>
             </Zoom>
           </div>
 
-          <Container fluid className="certificate-section" id="about">
-            <Container>
-              <Row className="g-5 mt-5">
+          <div>
 
-                {/* FOG */}
-                <Col md={3}>
-                  <Fade bottom>
-                    <div className="singleProject">
-                      <h5 style={{ color: "#fbd9ad" }}>
-                        Déploiement automatisé (FOG Project)
-                      </h5>
+            <div>
+              <Container fluid className="certificate-section" id="about">
 
-                      <img src={fog} alt="FOG" />
+                <Container>
 
-                      <a
-                        href="https://github.com/2Randi"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaCode />
-                      </a>
+                  <Row>
 
-                      <p className="project--desc">
-                        Déploiement automatique d’OS et gestion d’images machines via PXE/FOG.
-                      </p>
+                    <Col md={12} className="mt-5">
 
-                      <div className="project--lang">
-                        Linux, PXE, FOG Project
-                      </div>
-                    </div>
-                  </Fade>
-                </Col>
+                      <Row className="g-5">
 
-                {/* LINUX SERVICES */}
-                <Col md={3}>
-                  <Fade bottom>
-                    <div className="singleProject">
-                      <h5 style={{ color: "#fbd9ad" }}>
-                        Services infrastructure Linux
-                      </h5>
+                        {/* Project 1 */}
+                        <Col md={3} className="col-sm-12 col-md-4">
+                          <Fade bottom>
+                            <div
+                              key={1}
+                              className="singleProject"
+                              style={{
+                                backgroundColor: "rgb(142 70 186 / 31%)",
+                                border: "1px solid",
+                              }}
+                            >
+                              <div className="projectContent">
+                                <h5 id={"first"} style={{ color: "#fbd9ad" }}>
+                                  Automated OS Deployment (FOG Project)
+                                </h5>
+                                <img src={fog} alt={fog} />
+                                <div className="project--showcaseBtn">
+                                  <a
+                                    href={
+                                      "https://github.com/2Randi"
+                                    }
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`code`}
+                                  >
+                                    <FaCode
+                                      id={`code`}
+                                      className={"icon"}
+                                      aria-label="Code"
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                              <h6>
+                                <p
+                                  className="project--desc"
+                                  style={{
+                                    background: "#fbd9ad",
+                                    color: "#b061df",
+                                    fontWeight: 600,
+                                  }}
+                                >
+                                  Automated operating system deployment and machine image
+                                  management
+                                </p>
+                              </h6>
+                              <div
+                                className="project--lang"
+                                style={{
+                                  background: "#fbd9ad",
+                                  color: "#b061df",
+                                  fontWeight: 600,
+                                }}
+                              >
+                                Linux, PXE, FOG Project
+                              </div>
+                            </div>
+                          </Fade>
+                        </Col>
 
-                      <img src={linux} alt="Linux" />
 
-                      <a
-                        href="https://github.com/2Randi"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaCode />
-                      </a>
+                        {/* Project 2 */}
+                        <Col md={3} className="col-sm-12 col-md-4">
+                          <Fade bottom>
+                            <div
+                              key={1}
+                              className="singleProject"
+                              style={{
+                                backgroundColor: "rgb(142 70 186 / 31%)",
+                                border: "1px solid",
+                              }}
+                            >
+                              <div className="projectContent">
+                                <h5 id={"first"} style={{ color: "#fbd9ad" }}>
+                                  Linux Infrastructure Services
+                                </h5>
+                                <img src={linux} alt={linux} />
+                                <div className="project--showcaseBtn">
+                                  <a
+                                    href={
+                                      "https://github.com/2Randi/"
+                                    }
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`code`}
+                                  >
+                                    <FaCode
+                                      id={`code`}
+                                      className={"icon"}
+                                      aria-label="Code"
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                              <h6>
+                                <p
+                                  className="project--desc"
+                                  style={{
+                                    background: "#fbd9ad",
+                                    color: "#b061df",
+                                    fontWeight: 600,
+                                  }}
+                                >
+                                  Deployment and administration of Asterisk, OpenVPN, GLPI and Zabbix
+                                </p>
+                              </h6>
+                              <div
+                                className="project--lang"
+                                style={{
+                                  background: "#fbd9ad",
+                                  color: "#b061df",
+                                  fontWeight: 600,
+                                }}
+                              >
+                                Linux, Asterisk, OpenVPN, GLPI, Zabbix
+                              </div>
+                            </div>
+                          </Fade>
+                        </Col>
 
-                      <p className="project--desc">
-                        Déploiement et administration de services : Asterisk, OpenVPN, GLPI, Zabbix.
-                      </p>
+                        {/* Project 3 */}
+                        <Col md={3} className="col-sm-12 col-md-4">
+                          <Fade bottom>
+                            <div
+                              key={1}
+                              className="singleProject"
+                              style={{
+                                backgroundColor: "rgb(142 70 186 / 31%)",
+                                border: "1px solid",
+                              }}
+                            >
+                              <div className="projectContent">
+                                <h5 id={"first"} style={{ color: "#fbd9ad" }}>
+                                  Proxmox Backup & Migration
+                                </h5>
+                                <img src={proxmox} alt={proxmox} />
+                                <div className="project--showcaseBtn">
+                                  <a
+                                    href={
+                                      "https://github.com/2Randi/"
+                                    }
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`code`}
+                                  >
+                                    <FaCode
+                                      id={`code`}
+                                      className={"icon"}
+                                      aria-label="Code"
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                              <h6>
+                                <p
+                                  className="project--desc"
+                                  style={{
+                                    background: "#fbd9ad",
+                                    color: "#b061df",
+                                    fontWeight: 600,
+                                  }}
+                                >
+                                  Backup, restore and migration of virtual machines
+                                </p>
+                              </h6>
+                              <div
+                                className="project--lang"
+                                style={{
+                                  background: "#fbd9ad",
+                                  color: "#b061df",
+                                  fontWeight: 600,
+                                }}
+                              >
+                                Proxmox, Virtualization, Linux
+                              </div>
+                            </div>
+                          </Fade>
+                        </Col>
 
-                      <div className="project--lang">
-                        Linux, Asterisk, OpenVPN, GLPI, Zabbix
-                      </div>
-                    </div>
-                  </Fade>
-                </Col>
+                        {/* Project 4 */}
+                        <Col md={3} className="col-sm-12 col-md-4">
+                          <Fade bottom>
+                            <div
+                              key={1}
+                              className="singleProject"
+                              style={{
+                                backgroundColor: "rgb(142 70 186 / 31%)",
+                                border: "1px solid",
+                              }}
+                            >
+                              <div className="projectContent">
+                                <h5 id={"first"} style={{ color: "#fbd9ad" }}>
+                                  Knowledge Graph & RAG System
+                                </h5>
+                                <img src={rag} alt={rag} />
+                                <div className="project--showcaseBtn">
+                                  <a
+                                    href={
+                                      "https://github.com/2Randi/"
+                                    }
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`code`}
+                                  >
+                                    <FaCode
+                                      id={`code`}
+                                      className={"icon"}
+                                      aria-label="Code"
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                              <h6>
+                                <p
+                                  className="project--desc"
+                                  style={{
+                                    background: "#fbd9ad",
+                                    color: "#b061df",
+                                    fontWeight: 600,
+                                  }}
+                                >
+                                  Development of a semantic knowledge graph and Retrieval-Augmented
+                                  Generation (RAG) system for information indexing and retrieval
+                                </p>
+                              </h6>
+                              <div
+                                className="project--lang"
+                                style={{
+                                  background: "#fbd9ad",
+                                  color: "#b061df",
+                                  fontWeight: 600,
+                                }}
+                              >
+                                Python, RDF, SKOS, SPARQL, AI
+                              </div>
+                            </div>
+                          </Fade>
+                        </Col>
 
-                {/* PROXMOX */}
-                <Col md={3}>
-                  <Fade bottom>
-                    <div className="singleProject">
-                      <h5 style={{ color: "#fbd9ad" }}>
-                        Backup & migration Proxmox
-                      </h5>
+                      </Row>
 
-                      <img src={proxmox} alt="Proxmox" />
+                    </Col>
 
-                      <a
-                        href="https://github.com/2Randi"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaCode />
-                      </a>
+                  </Row>
 
-                      <p className="project--desc">
-                        Sauvegarde, restauration et migration de machines virtuelles.
-                      </p>
+                </Container>
 
-                      <div className="project--lang">
-                        Proxmox, Virtualisation
-                      </div>
-                    </div>
-                  </Fade>
-                </Col>
+              </Container>
 
-                {/* RAG */}
-                <Col md={3}>
-                  <Fade bottom>
-                    <div className="singleProject">
-                      <h5 style={{ color: "#fbd9ad" }}>
-                        Système RAG (IA)
-                      </h5>
+            </div>
 
-                      <img src={rag} alt="RAG" />
-
-                      <a
-                        href="https://github.com/2Randi"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaCode />
-                      </a>
-
-                      <p className="project--desc">
-                        Système de génération augmentée par récupération (Python + NLP).
-                      </p>
-
-                      <div className="project--lang">
-                        Python, IA, NLP
-                      </div>
-                    </div>
-                  </Fade>
-                </Col>
-
-                {/* RDF / SKOS */}
-                <Col md={3}>
-                  <Fade bottom>
-                    <div className="singleProject">
-                      <h5 style={{ color: "#fbd9ad" }}>
-                        Graphes RDF / SKOS
-                      </h5>
-
-                      <img src={rdf} alt="RDF" />
-
-                      <a
-                        href="https://github.com/2Randi"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaCode />
-                      </a>
-
-                      <p className="project--desc">
-                        Indexation et interrogation de graphes sémantiques RDF/SKOS.
-                      </p>
-
-                      <div className="project--lang">
-                        Python, RDF, SKOS
-                      </div>
-                    </div>
-                  </Fade>
-                </Col>
-
-              </Row>
-            </Container>
-          </Container>
-
+          </div>
         </Container>
+
       </Container>
+
     </section>
   );
 }

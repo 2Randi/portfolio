@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
-import phpCert from "../../images/skill.png";
+import phpCert from "../../images/tosaphp.png";
 import Particle from "../../Particle";
 
 export default function CertificatePage() {
@@ -40,7 +40,7 @@ export default function CertificatePage() {
                         <div className="cert-card">
 
                           <div className="content">
-                            
+
                             {/* LIEN OFFICIEL TOSA */}
                             <a
                               href={tosaLink}

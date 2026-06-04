@@ -19,7 +19,7 @@ export default function Home() {
         <Container className="home-content">
           <Row>
             <Col md={8} className="home-header">
-              <h1
+              <h5
                 style={{ paddingBottom: 15, fontSize: "175px" }}
                 className="heading"
               >
@@ -27,12 +27,12 @@ export default function Home() {
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
-              </h1>
+              </h5>
 
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> RANDRIAMISAINA Tsiory</strong>
-              </h1>
+              <h2 className="heading-name">
+                I'm
+                <strong className="main-name"> RANDRIAMISAINA Tsiory Fanomezana</strong>
+              </h2>
 
               <div className="typing-homeclass">
                 <Typing />
@@ -69,7 +69,7 @@ export default function Home() {
                       <AiFillInstagram />
                     </a>
                   </li>
-                  
+
                   <li className="socialicons">
                     <a
                       href="mailto:fano.randriamisaina@gmail.com"

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
 
-import phpCert from "../../images/skill.png";
+import phpCert from "../../images/tosaphp.png";
 
 export default function Certification() {
   return (

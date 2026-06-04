@@ -7,11 +7,11 @@ function Typing() {
             options={{
                 strings: [
                     "Networks and Systems Engineer",
-                    "DevOps Engineer"
+                    "DevOps junior"
                 ],
                 autoStart: true,
                 loop: true,
-                deleteSpeed: 50,
+                deleteSpeed: 30,
             }}
         />
     );

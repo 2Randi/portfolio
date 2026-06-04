@@ -47,8 +47,8 @@ function EducationJourney() {
             University of Montpellier, France
           </h4>
           <p>
-            Advanced studies in Data Science, Big Data technologies 
-            and Python-based data analysis.
+            Advanced studies in Data Science, Big Data technologies
+            and Python-based data analysis
           </p>
         </VerticalTimelineElement>
 
@@ -66,9 +66,9 @@ function EducationJourney() {
           <h4 className="vertical-timeline-element-subtitle mt-2">
             University of Montpellier, France
           </h4>
-         
+
         </VerticalTimelineElement>
-        
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
@@ -84,8 +84,8 @@ function EducationJourney() {
             Ecole Supérieure Polytechnique d'Antananarivo, Madagascar
           </h4>
           <p>
-            Engineering curriculum focused on telecommunications, 
-            computer networks and information systems.
+            Engineering curriculum focused on telecommunications,
+            computer networks and information systems
           </p>
         </VerticalTimelineElement>
 

@@ -7,16 +7,14 @@ import { Link } from "react-router-dom";
 import StarIcon from "@mui/icons-material/Star";
 import ComputerIcon from "@mui/icons-material/Computer";
 import {
-  DiHtml5,
+  DiLinux,
   DiPython,
-  DiReact,
-  DiPhp,
+  DiDatabase,
   DiJava,
-  DiCss3,
-  DiJavascript1,
-  DiMysql,
-  DiNodejs,
 } from "react-icons/di";
+import { SiPowershell, SiProxmox, SiGit } from "react-icons/si";
+import { FaNetworkWired, FaShieldAlt } from "react-icons/fa";
+import { MdMonitor } from "react-icons/md";
 import Flip from "react-reveal/Flip";
 
 function TechnicalJourney() {
@@ -50,10 +48,23 @@ function TechnicalJourney() {
           contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
           date=""
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<ComputerIcon />}
+          icon={<DiLinux />}
         >
           <h3 className="vertical-timeline-element-title">
-            LINUX ADMINISTRATION
+            Linux Administration
+          </h3>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          date=""
+          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          icon={<FaNetworkWired />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Networking (TCP/IP, VLAN, Routing, VPN)
           </h3>
         </VerticalTimelineElement>
 
@@ -66,7 +77,7 @@ function TechnicalJourney() {
           icon={<ComputerIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-             NETWORKING (TCP/IP, VLAN, ROUTING, VPN)
+            Virtualization (Proxmox, VMWare)
           </h3>
         </VerticalTimelineElement>
 
@@ -76,10 +87,23 @@ function TechnicalJourney() {
           contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
           date=""
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<DiJava />}
+          icon={<FaShieldAlt />}
         >
           <h3 className="vertical-timeline-element-title">
-            VIRTUALIZATION (PROXMOX, VMWARE)
+            Security (pfSense, IPTABLES)
+          </h3>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          date=""
+          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          icon={<MdMonitor />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Monitoring (Zabbix, Grafana)
           </h3>
         </VerticalTimelineElement>
 
@@ -92,7 +116,7 @@ function TechnicalJourney() {
           icon={<DiPython />}
         >
           <h3 className="vertical-timeline-element-title">
-            SECURITY (PFSENSE, IPTABLES)
+            Python
           </h3>
         </VerticalTimelineElement>
 
@@ -102,10 +126,10 @@ function TechnicalJourney() {
           contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
           date=""
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<DiHtml5 />}
+          icon={<DiJava />}
         >
           <h3 className="vertical-timeline-element-title">
-            MONITORING (ZABBIX, GRAFANA)
+            Java
           </h3>
         </VerticalTimelineElement>
 
@@ -115,10 +139,10 @@ function TechnicalJourney() {
           contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
           date=""
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<DiCss3 />}
+          icon={<SiPowershell />}
         >
           <h3 className="vertical-timeline-element-title">
-            PYTHON
+            Bash & PowerShell Scripting
           </h3>
         </VerticalTimelineElement>
 
@@ -128,10 +152,10 @@ function TechnicalJourney() {
           contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
           date=""
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<DiJavascript1 />}
+          icon={<DiDatabase />}
         >
           <h3 className="vertical-timeline-element-title">
-            JAVA
+            Databases (PostgreSQL, MariaDB, SQL Server, MongoDB)
           </h3>
         </VerticalTimelineElement>
 
@@ -141,36 +165,10 @@ function TechnicalJourney() {
           contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
           date=""
           iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<DiPhp />}
-        >
-          <h3 className="vertical-timeline-element-title"> 
-            ASH & POWERSHELL SCRIPTING
-          </h3>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<DiMysql />}
+          icon={<SiGit />}
         >
           <h3 className="vertical-timeline-element-title">
-            DATABASES (POSTGRESQL, MARIADB, SQL SERVER, MONGODB)
-          </h3>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
-          date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          icon={<DiNodejs />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            GIT & VERSION CONTROL
+            Git & Version Control
           </h3>
         </VerticalTimelineElement>
 

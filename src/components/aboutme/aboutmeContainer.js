@@ -1,10 +1,12 @@
-import React from 'react'
-import { Container, Row, Col,Nav } from "react-bootstrap";
-import { Link,Outlet } from 'react-router-dom';
+import React, { useContext } from 'react'
+import { Container, Row, Col, Nav } from "react-bootstrap";
+import { Link, Outlet } from 'react-router-dom';
 import Zoom from 'react-reveal/Zoom';
+import LanguageContext from '../../LanguageContext';
 
 
 export default function AboutmeContainer() {
+    const { t } = useContext(LanguageContext);
     return (
         <Container fluid className="home-about-section" id="about">
             <Container>
@@ -12,7 +14,7 @@ export default function AboutmeContainer() {
                     <Col md={12} className="home-about-description d-flex justify-content-start">
                     <Zoom left cascade>
                         <h1 className='aboutme-heading'>
-                            About me
+                            {t.about.heading}
                         </h1>
                     </Zoom>
                     </Col>
@@ -20,22 +22,22 @@ export default function AboutmeContainer() {
                         <div>
                             <Nav justify variant="tabs" defaultActiveKey="/">
                             <Nav.Item className="Navitem">
-                                <Nav.Link as={Link} to="/" eventKey="link-1" style={{ fontSize: "17px",fontWeight:700 }}>About</Nav.Link>
+                                <Nav.Link as={Link} to="/" eventKey="link-1" style={{ fontSize: "17px",fontWeight:700 }}>{t.aboutNav.about}</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link as={Link} to="technicalskill" eventKey="link-2" style={{ fontSize: "17px",fontWeight:700 }}>Skills</Nav.Link>
+                                <Nav.Link as={Link} to="technicalskill" eventKey="link-2" style={{ fontSize: "17px",fontWeight:700 }}>{t.aboutNav.skills}</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link as={Link} to="educationjourney" eventKey="link-3" style={{ fontSize: "17px",fontWeight:700 }}>Journey</Nav.Link>
+                                <Nav.Link as={Link} to="educationjourney" eventKey="link-3" style={{ fontSize: "17px",fontWeight:700 }}>{t.aboutNav.journey}</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link as={Link} to="ranking" eventKey="link-4" style={{ fontSize: "17px",fontWeight:700 }}>
-                                Ranking
+                                {t.aboutNav.ranking}
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link as={Link} to="socialmedia" eventKey="link-5" style={{ fontSize: "17px",fontWeight:700 }}>
-                                Social Media
+                                {t.aboutNav.socialMedia}
                                 </Nav.Link>
                             </Nav.Item>
                             </Nav>

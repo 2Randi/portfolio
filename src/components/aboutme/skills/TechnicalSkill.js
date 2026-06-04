@@ -28,11 +28,11 @@ export default function TechnicalSkill() {
         <Container>
           <Row className="g-5">
             <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#fe3e57", fontWeight: 700 }}
+              <h3
+                style={{ fontSize: "50px", color: "#fe3e57", fontWeight: 700 }}
               >
                 Linux
-              </h1>
+              </h3>
               <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
                 <div class="progress">
                   <div
@@ -58,11 +58,11 @@ export default function TechnicalSkill() {
             </Col>
 
             <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#54faae", fontWeight: 700 }}
+              <h3
+                style={{ fontSize: "50px", color: "#54faae", fontWeight: 700 }}
               >
                 Windows Server
-              </h1>
+              </h3>
               <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
                 <div class="progress">
                   <div
@@ -88,11 +88,11 @@ export default function TechnicalSkill() {
             </Col>
 
             <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#39c4ff", fontWeight: 700 }}
+              <h3
+                style={{ fontSize: "50px", color: "#39c4ff", fontWeight: 700 }}
               >
-               Virtualisation
-              </h1>
+                Virtualisation
+              </h3>
               <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
                 <div class="progress">
                   <div
@@ -118,11 +118,11 @@ export default function TechnicalSkill() {
             </Col>
 
             <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#f1f965", fontWeight: 700 }}
+              <h3
+                style={{ fontSize: "50px", color: "#f1f965", fontWeight: 700 }}
               >
                 Network
-              </h1>
+              </h3>
               <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
                 <div class="progress">
                   <div
@@ -148,11 +148,11 @@ export default function TechnicalSkill() {
             </Col>
 
             <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#ff0173", fontWeight: 700 }}
+              <h3
+                style={{ fontSize: "50px", color: "#ff0173", fontWeight: 700 }}
               >
                 Monitoring
-              </h1>
+              </h3>
               <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
                 <div class="progress">
                   <div
@@ -178,11 +178,11 @@ export default function TechnicalSkill() {
             </Col>
 
             <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#ff8c2f", fontWeight: 700 }}
+              <h3
+                style={{ fontSize: "50px", color: "#ff8c2f", fontWeight: 700 }}
               >
-                Scipting
-              </h1>
+                Scripting
+              </h3>
               <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
                 <div class="progress">
                   <div
@@ -208,11 +208,11 @@ export default function TechnicalSkill() {
             </Col>
 
             <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#41f2ff", fontWeight: 700 }}
+              <h3
+                style={{ fontSize: "50px", color: "#41f2ff", fontWeight: 700 }}
               >
                 Programming & tools
-              </h1>
+              </h3>
               <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
                 <div class="progress">
                   <div
@@ -238,11 +238,11 @@ export default function TechnicalSkill() {
             </Col>
 
             <Col md={4}>
-              <h1
-                style={{ fontSize: "100px", color: "#fe3e57", fontWeight: 700 }}
+              <h3
+                style={{ fontSize: "50px", color: "#fe3e57", fontWeight: 700 }}
               >
                 Databases
-              </h1>
+              </h3>
               <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
                 <div class="progress">
                   <div
@@ -266,7 +266,7 @@ export default function TechnicalSkill() {
                 </h2>
               </div>
             </Col>
-            
+
           </Row>
         </Container>
       </div>

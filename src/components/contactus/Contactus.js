@@ -56,105 +56,117 @@ export default function Contactus() {
             </Zoom>
           </Col>
 
-          <Col md={12} className="mt-3">
+          <Col md={12} id="contact" className="mt-3">
             <Row>
 
               {/* FORM */}
               <Col md={4}>
-                <form onSubmit={handleSubmit} className="contacts-form">
+                <div className="contacts-form" data-aos="fade-up">
+                  <form onSubmit={handleSubmit}>
 
-                  <div className="input-container d-flex flex-column">
-                    <label>Full Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Enter your name"
-                      required
-                    />
-                  </div>
+                    <div className="input-container d-flex flex-column">
+                      <label className="label-class">
+                        Full Name
+                      </label>
+                      <input
+                        type="text"
+                        className="form-input input-class"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Enter your name"
+                        required
+                      />
+                    </div>
 
-                  <div className="input-container d-flex flex-column">
-                    <label>Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="Enter email"
-                      required
-                    />
-                  </div>
+                    <div className="input-container d-flex flex-column">
+                      <label className="label-class">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        name="email"
+                        className="form-input input-class"
+                        value={formData.email}
+                        onChange={handleChange}
+                        placeholder="Enter email"
+                        required
+                      />
+                    </div>
 
-                  <div className="input-container d-flex flex-column">
-                    <label>Message</label>
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Enter message"
-                      rows="4"
-                      required
-                    />
-                  </div>
+                    <div className="input-container d-flex flex-column">
+                      <label className="label-class">
+                        Message
+                      </label>
+                      <textarea
+                        className="form-message input-class"
+                        name="message"
+                        rows="3"
+                        value={formData.message}
+                        onChange={handleChange}
+                        placeholder="Enter message"
+                        required
+                      />
+                    </div>
+                    <div className="submit-btn">
+                      <button type="submit" className="submitBtn">
+                        Submit <AiOutlineSend className="send-icon" />
+                      </button>
+                    </div>
 
-                  <button type="submit" className="submitBtn">
-                    Submit <AiOutlineSend />
-                  </button>
-
-                </form>
+                  </form>
+                </div>
               </Col>
 
               {/* CONTACT DETAILS */}
-                <Col md={7}>
-                  <div className="contacts-details">
-                    <a
-                      href={`mailto:fano.randriamisaina@gmail.com`}
-                      className="personal-details"
-                    >
+              <Col md={7}>
+                <div className="contacts-details">
+                  <a
+                    href={`mailto:fano.randriamisaina@gmail.com`}
+                    className="personal-details"
+                  >
+                    <div className="detailsIcon">
+                      <FiAtSign />
+                    </div>
+                    <p style={{ color: "#fbd9ad" }}>
+                      fano.randriamisaina@gmail.com
+                    </p>
+                  </a>
+
+                  <a
+                    href="https://www.google.com/maps/place/Montpellier,+France"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="personal-details"
+                  >
+                    <div className="personal-details">
                       <div className="detailsIcon">
-                        <FiAtSign />
+                        <HiOutlineLocationMarker />
                       </div>
                       <p style={{ color: "#fbd9ad" }}>
-                        fano.randriamisaina@gmail.com
+                        Montpellier, France
                       </p>
-                    </a>
-
-                    <a
-                      href="https://www.google.com/maps/place/Montpellier,+France"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="personal-details"
-                    >
-                      <div className="personal-details">
-                        <div className="detailsIcon">
-                          <HiOutlineLocationMarker />
-                        </div>
-                        <p style={{ color: "#fbd9ad" }}>
-                          Montpellier, France
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="contact-map">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1549!2d3.876716!3d43.610769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af3c3f0d1a6f%3A0x1c3c7c6a2d1c9b0!2sMontpellier!5e0!3m2!1sen!2sfr!4v1700000000000"
-                      frameBorder="0"
-                      allowFullScreen=""
-                      aria-hidden="false"
-                      title="Contact Me"
-                      tabIndex="0"
-                      loading="lazy"
-                      className=""
-                    ></iframe>
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
+                    </div>
+                  </a>
+                </div>
+                <div className="contact-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1549!2d3.876716!3d43.610769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af3c3f0d1a6f%3A0x1c3c7c6a2d1c9b0!2sMontpellier!5e0!3m2!1sen!2sfr!4v1700000000000"
+                    frameBorder="0"
+                    allowFullScreen=""
+                    aria-hidden="false"
+                    title="Contact Me"
+                    tabIndex="0"
+                    loading="lazy"
+                    className=""
+                  ></iframe>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
       </Container>
+    </Container>
 
   );
 }

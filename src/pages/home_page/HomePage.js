@@ -20,7 +20,7 @@ export default function Home() {
           <Row>
             <Col md={8} className="home-header">
               <h5
-                style={{ paddingBottom: 15, fontSize: "175px" }}
+                style={{ paddingBottom: 13, fontSize: "135px" }}
                 className="heading"
               >
                 Hi There!{" "}

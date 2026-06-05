@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
-import { FaLinkedinIn, FaFacebookF, FaGoogle } from "react-icons/fa";
+import { FaLinkedinIn, FaGoogle } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
@@ -9,12 +9,11 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by RANDRIAMISAINA Tsiory</h3>
-        </Col>
+
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} RANDRIAMISAINA Tsiory</h3>
         </Col>
+
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
@@ -27,6 +26,7 @@ function Footer() {
                 <AiFillGithub />
               </a>
             </li>
+
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/t-fanomezana-r/"
@@ -37,6 +37,7 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
+
             <li className="social-icons">
               <a
                 href="https://www.instagram.com/tsiory_randi/"
@@ -47,6 +48,7 @@ function Footer() {
                 <AiFillInstagram />
               </a>
             </li>
+
             <li className="social-icons">
               <a
                 href="mailto:fano.randriamisaina@gmail.com/"
@@ -57,8 +59,10 @@ function Footer() {
                 <FaGoogle />
               </a>
             </li>
+
           </ul>
         </Col>
+
       </Row>
     </Container>
   );

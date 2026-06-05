@@ -5,36 +5,36 @@ import Zoom from "react-reveal/Zoom";
 import LanguageContext from "../../../LanguageContext";
 
 import vs from "../../../images/Vs.png";
-import proxmox from "../../../images/proxmox.svg";
+import proxmox from "../../../images/proxmox.png";
 import git from "../../../images/git.png";
 import github from "../../../images/github.png";
-import docker from "../../../images/docker.svg";
+import docker from "../../../images/docker.png";
 
 import linux from "../../../images/linux.png";
-import windows from "../../../images/windows.png";
-import debian from "../../../images/debian.png";
-import redhat from "../../../images/redhat.png";
+import windows from "../../../images/windows.svg";
+import debian from "../../../images/debian.svg";
+import redhat from "../../../images/redhat.svg";
 
 import cisco from "../../../images/cisco.png";
 import pfsense from "../../../images/pfsense.png";
 
 import vmware from "../../../images/vmware.png";
-import ovhcloud from "../../../images/ovhcloud.png";
+import ovhcloud from "../../../images/ovhcloud.svg";
 
 import mysql from "../../../images/mysql.png";
-import mariadb from "../../../images/mariadb.png";
-import postgresql from "../../../images/postgresql.png";
+import mariadb from "../../../images/mariadb.svg";
+import postgresql from "../../../images/postgresql.svg";
 import oracle from "../../../images/oracle.png";
 
-import grafana from "../../../images/grafana.png";
-import prometheus from "../../../images/prometheus.png";
-import zabbix from "../../../images/zabbix.png";
+import grafana from "../../../images/grafana.svg";
+import prometheus from "../../../images/prometheus.svg";
+import zabbix from "../../../images/zabbix.svg";
 
 import java from "../../../images/java.png";
-import python from "../../../images/python.png";
-import powershell from "../../../images/powershell.png";
-import bash from "../../../images/bash.png";
-import ansible from "../../../images/ansible.png";
+import python from "../../../images/python.svg";
+import powershell from "../../../images/powershell.svg";
+import bash from "../../../images/bash.svg";
+import ansible from "../../../images/ansible.svg";
 
 export default function Toolkit() {
   const { t } = useContext(LanguageContext);

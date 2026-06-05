@@ -11,30 +11,30 @@ import github from "../../../images/github.png";
 import docker from "../../../images/docker.png";
 
 import linux from "../../../images/linux.png";
-import windows from "../../../images/windows.svg";
-import debian from "../../../images/debian.svg";
-import redhat from "../../../images/redhat.svg";
+import windows from "../../../images/windows.png";
+import debian from "../../../images/debian.png";
+import redhat from "../../../images/redhat.png";
 
 import cisco from "../../../images/cisco.png";
 import pfsense from "../../../images/pfsense.png";
 
 import vmware from "../../../images/vmware.png";
-import ovhcloud from "../../../images/ovhcloud.svg";
+import ovhcloud from "../../../images/ovhcloud.png";
 
 import mysql from "../../../images/mysql.png";
-import mariadb from "../../../images/mariadb.svg";
-import postgresql from "../../../images/postgresql.svg";
+import mariadb from "../../../images/mariadb.png";
+import postgresql from "../../../images/postgresql.png";
 import oracle from "../../../images/oracle.png";
 
-import grafana from "../../../images/grafana.svg";
-import prometheus from "../../../images/prometheus.svg";
-import zabbix from "../../../images/zabbix.svg";
+import grafana from "../../../images/grafana.png";
+import prometheus from "../../../images/prometheus.png";
+import zabbix from "../../../images/zabbix.png";
 
 import java from "../../../images/java.png";
-import python from "../../../images/python.svg";
-import powershell from "../../../images/powershell.svg";
-import bash from "../../../images/bash.svg";
-import ansible from "../../../images/ansible.svg";
+import python from "../../../images/python.png";
+import powershell from "../../../images/powershell.png";
+import bash from "../../../images/bash.png";
+import ansible from "../../../images/ansible.png";
 
 export default function Toolkit() {
   const { t } = useContext(LanguageContext);

@@ -3,27 +3,28 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Contact — RANDRIAMISAINA Tsiory</title>
+  <title>Contact - RANDRIAMISAINA Tsiory</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 <nav>
   <div class="nav-in">
-    <a class="logo" href="index.html">&lt;RANDI /&gt;</a>
+    <a class="logo" href="index.html">&lt; 2RANDI /&gt;</a>
     <ul class="nl" id="nl">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="skills.html">Skills</a></li>
+      <li><a href="tools.html">Tools</a></li>
       <li><a href="experience.html">Experience</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="resume.html">Resume</a></li>
-      <li><a href="contact.html" class="cta cur">Contact</a></li>
+      <li><a href="contact.html" class="cur cta">Contact</a></li>
     </ul>
-    <button class="burger" id="burger"><span></span><span></span><span></span></button>
-  </div>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>  </div>
 </nav>
 
 <div class="pgbanner">
@@ -41,8 +42,8 @@
       <div class="ct-info rv">
         <h2>Let's talk</h2>
         <p>
-          I am <strong>available immediately</strong> and looking for a position as a
-          <strong>Systems & Networks Administrator</strong> in France.
+          I'm <strong>available immediately</strong> and looking for a position as a
+          <strong>Systems and Networks Administrator</strong> in France.
           Feel free to reach out by email, phone, or through the contact form.
         </p>
         <div class="ci-list">
@@ -50,67 +51,64 @@
             <div class="ci-ico"><i class="fas fa-envelope"></i></div>
             <div><h4>Email</h4><a href="mailto:fano.randriamisaina@gmail.com">fano.randriamisaina@gmail.com</a></div>
           </div>
-          <div class="ci">
-            <div class="ci-ico"><i class="fas fa-phone"></i></div>
-            <div><h4>Phone</h4><a href="tel:+33745398560">+33 7 45 39 85 60</a></div>
-          </div>
+          
           <div class="ci">
             <div class="ci-ico"><i class="fas fa-map-marker-alt"></i></div>
             <div><h4>Location</h4><span>Montpellier, France</span></div>
           </div>
+
           <div class="ci">
             <div class="ci-ico"><i class="fab fa-linkedin"></i></div>
-            <div><h4>LinkedIn</h4><a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank" rel="noreferrer">linkedin.com/in/t-fanomezana-r</a></div>
+            <div><h4>LinkedIn</h4><a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank" rel="noreferrer">Tsiory RANDRIAMISAINA</a></div>
           </div>
+
           <div class="ci">
             <div class="ci-ico"><i class="fab fa-github"></i></div>
-            <div><h4>GitHub</h4><a href="https://github.com/2Randi" target="_blank" rel="noreferrer">github.com/2Randi</a></div>
+            <div><h4>GitHub</h4><a href="https://github.com/2Randi" target="_blank" rel="noreferrer">2Randi</a></div>
           </div>
+
         </div>
         <a href="RANDRIAMISAINA_CV.pdf" download class="btn gbtn" style="width:100%;justify-content:center">
-          <i class="fas fa-file-pdf"></i> Download Full CV (PDF)
+          <i class="fas fa-file-pdf"></i> Download CV
         </a>
       </div>
 
       <div class="cf rv">
         <h3>Send a message</h3>
-        <p>I usually reply within 24 hours.</p>
-        <!--
-          FORMSPREE SETUP:
-          1. Go to https://formspree.io — sign up free
-          2. Create a new form — copy your Form ID (e.g. xpwzgqko)
-          3. Replace YOUR_FORM_ID below with your actual ID
-        -->
-        <form id="cf" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <p>I usually reply within 24 hours</p>
+        
+        <form id="cf" action="https://formspree.io/f/mdadlqrg" method="POST">
           <div class="frow">
             <div class="fg">
               <label for="fn">First name</label>
-              <input type="text" id="fn" name="first_name" placeholder="John" required/>
+              <input type="text" id="fn" name="first_name" placeholder="Tsiory" required/>
             </div>
             <div class="fg">
               <label for="ln">Last name</label>
-              <input type="text" id="ln" name="last_name" placeholder="Doe" required/>
+              <input type="text" id="ln" name="last_name" placeholder="RANDRIAMISAINA" required/>
             </div>
           </div>
           <div class="fg">
             <label for="em">Email</label>
-            <input type="email" id="em" name="email" placeholder="john@company.com" required/>
+            <input type="email" id="em" name="email" placeholder="fano.randriamisaina@gmail.com" required/>
           </div>
           <div class="fg">
             <label for="su">Subject</label>
-            <input type="text" id="su" name="subject" placeholder="Job opportunity — Sysadmin position" required/>
+            <input type="text" id="su" name="subject" placeholder="Job opportunity - Networks Engineer" required/>
           </div>
+
           <div class="fg">
             <label for="msg">Message</label>
             <textarea id="msg" name="message" placeholder="Hello Tsiory, I have a position that might interest you..." required></textarea>
           </div>
+
           <input type="hidden" name="_subject" value="Portfolio contact"/>
           <input type="text" name="_gotcha" style="display:none"/>
           <button type="submit" class="btn gbtn" id="sbtn" style="width:100%;justify-content:center;font-size:1rem">
             <i class="fas fa-paper-plane"></i> Send Message
           </button>
           <div class="fsuc" id="fsuc">
-            <i class="fas fa-check-circle"></i> Message sent! I'll reply shortly.
+            <i class="fas fa-check-circle"></i> Message sent! I'll reply shortly
           </div>
         </form>
       </div>
@@ -126,10 +124,10 @@
       <a href="experience.html">Experience</a><a href="projects.html">Projects</a>
       <a href="resume.html">Resume</a><a href="contact.html">Contact</a>
     </div>
-    <p>Designed & built by <strong>RANDRIAMISAINA Tsiory Fanomezana</strong></p>
-    <p class="copy">© <span class="year"></span> · Montpellier, France</p>
+    <p class="copy">© <span class="year"></span> · by <strong>RANDRIAMISAINA Tsiory Fanomezana</strong></p>
   </div>
 </footer>
+
 <script src="script.js"></script>
 <script>
 document.getElementById('cf').addEventListener('submit', async e => {

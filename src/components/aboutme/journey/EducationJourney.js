@@ -34,10 +34,10 @@ function EducationJourney() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid rgb(78 22 112)" }}
+          contentStyle={{ background: "rgb(0 40 90)", color: "#b8d4f5" }}
+          contentArrowStyle={{ borderRight: "7px solid rgb(0 40 90)" }}
           date="2025 - Present"
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          iconStyle={{ background: "rgb(0 40 90)", color: "#00d4ff" }}
           icon={<SchoolIcon />}
         >
           <h4 className="vertical-timeline-element-title">
@@ -54,10 +54,10 @@ function EducationJourney() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          contentStyle={{ background: "rgb(0 40 90)", color: "#b8d4f5" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(0 40 90)" }}
           date="2023 - 2025"
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          iconStyle={{ background: "rgb(0 40 90)", color: "#00d4ff" }}
           icon={<SchoolIcon />}
         >
           <h4 className="vertical-timeline-element-title">
@@ -71,10 +71,10 @@ function EducationJourney() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          contentStyle={{ background: "rgb(0 40 90)", color: "#b8d4f5" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(0 40 90)" }}
           date="2014 - 2019"
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          iconStyle={{ background: "rgb(0 40 90)", color: "#00d4ff" }}
           icon={<SchoolIcon />}
         >
           <h4 className="vertical-timeline-element-title">
@@ -90,7 +90,7 @@ function EducationJourney() {
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          iconStyle={{ background: "#fbd9ad", color: "rgb(78 22 112)" }}
+          iconStyle={{ background: "#00d4ff", color: "rgb(0 40 90)" }}
           icon={<StarIcon />}
         />
       </VerticalTimeline>

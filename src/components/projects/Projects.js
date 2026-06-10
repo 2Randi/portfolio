@@ -4,16 +4,63 @@ import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
 import LanguageContext from "../../LanguageContext";
-import fog from "../../images/fog.png";
-import linux from "../../images/linux.png";
-import proxmox from "../../images/proxmox.png";
-import rag from "../../images/rag.png";
+import pfsense from "../../images/pfsense.png";
+import asterisk from "../../images/asterisk.png";
+import zabbix from "../../images/zabbix.png";
+import bash from "../../images/bash.png";
 import { FaCode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
 
+const CARD_STYLE = {
+  backgroundColor: "rgba(0, 55, 110, 0.28)",
+  border: "1px solid rgba(0, 180, 255, 0.35)",
+};
+
+const DESC_STYLE = {
+  background: "#081d3a",
+  color: "#00d4ff",
+};
+
+const LANG_STYLE = {
+  background: "#081d3a",
+  color: "#00d4ff",
+  fontWeight: 600,
+};
+
 export default function Projects() {
   const { t } = useContext(LanguageContext);
+
+  const projects = [
+    {
+      title: "pfSense Firewall & Network Security",
+      img: pfsense,
+      alt: "pfsense",
+      desc: "Deployment, configuration and administration of pfSense firewall — ruleset, VLANs, NAT, VPN tunnels and PRA/PCA participation",
+      tags: "pfSense, iptables, VPN, VLAN, Firewall",
+    },
+    {
+      title: "VoIP Infrastructure (Asterisk & SIP)",
+      img: asterisk,
+      alt: "asterisk",
+      desc: "Deployment of Asterisk VoIP server, SIP/RTP traffic analysis with Wireshark, one-way audio incident diagnosis and resolution",
+      tags: "Asterisk, SIP, RTP, OpenVPN, Wireshark",
+    },
+    {
+      title: "Network Monitoring (Zabbix & Grafana)",
+      img: zabbix,
+      alt: "zabbix",
+      desc: "Infrastructure supervision with Zabbix and Grafana dashboards — alerting, availability tracking and proactive incident prevention",
+      tags: "Zabbix, Grafana, Prometheus, SNMP",
+    },
+    {
+      title: "Automation Scripts (Bash / Python / PS)",
+      img: bash,
+      alt: "bash",
+      desc: "Administration automation scripts: user provisioning, backup routines, server health checks and scheduled maintenance tasks",
+      tags: "Bash, Python, PowerShell, Cron",
+    },
+  ];
 
   return (
     <div>
@@ -26,188 +73,33 @@ export default function Projects() {
               </Zoom>
             </Col>
 
-            {/* FOG PROJECT */}
-            <Col md={3}>
-              <Fade bottom>
-                <div
-                  className="singleProject"
-                  style={{
-                    backgroundColor: "rgb(142 70 186 / 31%)",
-                    border: "1px solid",
-                  }}
-                >
-                  <div className="projectContent">
-                    <h5 style={{ color: "#fbd9ad" }}>
-                      Automated OS Deployment (FOG Project)
-                    </h5>
-
-                    <img src={fog} alt="fog" />
-
-                    <div className="project--showcaseBtn">
-                      <a
-                        href="https://github.com/2Randi"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaCode />
-                      </a>
+            {projects.map((p, i) => (
+              <Col md={3} key={i}>
+                <Fade bottom>
+                  <div className="singleProject" style={CARD_STYLE}>
+                    <div className="projectContent">
+                      <h5 style={{ color: "#b8d4f5" }}>{p.title}</h5>
+                      <img src={p.img} alt={p.alt} />
+                      <div className="project--showcaseBtn">
+                        <a
+                          href="https://github.com/2Randi"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <FaCode />
+                        </a>
+                      </div>
+                    </div>
+                    <p className="project--desc" style={DESC_STYLE}>
+                      {p.desc}
+                    </p>
+                    <div className="project--lang" style={LANG_STYLE}>
+                      {p.tags}
                     </div>
                   </div>
-
-                  <p
-                    className="project--desc"
-                    style={{
-                      background: "#fbd9ad",
-                      color: "#b061df",
-                    }}
-                  >
-                    Automated operating system deployment and machine image
-                    management
-                  </p>
-
-                  <div className="project--lang">
-                    Linux, PXE, FOG Project
-                  </div>
-                </div>
-              </Fade>
-            </Col>
-
-            {/* LINUX SERVICES */}
-            <Col md={3}>
-              <Fade bottom>
-                <div
-                  className="singleProject"
-                  style={{
-                    backgroundColor: "rgb(142 70 186 / 31%)",
-                    border: "1px solid",
-                  }}
-                >
-                  <div className="projectContent">
-                    <h5 style={{ color: "#fbd9ad" }}>
-                      Linux Infrastructure Services
-                    </h5>
-
-                    <img src={linux} alt="linux" />
-
-                    <div className="project--showcaseBtn">
-                      <a
-                        href="https://github.com/2Randi"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaCode />
-                      </a>
-                    </div>
-                  </div>
-
-                  <p
-                    className="project--desc"
-                    style={{
-                      background: "#fbd9ad",
-                      color: "#b061df",
-                    }}
-                  >
-                    Deployment and administration of Asterisk, OpenVPN, GLPI and Zabbix
-                  </p>
-
-                  <div className="project--lang">
-                    Linux, Asterisk, OpenVPN, GLPI, Zabbix
-                  </div>
-                </div>
-              </Fade>
-            </Col>
-
-            {/* PROXMOX */}
-            <Col md={3}>
-              <Fade bottom>
-                <div
-                  className="singleProject"
-                  style={{
-                    backgroundColor: "rgb(142 70 186 / 31%)",
-                    border: "1px solid",
-                  }}
-                >
-                  <div className="projectContent">
-                    <h5 style={{ color: "#fbd9ad" }}>
-                      Proxmox Backup & Migration
-                    </h5>
-
-                    <img src={proxmox} alt="proxmox" />
-
-                    <div className="project--showcaseBtn">
-                      <a
-                        href="https://github.com/2Randi"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaCode />
-                      </a>
-                    </div>
-                  </div>
-
-                  <p
-                    className="project--desc"
-                    style={{
-                      background: "#fbd9ad",
-                      color: "#b061df",
-                    }}
-                  >
-                    Backup, restore and migration of virtual machines
-                  </p>
-
-                  <div className="project--lang">
-                    Proxmox, Virtualization, Linux
-                  </div>
-                </div>
-              </Fade>
-            </Col>
-
-            {/* KNOWLEDGE GRAPH & RAG */}
-            <Col md={3}>
-              <Fade bottom>
-                <div
-                  className="singleProject"
-                  style={{
-                    backgroundColor: "rgb(142 70 186 / 31%)",
-                    border: "1px solid",
-                  }}
-                >
-                  <div className="projectContent">
-                    <h5 style={{ color: "#fbd9ad" }}>
-                      Knowledge Graph & RAG System
-                    </h5>
-
-                    <img src={rag} alt="knowledge-graph-rag" />
-
-                    <div className="project--showcaseBtn">
-                      <a
-                        href="https://github.com/2Randi"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FaCode />
-                      </a>
-                    </div>
-                  </div>
-
-                  <p
-                    className="project--desc"
-                    style={{
-                      background: "#fbd9ad",
-                      color: "#b061df",
-                    }}
-                  >
-                    Development of a semantic knowledge graph and Retrieval-Augmented
-                    Generation (RAG) system for information indexing and retrieval
-                  </p>
-
-                  <div className="project--lang">
-                    Python, RDF, SKOS, SPARQL, AI
-                  </div>
-                </div>
-              </Fade>
-            </Col>
-
+                </Fade>
+              </Col>
+            ))}
           </Row>
 
           <div className="blog--viewAll">

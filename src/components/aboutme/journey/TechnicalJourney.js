@@ -44,10 +44,10 @@ function TechnicalJourney() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          contentStyle={{ background: "rgb(0 40 90)", color: "#b8d4f5" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(0 40 90)" }}
           date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          iconStyle={{ background: "rgb(0 40 90)", color: "#00d4ff" }}
           icon={<DiLinux />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -57,10 +57,10 @@ function TechnicalJourney() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          contentStyle={{ background: "rgb(0 40 90)", color: "#b8d4f5" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(0 40 90)" }}
           date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          iconStyle={{ background: "rgb(0 40 90)", color: "#00d4ff" }}
           icon={<FaNetworkWired />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -70,10 +70,10 @@ function TechnicalJourney() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          contentStyle={{ background: "rgb(0 40 90)", color: "#b8d4f5" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(0 40 90)" }}
           date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          iconStyle={{ background: "rgb(0 40 90)", color: "#00d4ff" }}
           icon={<ComputerIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -83,10 +83,10 @@ function TechnicalJourney() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          contentStyle={{ background: "rgb(0 40 90)", color: "#b8d4f5" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(0 40 90)" }}
           date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          iconStyle={{ background: "rgb(0 40 90)", color: "#00d4ff" }}
           icon={<FaShieldAlt />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -96,10 +96,10 @@ function TechnicalJourney() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          contentStyle={{ background: "rgb(0 40 90)", color: "#b8d4f5" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(0 40 90)" }}
           date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          iconStyle={{ background: "rgb(0 40 90)", color: "#00d4ff" }}
           icon={<MdMonitor />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -109,10 +109,10 @@ function TechnicalJourney() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          contentStyle={{ background: "rgb(0 40 90)", color: "#b8d4f5" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(0 40 90)" }}
           date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          iconStyle={{ background: "rgb(0 40 90)", color: "#00d4ff" }}
           icon={<DiPython />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -122,10 +122,10 @@ function TechnicalJourney() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          contentStyle={{ background: "rgb(0 40 90)", color: "#b8d4f5" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(0 40 90)" }}
           date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          iconStyle={{ background: "rgb(0 40 90)", color: "#00d4ff" }}
           icon={<DiJava />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -135,10 +135,10 @@ function TechnicalJourney() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          contentStyle={{ background: "rgb(0 40 90)", color: "#b8d4f5" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(0 40 90)" }}
           date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          iconStyle={{ background: "rgb(0 40 90)", color: "#00d4ff" }}
           icon={<SiPowershell />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -148,10 +148,10 @@ function TechnicalJourney() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          contentStyle={{ background: "rgb(0 40 90)", color: "#b8d4f5" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(0 40 90)" }}
           date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          iconStyle={{ background: "rgb(0 40 90)", color: "#00d4ff" }}
           icon={<DiDatabase />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -161,10 +161,10 @@ function TechnicalJourney() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(78 22 112)" }}
+          contentStyle={{ background: "rgb(0 40 90)", color: "#b8d4f5" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(0 40 90)" }}
           date=""
-          iconStyle={{ background: "rgb(78 22 112)", color: "#fbd9ad" }}
+          iconStyle={{ background: "rgb(0 40 90)", color: "#00d4ff" }}
           icon={<SiGit />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -173,7 +173,7 @@ function TechnicalJourney() {
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          iconStyle={{ background: "#fbd9ad", color: "rgb(78 22 112)" }}
+          iconStyle={{ background: "#00d4ff", color: "rgb(0 40 90)" }}
           icon={<StarIcon />}
         />
       </VerticalTimeline>

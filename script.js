@@ -1,80 +1,41 @@
 'use strict';
 
-/* ── NAVBAR SCROLL ── */
-const navbar = document.getElementById('navbar');
+/* ── NAV SCROLL ── */
+const navbar = document.querySelector('nav');
 window.addEventListener('scroll', () => {
-  navbar.style.background = window.scrollY > 60
-    ? 'rgba(13,17,23,0.98)'
-    : 'rgba(13,17,23,0.92)';
-});
+  navbar.style.background = window.scrollY > 50
+    ? 'rgba(13,17,23,.99)'
+    : 'rgba(13,17,23,.95)';
+}, { passive: true });
 
 /* ── HAMBURGER ── */
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
-hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('open');
-});
-navMenu.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navMenu.classList.remove('open'));
-});
-
-/* ── TYPING EFFECT ── */
-const typedEl = document.getElementById('typed-text');
-const words = [
-  'Réseaux & Systèmes',
-  'Infrastructure Linux',
-  'Virtualisation Proxmox',
-  'Sécurité pfSense',
-  'Supervision Zabbix',
-];
-let wordIdx = 0;
-let charIdx = 0;
-let deleting = false;
-let paused = false;
-
-function type() {
-  if (paused) { setTimeout(type, 1800); paused = false; return; }
-  const current = words[wordIdx];
-  if (!deleting) {
-    typedEl.textContent = current.slice(0, charIdx + 1);
-    charIdx++;
-    if (charIdx === current.length) { paused = true; deleting = true; }
-    setTimeout(type, 75);
-  } else {
-    typedEl.textContent = current.slice(0, charIdx - 1);
-    charIdx--;
-    if (charIdx === 0) {
-      deleting = false;
-      wordIdx = (wordIdx + 1) % words.length;
-    }
-    setTimeout(type, 40);
-  }
+const burger = document.getElementById('burger');
+const menu   = document.getElementById('nav-menu');
+if (burger && menu) {
+  burger.addEventListener('click', () => menu.classList.toggle('open'));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
 }
-type();
 
 /* ── SCROLL REVEAL ── */
 const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      setTimeout(() => entry.target.classList.add('visible'), i * 80);
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-reveals.forEach(el => observer.observe(el));
+if (reveals.length) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('on'), i * 90);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => io.observe(el));
+}
 
-/* ── ACTIVE NAV LINK ── */
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-links a');
-const activateLink = () => {
-  let current = '';
-  sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 100) current = s.id;
-  });
-  navLinks.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href') === '#' + current) link.classList.add('active');
-  });
-};
-window.addEventListener('scroll', activateLink, { passive: true });
+/* ── ABOUT GRID RESPONSIVE ── */
+const ag = document.querySelector('.about-grid-resp');
+if (ag) {
+  const fix = () => {
+    ag.style.gridTemplateColumns = window.innerWidth < 768 ? '1fr' : '1fr 340px';
+  };
+  fix();
+  window.addEventListener('resize', fix);
+}

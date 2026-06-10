@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f2753a05.css",
-    "main.js": "/portfolio/static/js/main.b3f1da3c.js",
+    "main.css": "/portfolio/static/css/main.2e5fe1e7.css",
+    "main.js": "/portfolio/static/js/main.d9e6f4a0.js",
     "static/js/415.4d6acbeb.chunk.js": "/portfolio/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/rag.png": "/portfolio/static/media/rag.3417433b7a193d23e432.png",
@@ -19,6 +19,7 @@
     "static/media/prometheus.png": "/portfolio/static/media/prometheus.507e48911124b3d10027.png",
     "static/media/java.png": "/portfolio/static/media/java.b4b741774de21f116069.png",
     "static/media/powershell.png": "/portfolio/static/media/powershell.3fafe3b93f0b111454a0.png",
+    "static/media/asterisk.png": "/portfolio/static/media/asterisk.945033509e09f5264d90.png",
     "static/media/bash.png": "/portfolio/static/media/bash.2edc0e5a1bb691f7203e.png",
     "static/media/grafana.png": "/portfolio/static/media/grafana.70abf02b0b8e0cba4f83.png",
     "static/media/mysql.png": "/portfolio/static/media/mysql.98561ab7afee22752f92.png",
@@ -35,13 +36,13 @@
     "static/media/docker.png": "/portfolio/static/media/docker.6667164ee4938d6da5a5.png",
     "static/media/windows.png": "/portfolio/static/media/windows.8dca9966762db817a475.png",
     "index.html": "/portfolio/index.html",
-    "main.f2753a05.css.map": "/portfolio/static/css/main.f2753a05.css.map",
-    "main.b3f1da3c.js.map": "/portfolio/static/js/main.b3f1da3c.js.map",
+    "main.2e5fe1e7.css.map": "/portfolio/static/css/main.2e5fe1e7.css.map",
+    "main.d9e6f4a0.js.map": "/portfolio/static/js/main.d9e6f4a0.js.map",
     "415.4d6acbeb.chunk.js.map": "/portfolio/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2753a05.css",
-    "static/js/main.b3f1da3c.js"
+    "static/css/main.2e5fe1e7.css",
+    "static/js/main.d9e6f4a0.js"
   ]
 }

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Skills — RANDRIAMISAINA Tsiory</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="index.html">&lt;RANDI /&gt;</a>
+    <ul class="nl" id="nl">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html" class="cur">Skills</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html" class="cta">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="pgbanner">
+  <div class="wrap">
+    <span class="stag">// skills</span>
+    <h1>Technical Skills</h1>
+    <p>Tools and technologies I work with</p>
+  </div>
+</div>
+
+<!-- SYSTEMS -->
+<section>
+  <div class="wrap">
+    <div class="sh"><span class="stag">// 01</span><h2>Operating Systems</h2><p>Server and workstation OS administration</p></div>
+    <div class="sk-grid rv">
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fab fa-linux"></i></div><h3>Linux</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="">Ubuntu</div>
+          <div class="sk-t"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" alt="">Debian</div>
+          <div class="sk-t"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redhat/redhat-original.svg" alt="">RedHat</div>
+          <div class="sk-t"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/centos/centos-original.svg" alt="">CentOS</div>
+          <div class="sk-t"><i class="fas fa-terminal" style="color:var(--green)"></i>systemd</div>
+          <div class="sk-t"><i class="fas fa-box" style="color:var(--green)"></i>apt / yum</div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fab fa-windows"></i></div><h3>Windows Server</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><i class="fab fa-windows" style="color:var(--sub)"></i>Windows Server 2019/2022</div>
+          <div class="sk-t"><i class="fas fa-users-cog" style="color:var(--sub)"></i>Active Directory</div>
+          <div class="sk-t"><i class="fas fa-file-code" style="color:var(--sub)"></i>Group Policy (GPO)</div>
+          <div class="sk-t"><i class="fas fa-share-alt" style="color:var(--sub)"></i>DNS / DHCP</div>
+          <div class="sk-t"><i class="fas fa-folder-open" style="color:var(--sub)"></i>File Server</div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fas fa-hdd"></i></div><h3>Storage & Hardware</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><i class="fas fa-server" style="color:var(--sub)"></i>Dell PowerEdge</div>
+          <div class="sk-t"><i class="fas fa-server" style="color:var(--sub)"></i>HP ProLiant</div>
+          <div class="sk-t"><i class="fas fa-hdd" style="color:var(--sub)"></i>RAID 0/1/5/10</div>
+          <div class="sk-t"><i class="fas fa-database" style="color:var(--sub)"></i>NAS / SAN</div>
+          <div class="sk-t"><i class="fas fa-clone" style="color:var(--sub)"></i>FOG Project</div>
+          <div class="sk-t"><i class="fas fa-clipboard-list" style="color:var(--sub)"></i>GLPI</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIRTUALIZATION -->
+<section class="dark">
+  <div class="wrap">
+    <div class="sh"><span class="stag">// 02</span><h2>Virtualization & Containers</h2><p>Virtual machines and container environments</p></div>
+    <div class="sk-grid rv">
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fas fa-cubes"></i></div><h3>Proxmox VE</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><i class="fas fa-cubes" style="color:var(--org)"></i>Proxmox VE 7/8</div>
+          <div class="sk-t"><i class="fas fa-copy" style="color:var(--sub)"></i>Live Migration</div>
+          <div class="sk-t"><i class="fas fa-save" style="color:var(--sub)"></i>vzdump / PBS</div>
+          <div class="sk-t"><i class="fas fa-network-wired" style="color:var(--sub)"></i>Virtual Networks</div>
+          <div class="sk-t"><i class="fas fa-project-diagram" style="color:var(--sub)"></i>Cluster</div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fas fa-layer-group"></i></div><h3>VMware / KVM</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><i class="fas fa-layer-group" style="color:var(--sub)"></i>VMware ESXi</div>
+          <div class="sk-t"><i class="fas fa-desktop" style="color:var(--sub)"></i>vSphere</div>
+          <div class="sk-t"><i class="fas fa-microchip" style="color:var(--sub)"></i>KVM / QEMU</div>
+          <div class="sk-t"><i class="fas fa-code-branch" style="color:var(--sub)"></i>Snapshots</div>
+          <div class="sk-t"><i class="fas fa-exchange-alt" style="color:var(--sub)"></i>VM Templates</div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" style="width:22px"></div><h3>Docker / Containers</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="">Docker</div>
+          <div class="sk-t"><i class="fas fa-box" style="color:var(--sub)"></i>Docker Compose</div>
+          <div class="sk-t"><i class="fas fa-cubes" style="color:var(--sub)"></i>LXC Containers</div>
+          <div class="sk-t"><i class="fas fa-shield-alt" style="color:var(--sub)"></i>Image hardening</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NETWORKING -->
+<section>
+  <div class="wrap">
+    <div class="sh"><span class="stag">// 03</span><h2>Networking</h2><p>Infrastructure, protocols and connectivity</p></div>
+    <div class="sk-grid rv">
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fas fa-network-wired"></i></div><h3>Protocols & Architecture</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><i class="fas fa-sitemap" style="color:var(--sub)"></i>TCP/IP · OSI</div>
+          <div class="sk-t"><i class="fas fa-random" style="color:var(--sub)"></i>VLAN / VTP</div>
+          <div class="sk-t"><i class="fas fa-route" style="color:var(--sub)"></i>Routing — OSPF / BGP</div>
+          <div class="sk-t"><i class="fas fa-share-alt" style="color:var(--sub)"></i>DNS / DHCP</div>
+          <div class="sk-t"><i class="fas fa-network-wired" style="color:var(--sub)"></i>Spanning Tree</div>
+          <div class="sk-t"><i class="fas fa-map-signs" style="color:var(--sub)"></i>NAT / PAT</div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fas fa-fire"></i></div><h3>Firewall & Security</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><i class="fas fa-fire" style="color:var(--org)"></i>pfSense</div>
+          <div class="sk-t"><i class="fas fa-shield-alt" style="color:var(--sub)"></i>iptables / nftables</div>
+          <div class="sk-t"><i class="fas fa-lock" style="color:var(--sub)"></i>OpenVPN</div>
+          <div class="sk-t"><i class="fas fa-wave-square" style="color:var(--sub)"></i>WireGuard</div>
+          <div class="sk-t"><i class="fas fa-bug" style="color:var(--sub)"></i>Snort / IDS</div>
+          <div class="sk-t"><i class="fas fa-redo" style="color:var(--sub)"></i>BCP / DRP</div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fas fa-satellite-dish"></i></div><h3>Telecom & VoIP</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><i class="fas fa-phone-alt" style="color:var(--green)"></i>Asterisk PBX</div>
+          <div class="sk-t"><i class="fas fa-satellite-dish" style="color:var(--sub)"></i>SIP / RTP</div>
+          <div class="sk-t"><i class="fas fa-search" style="color:var(--sub)"></i>Wireshark</div>
+          <div class="sk-t"><i class="fas fa-tower-broadcast" style="color:var(--sub)"></i>Fiber Optics</div>
+          <div class="sk-t"><i class="fas fa-broadcast-tower" style="color:var(--sub)"></i>Microwave</div>
+          <div class="sk-t"><i class="fas fa-satellite" style="color:var(--sub)"></i>Satellite</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MONITORING -->
+<section class="dark">
+  <div class="wrap">
+    <div class="sh"><span class="stag">// 04</span><h2>Monitoring & Supervision</h2><p>Infrastructure observability and alerting</p></div>
+    <div class="sk-grid rv">
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fas fa-eye"></i></div><h3>Zabbix</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><i class="fas fa-eye" style="color:var(--green)"></i>Zabbix 6/7</div>
+          <div class="sk-t"><i class="fas fa-server" style="color:var(--sub)"></i>Agent deployment</div>
+          <div class="sk-t"><i class="fas fa-broadcast-tower" style="color:var(--sub)"></i>SNMP polling</div>
+          <div class="sk-t"><i class="fas fa-bell" style="color:var(--sub)"></i>Triggers & Alerts</div>
+          <div class="sk-t"><i class="fas fa-scroll" style="color:var(--sub)"></i>Templates</div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fas fa-chart-bar"></i></div><h3>Grafana</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><i class="fas fa-chart-bar" style="color:var(--org)"></i>Grafana</div>
+          <div class="sk-t"><i class="fas fa-chart-pie" style="color:var(--sub)"></i>Dashboards</div>
+          <div class="sk-t"><i class="fas fa-database" style="color:var(--sub)"></i>Prometheus</div>
+          <div class="sk-t"><i class="fas fa-cogs" style="color:var(--sub)"></i>Data Sources</div>
+          <div class="sk-t"><i class="fas fa-bell" style="color:var(--sub)"></i>Alerting rules</div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fas fa-clipboard-list"></i></div><h3>ITSM & Helpdesk</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><i class="fas fa-clipboard-list" style="color:var(--sub)"></i>GLPI</div>
+          <div class="sk-t"><i class="fas fa-ticket-alt" style="color:var(--sub)"></i>Ticketing systems</div>
+          <div class="sk-t"><i class="fas fa-project-diagram" style="color:var(--sub)"></i>Incident N1/N2</div>
+          <div class="sk-t"><i class="fas fa-file-alt" style="color:var(--sub)"></i>Documentation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCRIPTING -->
+<section>
+  <div class="wrap">
+    <div class="sh"><span class="stag">// 05</span><h2>Scripting & Automation</h2><p>Automating repetitive tasks and infrastructure management</p></div>
+    <div class="sk-grid rv">
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fas fa-terminal"></i></div><h3>Bash / Shell</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="">Bash scripting</div>
+          <div class="sk-t"><i class="fas fa-clock" style="color:var(--sub)"></i>Cron jobs</div>
+          <div class="sk-t"><i class="fas fa-save" style="color:var(--sub)"></i>Backup automation</div>
+          <div class="sk-t"><i class="fas fa-sync" style="color:var(--sub)"></i>rsync / scp</div>
+          <div class="sk-t"><i class="fas fa-eye" style="color:var(--sub)"></i>Log parsing</div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" style="width:22px"></div><h3>Python</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">Python 3</div>
+          <div class="sk-t"><i class="fas fa-network-wired" style="color:var(--sub)"></i>Nmap / SNMP libs</div>
+          <div class="sk-t"><i class="fas fa-robot" style="color:var(--sub)"></i>REST API calls</div>
+          <div class="sk-t"><i class="fas fa-chart-pie" style="color:var(--sub)"></i>Pandas</div>
+          <div class="sk-t"><i class="fas fa-mail-bulk" style="color:var(--sub)"></i>smtplib</div>
+          <div class="sk-t"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">Git</div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fab fa-windows"></i></div><h3>PowerShell</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><i class="fab fa-windows" style="color:var(--sub)"></i>PowerShell 5/7</div>
+          <div class="sk-t"><i class="fas fa-users-cog" style="color:var(--sub)"></i>AD automation</div>
+          <div class="sk-t"><i class="fas fa-file-csv" style="color:var(--sub)"></i>CSV import/export</div>
+          <div class="sk-t"><i class="fas fa-mail-bulk" style="color:var(--sub)"></i>Send-MailMessage</div>
+          <div class="sk-t"><i class="fas fa-cog" style="color:var(--sub)"></i>Task Scheduler</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATABASES -->
+<section class="dark">
+  <div class="wrap">
+    <div class="sh"><span class="stag">// 06</span><h2>Databases & Data</h2></div>
+    <div class="sk-grid rv" style="grid-template-columns:repeat(2,1fr)">
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fas fa-database"></i></div><h3>Relational Databases</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="">PostgreSQL</div>
+          <div class="sk-t"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">MariaDB / MySQL</div>
+          <div class="sk-t"><i class="fas fa-table" style="color:var(--sub)"></i>SQL Server</div>
+          <div class="sk-t"><i class="fas fa-code" style="color:var(--sub)"></i>PL/SQL</div>
+        </div>
+      </div>
+      <div class="sk-card">
+        <div class="sk-head"><div class="ico"><i class="fas fa-brain"></i></div><h3>NoSQL & Data Science</h3></div>
+        <div class="sk-tags">
+          <div class="sk-t"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">MongoDB</div>
+          <div class="sk-t"><i class="fas fa-robot" style="color:var(--sub)"></i>RAG / LLM</div>
+          <div class="sk-t"><i class="fas fa-sitemap" style="color:var(--sub)"></i>SKOS / RDF</div>
+          <div class="sk-t"><i class="fas fa-project-diagram" style="color:var(--sub)"></i>Knowledge Graph</div>
+          <div class="sk-t"><i class="fas fa-chart-pie" style="color:var(--sub)"></i>Big Data</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="flinks">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a><a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a><a href="contact.html">Contact</a>
+    </div>
+    <p>Designed & built by <strong>RANDRIAMISAINA Tsiory Fanomezana</strong></p>
+    <p class="copy">© <span class="year"></span> · Montpellier, France</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

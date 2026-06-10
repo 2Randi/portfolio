@@ -4,335 +4,88 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>RANDRIAMISAINA Tsiory — Systems & Networks Admin</title>
-  <meta name="description" content="Portfolio of RANDRIAMISAINA Tsiory Fanomezana — Systems & Network Administrator, Master's Degree in Computer Science, Université de Montpellier."/>
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-
 <nav>
-  <div class="nav-inner">
+  <div class="nav-in">
     <a class="logo" href="index.html">&lt;RANDI /&gt;</a>
-    <ul class="nav-links" id="nav-menu">
-      <li><a href="index.html" class="active">Home</a></li>
+    <ul class="nl" id="nl">
+      <li><a href="index.html" class="cur">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
       <li><a href="experience.html">Experience</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html" class="btn-nav">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html" class="cta">Contact</a></li>
     </ul>
-    <button class="burger" id="burger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- ═══ HERO ═══ -->
 <section id="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-glow-l"></div>
-  <div class="hero-glow-r"></div>
-  <div class="wrap hero-inner">
-
-    <div class="hero-left">
+  <div class="hgrid"></div>
+  <div class="hglow"></div>
+  <div class="hglow2"></div>
+  <div class="wrap hero-in">
+    <div class="hleft">
       <div class="badge">
         <span class="dot"></span>
         Open to work · Available immediately · Montpellier / France
       </div>
       <h1>Tsiory<br><span>Fanomezana</span></h1>
-      <div class="hero-sub">
-        <span class="typed" id="typed"></span><span class="cursor">|</span>
+      <div class="htyp">
+        <span class="typed" id="typed"></span><span class="cur">|</span>
       </div>
-      <p class="hero-desc">
+      <p class="hdesc">
         Telecommunications Engineer · Master's in Computer Science<br>
-        Linux Systems · Network Administration · Virtualization · Security
+        Linux Systems · Network Admin · Virtualization · Security
       </p>
-      <div class="hero-btns">
-        <a href="RANDRIAMISAINA_CV.pdf" download class="btn btn-green">
-          <i class="fas fa-download"></i> Download CV
-        </a>
-        <a href="contact.html" class="btn btn-ghost">
-          <i class="fas fa-envelope"></i> Get in touch
-        </a>
+      <div class="hbtns">
+        <a href="resume.html" class="btn gbtn"><i class="fas fa-file-alt"></i> View Resume</a>
+        <a href="contact.html" class="btn obtn"><i class="fas fa-envelope"></i> Contact me</a>
       </div>
-      <div class="socials">
-        <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank" rel="noreferrer" title="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="mailto:fano.randriamisaina@gmail.com" title="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://www.instagram.com/tsiory_randi/" target="_blank" rel="noreferrer" title="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
+      <div class="soc">
+        <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank" rel="noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:fano.randriamisaina@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/tsiory_randi/" target="_blank" rel="noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
-
-    <div class="hero-photo">
-      <div class="photo-ring"></div>
-      <div class="photo-ring2"></div>
-      <div class="photo-circle">
+    <div class="hphoto">
+      <div class="pring"></div>
+      <div class="pring2"></div>
+      <div class="pcircle">
         <img src="profile.png" alt="Tsiory Fanomezana RANDRIAMISAINA"/>
       </div>
-      <div class="ptag ptag-1"><i class="fab fa-linux"></i> Linux Admin</div>
-      <div class="ptag ptag-2"><i class="fas fa-network-wired"></i> Networking</div>
-      <div class="ptag ptag-3"><i class="fas fa-shield-alt"></i> Security</div>
-      <div class="ptag ptag-4"><i class="fas fa-server"></i> Proxmox</div>
-    </div>
-
-  </div>
-  <div class="scroll-hint">
-    <span>Scroll</span>
-    <i class="fas fa-chevron-down"></i>
-  </div>
-</section>
-
-<!-- ═══ ABOUT ═══ -->
-<section id="about">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-tag">// about me</span>
-      <h2>Who I am</h2>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 340px;gap:52px;align-items:start" class="about-grid-resp">
-      <div class="reveal">
-        <p style="color:var(--muted);font-size:1.05rem;margin-bottom:20px;line-height:1.85">
-          I'm a <strong style="color:var(--text)">Telecommunications Engineer</strong> (graduated from the École Supérieure Polytechnique d'Antananarivo, Madagascar)
-          who reinforced his expertise with a <strong style="color:var(--text)">Master's degree in Computer Science</strong> at the Université de Montpellier (2023–2025).
-        </p>
-        <p style="color:var(--muted);font-size:1.05rem;margin-bottom:20px;line-height:1.85">
-          During my studies in France, I completed targeted internships in <strong style="color:var(--text)">systems & networks administration</strong>:
-          deploying pfSense firewalls at <strong style="color:var(--text)">VNB-IT</strong>, resolving VoIP incidents at <strong style="color:var(--text)">LundiMatin</strong>,
-          and building a RAG knowledge system at <strong style="color:var(--text)">IRD</strong>.
-        </p>
-        <p style="color:var(--muted);font-size:1.05rem;line-height:1.85">
-          Previously I worked 3 years in Madagascar as a <strong style="color:var(--text)">Network Technician at Orange Business</strong> and
-          a <strong style="color:var(--text)">Telecom Engineer at YAS</strong> (fiber optics, microwave, satellite).
-          I am currently completing a <strong style="color:var(--text)">DU Big Data & Data Science</strong> (2025–2026)
-          alongside a data engineering internship at the IRD.
-        </p>
-        <div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap">
-          <a href="experience.html" class="btn btn-green"><i class="fas fa-briefcase"></i> My Experience</a>
-          <a href="projects.html" class="btn btn-ghost"><i class="fas fa-code-branch"></i> My Projects</a>
-        </div>
-      </div>
-      <div class="reveal" style="display:flex;flex-direction:column;gap:16px">
-        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--rl);padding:24px">
-          <h3 style="font-family:var(--mono);font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:18px">Quick info</h3>
-          <ul style="display:flex;flex-direction:column;gap:14px">
-            <li style="display:flex;align-items:center;gap:12px;font-size:.95rem;border-bottom:1px solid var(--border);padding-bottom:12px">
-              <i class="fas fa-map-marker-alt" style="color:var(--orange);width:16px;text-align:center"></i>
-              Montpellier, France
-            </li>
-            <li style="display:flex;align-items:center;gap:12px;font-size:.95rem;border-bottom:1px solid var(--border);padding-bottom:12px">
-              <i class="fas fa-check-circle" style="color:var(--green);width:16px;text-align:center"></i>
-              <strong>Available immediately</strong>
-            </li>
-            <li style="display:flex;align-items:center;gap:12px;font-size:.95rem;border-bottom:1px solid var(--border);padding-bottom:12px">
-              <i class="fas fa-car" style="color:var(--orange);width:16px;text-align:center"></i>
-              Driver's license · National mobility
-            </li>
-            <li style="display:flex;align-items:center;gap:12px;font-size:.95rem">
-              <i class="fas fa-graduation-cap" style="color:var(--green);width:16px;text-align:center"></i>
-              Master's + Engineer's Degree
-            </li>
-          </ul>
-        </div>
-        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--rl);padding:24px">
-          <h3 style="font-family:var(--mono);font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:18px">Languages</h3>
-          <ul style="display:flex;flex-direction:column;gap:12px">
-            <li style="display:flex;align-items:center;gap:12px;font-size:.95rem">
-              <span style="font-size:1.2rem">🇫🇷</span> French — Fluent
-            </li>
-            <li style="display:flex;align-items:center;gap:12px;font-size:.95rem">
-              <span style="font-size:1.2rem">🇬🇧</span> English — Technical
-            </li>
-            <li style="display:flex;align-items:center;gap:12px;font-size:.95rem">
-              <span style="font-size:1.2rem">🇲🇬</span> Malagasy — Native
-            </li>
-          </ul>
-        </div>
-      </div>
+      <div class="ptag pt1"><i class="fab fa-linux"></i> Linux Admin</div>
+      <div class="ptag pt2"><i class="fas fa-network-wired"></i> Networking</div>
+      <div class="ptag pt3"><i class="fas fa-shield-alt"></i> Security</div>
+      <div class="ptag pt4"><i class="fas fa-server"></i> Proxmox</div>
     </div>
   </div>
-</section>
-
-<!-- ═══ SKILLS ═══ -->
-<section class="dark-section">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-tag">// skills</span>
-      <h2>Technical Skills</h2>
-      <p>Technologies and tools I work with daily</p>
-    </div>
-    <div class="skills-cats">
-
-      <div class="skill-cat reveal">
-        <div class="skill-cat-head">
-          <div class="ico"><i class="fas fa-server"></i></div>
-          <h3>Systems & Virtualization</h3>
-        </div>
-        <div class="skill-logos">
-          <div class="sl"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="">Linux</div>
-          <div class="sl"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" alt="">Debian</div>
-          <div class="sl"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="">Ubuntu</div>
-          <div class="sl"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redhat/redhat-original.svg" alt="">RedHat</div>
-          <div class="sl"><i class="fas fa-cubes" style="color:var(--orange)"></i>Proxmox VE</div>
-          <div class="sl"><i class="fas fa-layer-group" style="color:var(--green)"></i>VMware</div>
-          <div class="sl"><i class="fas fa-clone" style="color:var(--muted)"></i>KVM</div>
-          <div class="sl"><i class="fas fa-database" style="color:var(--muted)"></i>RAID / NAS</div>
-          <div class="sl"><i class="fas fa-laptop-code" style="color:var(--muted)"></i>Windows Server</div>
-        </div>
-      </div>
-
-      <div class="skill-cat reveal">
-        <div class="skill-cat-head">
-          <div class="ico"><i class="fas fa-network-wired"></i></div>
-          <h3>Networking & VoIP</h3>
-        </div>
-        <div class="skill-logos">
-          <div class="sl"><i class="fas fa-fire" style="color:var(--orange)"></i>pfSense</div>
-          <div class="sl"><i class="fas fa-shield-alt" style="color:var(--green)"></i>iptables</div>
-          <div class="sl"><i class="fas fa-lock" style="color:var(--muted)"></i>OpenVPN</div>
-          <div class="sl"><i class="fas fa-wave-square" style="color:var(--muted)"></i>WireGuard</div>
-          <div class="sl"><i class="fas fa-phone-alt" style="color:var(--green)"></i>Asterisk</div>
-          <div class="sl"><i class="fas fa-satellite-dish" style="color:var(--muted)"></i>SIP / RTP</div>
-          <div class="sl"><i class="fas fa-search" style="color:var(--muted)"></i>Wireshark</div>
-          <div class="sl"><i class="fas fa-project-diagram" style="color:var(--muted)"></i>VLAN / VTP</div>
-          <div class="sl"><i class="fas fa-route" style="color:var(--muted)"></i>Routing / BGP</div>
-        </div>
-      </div>
-
-      <div class="skill-cat reveal">
-        <div class="skill-cat-head">
-          <div class="ico"><i class="fas fa-chart-line"></i></div>
-          <h3>Monitoring & Security</h3>
-        </div>
-        <div class="skill-logos">
-          <div class="sl"><i class="fas fa-eye" style="color:var(--green)"></i>Zabbix</div>
-          <div class="sl"><i class="fas fa-chart-bar" style="color:var(--orange)"></i>Grafana</div>
-          <div class="sl"><i class="fas fa-bell" style="color:var(--muted)"></i>Prometheus</div>
-          <div class="sl"><i class="fas fa-bug" style="color:var(--muted)"></i>Nagios</div>
-          <div class="sl"><i class="fas fa-key" style="color:var(--muted)"></i>Active Directory</div>
-          <div class="sl"><i class="fas fa-clipboard-list" style="color:var(--muted)"></i>GLPI</div>
-          <div class="sl"><i class="fas fa-redo" style="color:var(--muted)"></i>PRA / PCA</div>
-          <div class="sl"><i class="fas fa-lock" style="color:var(--green)"></i>Audit sécurité</div>
-        </div>
-      </div>
-
-      <div class="skill-cat reveal">
-        <div class="skill-cat-head">
-          <div class="ico"><i class="fas fa-terminal"></i></div>
-          <h3>Scripting & Automation</h3>
-        </div>
-        <div class="skill-logos">
-          <div class="sl"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="">Bash</div>
-          <div class="sl"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">Python</div>
-          <div class="sl"><i class="fab fa-windows" style="color:var(--muted)"></i>PowerShell</div>
-          <div class="sl"><i class="fas fa-clock" style="color:var(--muted)"></i>Cron</div>
-          <div class="sl"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">Git</div>
-          <div class="sl"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="">Docker</div>
-        </div>
-      </div>
-
-      <div class="skill-cat reveal">
-        <div class="skill-cat-head">
-          <div class="ico"><i class="fas fa-database"></i></div>
-          <h3>Databases</h3>
-        </div>
-        <div class="skill-logos">
-          <div class="sl"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="">PostgreSQL</div>
-          <div class="sl"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">MariaDB</div>
-          <div class="sl"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">MongoDB</div>
-          <div class="sl"><i class="fas fa-table" style="color:var(--muted)"></i>SQL Server</div>
-          <div class="sl"><i class="fas fa-code" style="color:var(--muted)"></i>PL/SQL</div>
-        </div>
-      </div>
-
-      <div class="skill-cat reveal">
-        <div class="skill-cat-head">
-          <div class="ico"><i class="fas fa-brain"></i></div>
-          <h3>Data & AI</h3>
-        </div>
-        <div class="skill-logos">
-          <div class="sl"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">Pandas</div>
-          <div class="sl"><i class="fas fa-robot" style="color:var(--green)"></i>RAG / LLM</div>
-          <div class="sl"><i class="fas fa-sitemap" style="color:var(--muted)"></i>SKOS / RDF</div>
-          <div class="sl"><i class="fas fa-project-diagram" style="color:var(--muted)"></i>Knowledge Graph</div>
-          <div class="sl"><i class="fas fa-chart-pie" style="color:var(--muted)"></i>Big Data</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══ FEATURED PROJECTS ═══ -->
-<section>
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-tag">// projects</span>
-      <h2>Featured Projects</h2>
-      <p>Some highlights — <a href="projects.html" style="color:var(--green)">view all projects →</a></p>
-    </div>
-    <div class="proj-grid" style="grid-template-columns:repeat(3,1fr)">
-
-      <div class="proj-card reveal">
-        <div class="proj-banner pb-sec"><i class="fas fa-shield-alt" style="color:#4ade80"></i></div>
-        <div class="proj-body">
-          <span class="proj-cat">Network Security</span>
-          <h3>pfSense Firewall + VPN</h3>
-          <p>Full pfSense setup: ACL rules, NAT, site-to-site OpenVPN, VLAN segmentation and traffic monitoring across a multi-site network.</p>
-          <div class="proj-tech"><span>pfSense</span><span>OpenVPN</span><span>VLAN</span><span>NAT</span></div>
-        </div>
-      </div>
-
-      <div class="proj-card reveal">
-        <div class="proj-banner pb-voip"><i class="fas fa-phone-alt" style="color:#a78bfa"></i></div>
-        <div class="proj-body">
-          <span class="proj-cat">VoIP</span>
-          <h3>VoIP Infrastructure — Asterisk</h3>
-          <p>Deployed Asterisk PBX on Debian, configured SIP extensions, diagnosed one-way audio incidents via Wireshark RTP/SIP capture analysis.</p>
-          <div class="proj-tech"><span>Asterisk</span><span>SIP</span><span>RTP</span><span>Wireshark</span></div>
-        </div>
-      </div>
-
-      <div class="proj-card reveal">
-        <div class="proj-banner pb-mon"><i class="fas fa-chart-bar" style="color:#60a5fa"></i></div>
-        <div class="proj-body">
-          <span class="proj-cat">Monitoring</span>
-          <h3>Zabbix / Grafana Stack</h3>
-          <p>Full monitoring platform: Zabbix metrics collection, Grafana dashboards, email/SMS alerting, SNMP polling for network equipment and servers.</p>
-          <div class="proj-tech"><span>Zabbix</span><span>Grafana</span><span>SNMP</span><span>Alerting</span></div>
-        </div>
-      </div>
-
-    </div>
-    <div style="text-align:center;margin-top:40px">
-      <a href="projects.html" class="btn btn-ghost"><i class="fas fa-th-large"></i> View all 10+ projects</a>
-    </div>
+  <div class="scrollhint">
+    <span>Scroll</span><i class="fas fa-chevron-down"></i>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="foot-links">
-      <a href="index.html">Home</a>
-      <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+    <div class="flinks">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a>
+      <a href="experience.html">Experience</a><a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a><a href="contact.html">Contact</a>
     </div>
     <p>Designed & built by <strong>RANDRIAMISAINA Tsiory Fanomezana</strong></p>
-    <p class="footer-copy" style="margin-top:6px;font-size:.82rem">© 2025 · Montpellier, France</p>
+    <p class="copy">© <span class="year"></span> · Montpellier, France</p>
   </div>
 </footer>
-
 <script src="script.js"></script>
 <script>
-const words = ['Systems Administrator','Network Administrator','Linux & Proxmox','pfSense & Security','Infrastructure Engineer'];
+const words=['Systems Administrator','Network Administrator','Linux & Proxmox','pfSense & Security','Infrastructure Engineer'];
 let wi=0,ci=0,del=false,pause=false;
 function tick(){
   if(pause){pause=false;setTimeout(tick,1900);return}

@@ -3,19 +3,7 @@
 /* ── DYNAMIC COPYRIGHT YEAR ── */
 document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
 
-/* ── NAV SCROLL ── */
-const nav = document.querySelector('nav');
-window.addEventListener('scroll', () => {
-  nav.style.background = window.scrollY > 50 ? 'rgba(13,17,23,1)' : 'rgba(13,17,23,.97)';
-}, { passive: true });
-
-/* ── HAMBURGER ── */
-const burger = document.getElementById('burger');
-const nl = document.getElementById('nl');
-if (burger && nl) {
-  burger.addEventListener('click', () => nl.classList.toggle('open'));
-  nl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nl.classList.remove('open')));
-}
+/* ── NAV ── */
 
 /* ── SCROLL REVEAL ── */
 const rvs = document.querySelectorAll('.rv');

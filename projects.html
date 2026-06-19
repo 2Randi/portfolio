@@ -3,28 +3,30 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Projects — RANDRIAMISAINA Tsiory</title>
+  <title>Projects - RANDRIAMISAINA Tsiory</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 <nav>
-  <div class="nav-in">
-    <a class="logo" href="index.html">&lt; 2RANDI /&gt;</a>
-    <ul class="nl" id="nl">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="tools.html">Tools</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="projects.html" class="cur">Projects</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="contact.html" class="cta">Contact</a></li>
-    </ul>
-    <button class="burger" id="burger"><span></span><span></span><span></span></button>  </div>
+  <a class="logo" href="index.html">&lt; 2RANDI /&gt;</a>
+  <ul class="nl" id="nl">
+    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="skills.html"><i class="fas fa-layer-group"></i> Skills</a></li>
+    <li><a href="tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+    <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+    <li><a href="projects.html" class="cur"><i class="fas fa-code"></i> Projects</a></li>
+    <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+  </ul>
+  <div class="nav-soc">
+    <a href="https://github.com/2Randi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
 </nav>
 
 <div class="pgbanner">
@@ -38,22 +40,19 @@
 <section>
   <div class="wrap">
     <div class="pf">
-      <button class="pfb on" data-cat="all">All</button>
-      <button class="pfb" data-cat="security">Security</button>
-      <button class="pfb" data-cat="monitoring">Monitoring</button>
-      <button class="pfb" data-cat="automation">Automation</button>
-      <button class="pfb" data-cat="virtualization">Virtualization</button>
-      <button class="pfb" data-cat="voip">VoIP</button>
+      <button class="pfb on" data-cat="info">Informatique</button>
+      <button class="pfb" data-cat="telecom">Telecom</button>
       <button class="pfb" data-cat="data">Data / AI</button>
+      <button class="pfb" data-cat="all">All</button>
     </div>
 
     <div class="pg" id="pgrid">
 
-      <div class="pc rv" data-cat="security">
+      <div class="pc rv" data-cat="info">
         <div class="pbanner pb1"><i class="fas fa-shield-alt" style="color:#4ade80"></i></div>
         <div class="pbody">
           <span class="pcat">Network Security</span>
-          <h3>pfSense Firewall + Site-to-Site VPN</h3>
+          <h3>pfSense Firewall & Site-to-Site VPN</h3>
           <p>Complete pfSense setup: ACL rules, NAT, site-to-site OpenVPN, VLAN segmentation, Snort IDS. Deployed during internship to secure a multi-site infrastructure.</p>
           <div class="ptech"><span>pfSense</span><span>OpenVPN</span><span>VLAN</span><span>Snort</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
@@ -62,11 +61,11 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="security">
+      <div class="pc rv" data-cat="info">
         <div class="pbanner pb9"><i class="fas fa-users-cog" style="color:#f87171"></i></div>
         <div class="pbody">
           <span class="pcat">Identity & Access</span>
-          <h3>Active Directory User Management</h3>
+          <h3>Active Directory user management</h3>
           <p>Deployed and managed AD: OU structure, GPO policies, bulk user provisioning via PowerShell (CSV), password policies and audit logging for a 50+ user environment.</p>
           <div class="ptech"><span>Active Directory</span><span>GPO</span><span>PowerShell</span><span>LDAP</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
@@ -75,11 +74,11 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="monitoring">
+      <div class="pc rv" data-cat="info">
         <div class="pbanner pb3"><i class="fas fa-chart-bar" style="color:#60a5fa"></i></div>
         <div class="pbody">
           <span class="pcat">Monitoring</span>
-          <h3>Zabbix / Grafana Monitoring Stack</h3>
+          <h3>Zabbix / Grafana monitoring stack</h3>
           <p>End-to-end monitoring platform: Zabbix agents on Linux/Windows, SNMP polling for switches, custom Grafana dashboards, email and SMS alerting for critical thresholds.</p>
           <div class="ptech"><span>Zabbix</span><span>Grafana</span><span>SNMP</span><span>Prometheus</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
@@ -88,11 +87,11 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="voip">
+      <div class="pc rv" data-cat="telecom">
         <div class="pbanner pb2"><i class="fas fa-phone-alt" style="color:#a78bfa"></i></div>
         <div class="pbody">
           <span class="pcat">VoIP</span>
-          <h3>Asterisk PBX Infrastructure</h3>
+          <h3>Asterisk PBX infrastructure</h3>
           <p>Deployed Asterisk on Debian: SIP trunk config, dial plan, call routing, voicemail. Diagnosed a critical one-way audio incident by analyzing RTP/SIP captures in Wireshark.</p>
           <div class="ptech"><span>Asterisk</span><span>SIP</span><span>RTP</span><span>Wireshark</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
@@ -101,11 +100,11 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="virtualization">
+      <div class="pc rv" data-cat="info">
         <div class="pbanner pb5"><i class="fas fa-cubes" style="color:#94a3b8"></i></div>
         <div class="pbody">
           <span class="pcat">Virtualization</span>
-          <h3>Proxmox VE Cluster — VM Migration</h3>
+          <h3>Proxmox VE cluster - VM migration</h3>
           <p>Set up a Proxmox cluster with shared storage. Performed live and offline VM migrations between nodes, documented backup/restore procedures using vzdump and PBS.</p>
           <div class="ptech"><span>Proxmox VE</span><span>KVM</span><span>vzdump</span><span>PBS</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
@@ -114,11 +113,11 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="virtualization">
+      <div class="pc rv" data-cat="info">
         <div class="pbanner pb6"><i class="fas fa-server" style="color:#4ade80"></i></div>
         <div class="pbody">
           <span class="pcat">Multi-service VM</span>
-          <h3>All-in-One Linux Services Server</h3>
+          <h3>All-in-One Linux services server</h3>
           <p>Debian VM hosting multiple services: Asterisk, OpenVPN server, Zabbix agent, GLPI helpdesk. Managed via systemd with automated startup and health-check scripts.</p>
           <div class="ptech"><span>Debian</span><span>systemd</span><span>GLPI</span><span>OpenVPN</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
@@ -127,11 +126,11 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="automation">
+      <div class="pc rv" data-cat="info">
         <div class="pbanner pb4"><i class="fas fa-terminal" style="color:#fb923c"></i></div>
         <div class="pbody">
           <span class="pcat">Automation · Bash</span>
-          <h3>Automated Backup Script</h3>
+          <h3>Automated backup script</h3>
           <p>Bash script for daily incremental backups to NAS. Features: gzip compression, SHA256 checksum verification, email alert on failure, 30-day auto-cleanup retention policy.</p>
           <div class="ptech"><span>Bash</span><span>rsync</span><span>gzip</span><span>cron</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
@@ -140,11 +139,11 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="automation">
+      <div class="pc rv" data-cat="info">
         <div class="pbanner pb4"><i class="fab fa-windows" style="color:#fb923c"></i></div>
         <div class="pbody">
           <span class="pcat">Automation · PowerShell</span>
-          <h3>AD Bulk User Provisioning</h3>
+          <h3>AD Bulk user provisioning</h3>
           <p>PowerShell script reading a CSV to bulk-create AD accounts: sets OU placement, group membership, home folder, and sends a welcome email with a temporary password.</p>
           <div class="ptech"><span>PowerShell</span><span>Active Directory</span><span>CSV</span><span>SMTP</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
@@ -153,11 +152,11 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="automation">
+      <div class="pc rv" data-cat="info">
         <div class="pbanner pb4"><i class="fab fa-python" style="color:#fb923c"></i></div>
         <div class="pbody">
           <span class="pcat">Automation · Python</span>
-          <h3>Log Analyser & Slack Alert Bot</h3>
+          <h3>Log analyser & Slack alert bot</h3>
           <p>Python script parsing /var/log/syslog and auth.log for suspicious patterns (brute-force, SSH failures, sudo abuse). Generates daily HTML report and posts alerts to Slack webhook.</p>
           <div class="ptech"><span>Python</span><span>regex</span><span>syslog</span><span>Slack API</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
@@ -166,11 +165,11 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="automation">
+      <div class="pc rv" data-cat="info">
         <div class="pbanner pb4"><i class="fas fa-sync-alt" style="color:#fb923c"></i></div>
         <div class="pbody">
           <span class="pcat">Automation · Python</span>
-          <h3>Proxmox VM Snapshot Scheduler</h3>
+          <h3>Proxmox VM snapshot scheduler</h3>
           <p>Python script using the Proxmox REST API to schedule and rotate VM snapshots automatically. Creates snapshots before maintenance windows and purges those older than N days.</p>
           <div class="ptech"><span>Python</span><span>Proxmox API</span><span>REST</span><span>cron</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
@@ -179,11 +178,11 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="automation">
+      <div class="pc rv" data-cat="info">
         <div class="pbanner pb8"><i class="fas fa-hdd" style="color:#60a5fa"></i></div>
         <div class="pbody">
           <span class="pcat">Automation · Monitoring</span>
-          <h3>Disk Health Monitor — Bash</h3>
+          <h3>Disk health monitor - Bash</h3>
           <p>Bash script monitoring disk health via SMART data and filesystem usage. Sends email alerts when disk usage exceeds 85% or SMART reports a warning. Runs hourly via cron.</p>
           <div class="ptech"><span>Bash</span><span>smartctl</span><span>df</span><span>cron</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
@@ -192,11 +191,11 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="automation">
+      <div class="pc rv" data-cat="info">
         <div class="pbanner pb4"><i class="fas fa-network-wired" style="color:#fb923c"></i></div>
         <div class="pbody">
           <span class="pcat">Automation · Network</span>
-          <h3>Network Inventory Script</h3>
+          <h3>Network inventory script</h3>
           <p>Python + Nmap + SNMP to auto-discover and inventory all network devices (IP, MAC, hostname, open ports, OS). Exports to CSV and HTML table for asset management.</p>
           <div class="ptech"><span>Python</span><span>Nmap</span><span>SNMP</span><span>CSV</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
@@ -205,11 +204,11 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="automation">
+      <div class="pc rv" data-cat="info">
         <div class="pbanner pb4"><i class="fas fa-clone" style="color:#fb923c"></i></div>
         <div class="pbody">
           <span class="pcat">Automation · Deployment</span>
-          <h3>FOG Project — Automated OS Deploy</h3>
+          <h3>FOG Project - Automated OS deploy</h3>
           <p>FOG server for PXE-based OS imaging across a workstation fleet. Reduced a manual 2-hour reinstall to 15 minutes. Managed with Bash post-install customisation hooks.</p>
           <div class="ptech"><span>FOG</span><span>PXE</span><span>DHCP</span><span>Bash</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
@@ -222,9 +221,9 @@
         <div class="pbanner pb7"><i class="fas fa-brain" style="color:#c084fc"></i></div>
         <div class="pbody">
           <span class="pcat">Data / AI</span>
-          <h3>RAG System + Knowledge Graph</h3>
+          <h3>RAG System & knowledge graph</h3>
           <p>Built a Retrieval-Augmented Generation (RAG) system with a SKOS/RDF knowledge graph for querying scientific document collections at a French research institute (IRD).</p>
-          <div class="ptech"><span>Python</span><span>LangChain</span><span>FAISS</span><span>SKOS/RDF</span></div>
+          <div class="ptech"><span>Python</span><span>LangChain</span><span>Chroma</span><span>SKOS/RDF</span></div>
           <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" class="plink">
             <i class="fab fa-github"></i> View on GitHub
           </a>
@@ -256,6 +255,9 @@ document.querySelectorAll('.pfb').forEach(btn => {
       c.style.display = (cat === 'all' || c.dataset.cat === cat) ? 'flex' : 'none';
     });
   });
+});
+document.querySelectorAll('.pc').forEach(c => {
+  c.style.display = c.dataset.cat === 'info' ? 'flex' : 'none';
 });
 </script>
 </body>

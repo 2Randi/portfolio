@@ -6,31 +6,33 @@
   <title>Skills - RANDRIAMISAINA Tsiory</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 <nav>
-  <div class="nav-in">
-    <a class="logo" href="index.html">&lt; 2RANDI /&gt;</a>
-    <ul class="nl" id="nl">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="skills.html" class="cur">Skills</a></li>
-      <li><a href="tools.html">Tools</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="contact.html" class="cta">Contact</a></li>
-    </ul>
-    <button class="burger" id="burger"><span></span><span></span><span></span></button>  </div>
+  <a class="logo" href="index.html">&lt; 2RANDI /&gt;</a>
+  <ul class="nl" id="nl">
+    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="skills.html" class="cur"><i class="fas fa-layer-group"></i> Skills</a></li>
+    <li><a href="tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+    <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+    <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+    <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+  </ul>
+  <div class="nav-soc">
+    <a href="https://github.com/2Randi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
 </nav>
 
 <div class="pgbanner">
   <div class="wrap">
     <span class="stag">// skills</span>
-    <h1>Technical Skills</h1>
+    <h1>Technical skills</h1>
     <p>Tools and technologies I work with</p>
   </div>
 </div>
@@ -38,18 +40,16 @@
 <section>
   <div class="wrap">
     <div class="pf">
-      <button class="pfb on" data-cat="all">All</button>
-      <button class="pfb" data-cat="systems">Systems</button>
-      <button class="pfb" data-cat="security">Security</button>
+      <button class="pfb on" data-cat="sysnet">Systems & Networks</button>
       <button class="pfb" data-cat="monitoring">Monitoring</button>
       <button class="pfb" data-cat="automation">Automation</button>
-      <button class="pfb" data-cat="virtualization">Virtualization</button>
-      <button class="pfb" data-cat="networking">Networking</button>
-      <button class="pfb" data-cat="data">Data / AI</button>
+      <button class="pfb" data-cat="langtools">Programming languages & Tools</button>
+      <button class="pfb" data-cat="data">AI / Data</button>
+      <button class="pfb" data-cat="all">All</button>
     </div>
 
     <div class="pg" id="skill-grid">
-      <div class="pc rv" data-cat="systems">
+      <div class="pc rv" data-cat="sysnet">
         <div class="pbanner pb6"><i class="fab fa-linux" style="color:#4ade80"></i></div>
         <div class="pbody">
           <div class="phead"><div class="ico"><i class="fab fa-linux"></i></div><h3>Linux Systems</h3></div>
@@ -59,7 +59,7 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="systems">
+      <div class="pc rv" data-cat="sysnet">
         <div class="pbanner pb2"><i class="fab fa-windows" style="color:#a78bfa"></i></div>
         <div class="pbody">
           <div class="phead"><div class="ico"><i class="fab fa-windows"></i></div><h3>Windows Server</h3></div>
@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="systems">
+      <div class="pc rv" data-cat="sysnet">
         <div class="pbanner pb1"><i class="fas fa-hdd" style="color:#4ade80"></i></div>
         <div class="pbody">
           <div class="phead"><div class="ico"><i class="fas fa-hdd"></i></div><h3>Storage & Hardware</h3></div>
@@ -79,7 +79,7 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="virtualization">
+      <div class="pc rv" data-cat="sysnet">
         <div class="pbanner pb5"><i class="fas fa-cubes" style="color:#94a3b8"></i></div>
         <div class="pbody">
           <div class="phead"><div class="ico"><i class="fas fa-cubes"></i></div><h3>Proxmox VE</h3></div>
@@ -89,17 +89,17 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="virtualization">
+      <div class="pc rv" data-cat="sysnet">
         <div class="pbanner pb3"><i class="fas fa-layer-group" style="color:#60a5fa"></i></div>
         <div class="pbody">
           <div class="phead"><div class="ico"><i class="fas fa-layer-group"></i></div><h3>VMware / KVM</h3></div>
           <span class="pcat">Virtualization</span>
           <p>ESXi, vSphere, KVM/QEMU and VM templates for high-availability virtualization</p>
-          <div class="ptech"><span><i class="fas fa-desktop"></i>ESXi</span><span><i class="fas fa-microchip"></i>KVM</span><span><i class="fas fa-code-branch"></i>Snapshots</span><span><i></i>Templates</span></div>
+          <div class="ptech"><span><i class="fas fa-desktop"></i>ESXi</span><span><i></i>KVM</span><span><i></i>Snapshots</span><span><i></i>Templates</span></div>
         </div>
       </div>
 
-      <div class="pc rv" data-cat="virtualization">
+      <div class="pc rv" data-cat="sysnet">
         <div class="pbanner pb4"><i class="fab fa-docker" style="color:#fb923c"></i></div>
         <div class="pbody">
           <div class="phead"><div class="ico"><i class="fab fa-docker"></i></div><h3>Docker & Containers</h3></div>
@@ -109,7 +109,7 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="networking">
+      <div class="pc rv" data-cat="sysnet">
         <div class="pbanner pb2"><i class="fas fa-sitemap" style="color:#a78bfa"></i></div>
         <div class="pbody">
           <div class="phead"><div class="ico"><i class="fas fa-sitemap"></i></div><h3>Network Architecture</h3></div>
@@ -119,17 +119,17 @@
         </div>
       </div>
 
-      <div class="pc rv" data-cat="security">
+      <div class="pc rv" data-cat="sysnet">
         <div class="pbanner pb1"><i class="fas fa-fire" style="color:#4ade80"></i></div>
         <div class="pbody">
           <div class="phead"><div class="ico"><i class="fas fa-fire"></i></div><h3>Firewall & Security</h3></div>
           <span class="pcat">Security</span>
           <p>pfSense, iptables, VPNs, IDS and network hardening practices</p>
-          <div class="ptech"><span><i></i>pfSense</span><span><i class="fas fa-lock"></i>VPN</span><span><i></i>iptables</span><span><i></i>IDS</span></div>
+          <div class="ptech"><span><i></i>pfSense</span><span><i></i>VPN</span><span><i></i>iptables</span><span><i></i>IDS</span></div>
         </div>
       </div>
 
-      <div class="pc rv" data-cat="networking">
+      <div class="pc rv" data-cat="sysnet">
         <div class="pbanner pb2"><i class="fas fa-phone-alt" style="color:#a78bfa"></i></div>
         <div class="pbody">
           <div class="phead"><div class="ico"><i class="fas fa-phone-alt"></i></div><h3>Telecom & VoIP</h3></div>
@@ -190,12 +190,66 @@
       </div>
 
       <div class="pc rv" data-cat="automation">
-        <div class="pbanner pb2"><i class="fab fa-windows" style="color:#a78bfa"></i></div>
+        <div class="pbanner pb2"><i class="fab fa-windows" style="color:#fb923c"></i></div>
         <div class="pbody">
           <div class="phead"><div class="ico"><i class="fab fa-windows"></i></div><h3>PowerShell</h3></div>
           <span class="pcat">Automation</span>
           <p>AD automation, CSV imports, task scheduling and mailbox alerts</p>
           <div class="ptech"><span><i class="fab fa-windows"></i>PowerShell</span><span><i></i>CSV</span><span><i></i>Tasks</span></div>
+        </div>
+      </div>
+
+      <div class="pc rv" data-cat="langtools">
+        <div class="pbanner pb4"><i class="fas fa-terminal" style="color:#fb923c"></i></div>
+        <div class="pbody">
+          <div class="phead"><div class="ico"><i class="fas fa-terminal"></i></div><h3>Bash</h3></div>
+          <span class="pcat">Language</span>
+          <p>Shell scripting, cron, rsync, log parsing</p>
+        </div>
+      </div>
+
+      <div class="pc rv" data-cat="langtools">
+        <div class="pbanner pb1"><i class="fab fa-python" style="color:#4ade80"></i></div>
+        <div class="pbody">
+          <div class="phead"><div class="ico"><i class="fab fa-python"></i></div><h3>Python</h3></div>
+          <span class="pcat">Language</span>
+          <p>REST APIs, automation, data processing, RAG</p>
+        </div>
+      </div>
+
+      <div class="pc rv" data-cat="langtools">
+        <div class="pbanner pb2"><i class="fab fa-windows" style="color:#fb923c"></i></div>
+        <div class="pbody">
+          <div class="phead"><div class="ico"><i class="fab fa-windows"></i></div><h3>PowerShell</h3></div>
+          <span class="pcat">Language</span>
+          <p>AD automation, CSV imports, task scheduling</p>
+        </div>
+      </div>
+
+      <div class="pc rv" data-cat="langtools">
+        <div class="pbanner pb8"><i class="fas fa-database" style="color:#60a5fa"></i></div>
+        <div class="pbody">
+          <div class="phead"><div class="ico"><i class="fas fa-database"></i></div><h3>SQL</h3></div>
+          <span class="pcat">Language</span>
+          <p>PostgreSQL, MariaDB, SQL Server, PL/SQL</p>
+        </div>
+      </div>
+
+      <div class="pc rv" data-cat="langtools">
+        <div class="pbanner pb5"><i class="fab fa-git-alt" style="color:#f05032"></i></div>
+        <div class="pbody">
+          <div class="phead"><div class="ico"><i class="fab fa-git-alt"></i></div><h3>Git</h3></div>
+          <span class="pcat">Tool</span>
+          <p>Version control, branching, merge, GitHub</p>
+        </div>
+      </div>
+
+      <div class="pc rv" data-cat="langtools">
+        <div class="pbanner pb3"><i class="fab fa-java" style="color:#60a5fa"></i></div>
+        <div class="pbody">
+          <div class="phead"><div class="ico"><i class="fab fa-java"></i></div><h3>Java</h3></div>
+          <span class="pcat">Language</span>
+          <p>OOP, data structures, algorithms</p>
         </div>
       </div>
 
@@ -233,5 +287,10 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+document.querySelectorAll('.pc').forEach(c => {
+  c.style.display = c.dataset.cat === 'sysnet' ? 'flex' : 'none';
+});
+</script>
 </body>
 </html>

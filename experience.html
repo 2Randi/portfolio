@@ -6,55 +6,59 @@
   <title>Experience - RANDRIAMISAINA Tsiory</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 <nav>
-  <div class="nav-in">
-    <a class="logo" href="index.html">&lt; 2RANDI /&gt;</a>
-    <ul class="nl" id="nl">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="tools.html">Tools</a></li>
-      <li><a href="experience.html" class="cur">Experience</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="contact.html" class="cta">Contact</a></li>
-    </ul>
-    <button class="burger" id="burger"><span></span><span></span><span></span></button>  </div>
+  <a class="logo" href="index.html">&lt; 2RANDI /&gt;</a>
+  <ul class="nl" id="nl">
+    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="skills.html"><i class="fas fa-layer-group"></i> Skills</a></li>
+    <li><a href="tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+    <li><a href="experience.html" class="cur"><i class="fas fa-briefcase"></i> Experience</a></li>
+    <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+    <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+  </ul>
+  <div class="nav-soc">
+    <a href="https://github.com/2Randi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
 </nav>
 
 <div class="pgbanner">
   <div class="wrap">
     <span class="stag">// experience & education</span>
-    <h1>My Journey</h1>
+    <h1>My journey</h1>
     <p>Professional experience and academic background</p>
   </div>
 </div>
 
 <section>
   <div class="wrap">
-    <div class="sh"><span class="stag">// work</span><h2>Work Experience</h2></div>
-    <div class="tl">
+    <div class="sh"><span class="stag">// work</span><h2>Work experience</h2></div>
+    <div class="tl-wrap">
+    <button class="tl-arr left" onclick="document.getElementById('tl').scrollBy({left:-360,behavior:'smooth'})"><i class="fas fa-chevron-left"></i></button>
+    <button class="tl-arr right" onclick="document.getElementById('tl').scrollBy({left:360,behavior:'smooth'})"><i class="fas fa-chevron-right"></i></button>
+    <div class="tl" id="tl">
 
       <div class="tli rv">
         <div class="tld"></div>
         <div class="tlb">
           <div class="tlm">
-            <span class="tld8">Apr. 2026 — Jun. 2026</span>
+            <span class="tld8">Apr. 2026 - Jun. 2026</span>
             <span class="tlbg s">Internship</span>
           </div>
-          <h3>RAG Developer & Knowledge Graph Engineer</h3>
+          <h3>RAG & Knowledge Graph Developer</h3>
           <h4><i class="fas fa-building"></i> IRD (Institut de Recherche pour le Développement) - Montpellier, France</h4>
           <ul>
-            <li>Designed and developed a Retrieval-Augmented Generation (RAG) system for querying large scientific document corpora</li>
-            <li>Modelled knowledge graphs in SKOS/RDF using Python, integrated with vector search (FAISS)</li>
-            <li>Tested and compared multiple LLM backends for domain-specific question answering</li>
+            <li>Built a RAG pipeline with SKOS/RDF knowledge graphs and Chroma vector search</li>
+            <li>Benchmarked multiple LLM backends on domain-specific QA tasks</li>
           </ul>
-          <div class="tgs"><span>Python</span><span>RAG</span><span>SKOS/RDF</span><span>LangChain</span><span>FAISS</span></div>
+          <div class="tgs"><span>Python</span><span>RAG</span><span>SKOS/RDF</span><span>LangChain</span><span>Chroma</span></div>
         </div>
       </div>
 
@@ -62,15 +66,14 @@
         <div class="tld"></div>
         <div class="tlb">
           <div class="tlm">
-            <span class="tld8">Feb. 2025 — Jul. 2025</span>
+            <span class="tld8">Feb. 2025 - Jul. 2025</span>
             <span class="tlbg s">Internship</span>
           </div>
           <h3>Systems & Networks Administrator</h3>
           <h4><i class="fas fa-building"></i> LundiMatin - Montpellier, France</h4>
           <ul>
-            <li>Managed and maintained VoIP (Asterisk) and VPN servers for the company's communication infrastructure</li>
-            <li>Diagnosed a critical one-way audio incident: captured SIP/RTP flows with Wireshark, identified a codec mismatch and deployed the fix</li>
-            <li>Monitored network infrastructure and documented incident resolution procedures</li>
+            <li>Deployment and administration of VOIP and VPN servers</li>
+            <li>Diagnosed a one-way audio incident via SIP/RTP capture in Wireshark</li>
           </ul>
           <div class="tgs"><span>VoIP</span><span>Asterisk</span><span>SIP/RTP</span><span>VPN</span><span>Wireshark</span></div>
         </div>
@@ -80,15 +83,14 @@
         <div class="tld"></div>
         <div class="tlb">
           <div class="tlm">
-            <span class="tld8">Jun. 2024 — Aug. 2024</span>
+            <span class="tld8">Jun. 2024 - Aug. 2024</span>
             <span class="tlbg s">Internship</span>
           </div>
           <h3>Systems, Networks & Security Administrator</h3>
           <h4><i class="fas fa-building"></i> VNB-IT - Montpellier, France</h4>
           <ul>
-            <li>Deployed and fully configured a pfSense firewall: filtering rules, NAT, site-to-site VPN</li>
-            <li>Managed Active Directory users, groups and permissions for multiple client organisations</li>
-            <li>Participated in Business Continuity and Disaster Recovery planning (BCP/DRP)</li>
+            <li>Windows administration and BCP/DRP planning</li>
+            <li>Deployed pfSense firewall</li>
           </ul>
           <div class="tgs"><span>pfSense</span><span>Active Directory</span><span>BCP/DRP</span><span>VPN</span></div>
         </div>
@@ -98,15 +100,14 @@
         <div class="tld o"></div>
         <div class="tlb">
           <div class="tlm">
-            <span class="tld8">Sep. 2021 — Jul. 2023</span>
+            <span class="tld8">Sep. 2021 - Jul. 2023</span>
             <span class="tlbg c">Permanent</span>
           </div>
           <h3>Network Technician N1/N2</h3>
           <h4><i class="fas fa-building"></i> Orange Business - Madagascar</h4>
           <ul>
-            <li>Handled Level 1 and Level 2 network incident diagnosis and resolution</li>
-            <li>Monitored active network infrastructure (routers, switches, links) via NOC tools</li>
-            <li>Coordinated escalations to N3 teams and maintained incident records in ticketing system</li>
+            <li>N1/N2 incident diagnosis and NOC monitoring</li>
+            <li>Escalation coordination and ticketing</li>
           </ul>
           <div class="tgs o"><span>N1/N2 Support</span><span>NOC</span><span>Incident Management</span></div>
         </div>
@@ -116,58 +117,58 @@
         <div class="tld o"></div>
         <div class="tlb">
           <div class="tlm">
-            <span class="tld8">Feb. 2020 — Feb. 2021</span>
+            <span class="tld8">Feb. 2020 - Feb. 2021</span>
             <span class="tlbg c">Permanent</span>
           </div>
           <h3>Telecommunications Engineer</h3>
           <h4><i class="fas fa-building"></i> YAS - Madagascar</h4>
           <ul>
-            <li>Deployed and maintained fiber optic links and transmission equipment</li>
-            <li>Installed and configured microwave and satellite communication links</li>
-            <li>Produced technical studies, site surveys and project cost estimates</li>
+            <li>Fiber optic, microwave beam and satellite link deployment</li>
+            <li>Technical studies and site surveys</li>
           </ul>
           <div class="tgs o"><span>Fiber Optics</span><span>Microwave beam</span><span>Satellite</span></div>
         </div>
       </div>
 
     </div>
+    </div>
   </div>
 </section>
 
 <section class="dark">
   <div class="wrap">
-    <div class="sh"><span class="stag">// education</span><h2>Academic Background</h2></div>
+    <div class="sh"><span class="stag">// education</span><h2>Academic background</h2></div>
     <div class="edu-g">
 
       <div class="edu-c rv">
-        <div class="edu-top"><span>2025 — 2026</span></div>
+        <div class="edu-top"><span>2025 - 2026</span></div>
         <div class="edu-bd">
-          <div class="edu-ico"><i class="fas fa-database"></i></div>
+          <div class="edu-ico"><i class="fas fa-graduation-cap"></i></div>
           <h3>DU Big Data & Data Science with Python</h3>
-          <h4>Université de Montpellier - France</h4>
-          <p>Data processing at scale, machine learning, Python/Pandas/Scikit-learn, NoSQL databases, data visualisation.</p>
+          <h4>University of Montpellier - France</h4>
+          <p>Data processing at scale, Machine/Deep Learning, NLP,data visualisation.</p>
           <span class="chip chip-g">In progress</span>
         </div>
       </div>
 
       <div class="edu-c rv">
-        <div class="edu-top"><span>2023 — 2025</span></div>
+        <div class="edu-top"><span>2023 - 2025</span></div>
         <div class="edu-bd">
           <div class="edu-ico"><i class="fas fa-graduation-cap"></i></div>
-          <h3>Master's in Computer Science</h3>
-          <h4>Université de Montpellier - France</h4>
-          <p>Distributed systems, advanced systems & networks administration, IT security, databases, software engineering.</p>
+          <h3>Master's degree in Computer Science</h3>
+          <h4>University of Montpellier - France</h4>
+          <p>Distributed systems,scripting languages, databases, software engineering</p>
           <span class="chip chip-d">Graduated 2025</span>
         </div>
       </div>
 
       <div class="edu-c rv">
-        <div class="edu-top"><span>2014 — 2019</span></div>
+        <div class="edu-top"><span>2014 - 2019</span></div>
         <div class="edu-bd">
-          <div class="edu-ico"><i class="fas fa-broadcast-tower"></i></div>
-          <h3>Engineer's Degree - Telecommunications</h3>
+          <div class="edu-ico"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Engineer's degree in Telecommunication - Networks and Systems Engineering</h3>
           <h4>École Supérieure Polytechnique d'Antananarivo - Madagascar</h4>
-          <p>Networks, radio transmission, electronics, embedded systems, project management.</p>
+          <p>Radio transmission, electronics, embedded systems, project management</p>
           <span class="chip chip-d">Graduated 2019</span>
         </div>
       </div>

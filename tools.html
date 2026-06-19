@@ -3,28 +3,30 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Tools — RANDRIAMISAINA Tsiory</title>
+  <title>Tools - RANDRIAMISAINA Tsiory</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
 <body class="tools-page">
 <nav>
-  <div class="nav-in">
-    <a class="logo" href="index.html">&lt; 2RANDI /&gt;</a>
-    <ul class="nl" id="nl">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="tools.html" class="cur">Tools</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="contact.html" class="cta">Contact</a></li>
-    </ul>
-    <button class="burger" id="burger"><span></span><span></span><span></span></button>  </div>
+  <a class="logo" href="index.html">&lt; 2RANDI /&gt;</a>
+  <ul class="nl" id="nl">
+    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="skills.html"><i class="fas fa-layer-group"></i> Skills</a></li>
+    <li><a href="tools.html" class="cur"><i class="fas fa-wrench"></i> Tools</a></li>
+    <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+    <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+    <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+  </ul>
+  <div class="nav-soc">
+    <a href="https://github.com/2Randi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
 </nav>
 
 <div class="pgbanner">
@@ -38,58 +40,42 @@
 <section>
   <div class="wrap">
     <div class="pf">
-      <button class="pfb on" data-cat="all">All</button>
-      <button class="pfb" data-cat="systems">Systems</button>
-      <button class="pfb" data-cat="security">Security</button>
+      <button class="pfb on" data-cat="sysnet">Systems & Networks</button>
       <button class="pfb" data-cat="monitoring">Monitoring</button>
       <button class="pfb" data-cat="automation">Automation</button>
-      <button class="pfb" data-cat="virtualization">Virtualization</button>
-      <button class="pfb" data-cat="networking">Networking</button>
-      <button class="pfb" data-cat="data">Data / AI</button>
+      <button class="pfb" data-cat="langtools">Programming languages & Tools</button>
+      <button class="pfb" data-cat="ia">IA/Data</button>
+      <button class="pfb" data-cat="all">All</button>
     </div>
 
     <div class="pg" id="pgrid">
-      <div class="pc rv" data-cat="systems">
-        <div class="pbody">
-          <div class="ptech"><span><img src="images/linux.png" alt="Linux"></span><span><img src="images/debian.png" alt="Debian"></span><span><img src="images/redhat.png" alt="Red Hat"></span><span><img src="images/windows.png" alt="Windows"></span></div>
-        </div>
-      </div>
+      <div class="pc rv" data-cat="sysnet"><div class="pbody"><div class="ptech"><span><img src="images/linux.png" alt="Linux"></span></div></div></div>
+      <div class="pc rv" data-cat="sysnet"><div class="pbody"><div class="ptech"><span><img src="images/debian.png" alt="Debian"></span></div></div></div>
+      <div class="pc rv" data-cat="sysnet"><div class="pbody"><div class="ptech"><span><img src="images/redhat.png" alt="Red Hat"></span></div></div></div>
+      <div class="pc rv" data-cat="sysnet"><div class="pbody"><div class="ptech"><span><img src="images/windows.png" alt="Windows"></span></div></div></div>
+      <div class="pc rv" data-cat="sysnet"><div class="pbody"><div class="ptech"><span><img src="images/pfsense.png" alt="pfSense"></span></div></div></div>
+      <div class="pc rv" data-cat="sysnet"><div class="pbody"><div class="ptech"><span><img src="images/cisco.png" alt="Cisco"></span></div></div></div>
+      <div class="pc rv" data-cat="sysnet"><div class="pbody"><div class="ptech"><span><img src="images/wireshark.svg" alt="Wireshark"></span></div></div></div>
+      <div class="pc rv" data-cat="sysnet"><div class="pbody"><div class="ptech"><span><img src="images/proxmox.png" alt="Proxmox"></span></div></div></div>
+      <div class="pc rv" data-cat="sysnet"><div class="pbody"><div class="ptech"><span><img src="images/vmware.png" alt="VMware"></span></div></div></div>
+      <div class="pc rv" data-cat="sysnet"><div class="pbody"><div class="ptech"><span><img src="images/docker.png" alt="Docker"></span></div></div></div>
+      <div class="pc rv" data-cat="sysnet"><div class="pbody"><div class="ptech"><span><img src="images/asterisk.png" alt="Asterisk"></span></div></div></div>
 
-      <div class="pc rv" data-cat="security">
-        <div class="pbody">
-          <div class="ptech"><span><img src="images/pfsense.png" alt="pfSense"></span></div>
-        </div>
-      </div>
+      <div class="pc rv" data-cat="monitoring"><div class="pbody"><div class="ptech"><span><img src="images/grafana.png" alt="Grafana"></span></div></div></div>
+      <div class="pc rv" data-cat="monitoring"><div class="pbody"><div class="ptech"><span><img src="images/zabbix.png" alt="Zabbix"></span></div></div></div>
+      <div class="pc rv" data-cat="monitoring"><div class="pbody"><div class="ptech"><span><img src="images/prometheus.png" alt="Prometheus"></span></div></div></div>
 
-      <div class="pc rv" data-cat="monitoring">
-        <div class="pbody">
-          <div class="ptech"><span><img src="images/grafana.png" alt="Grafana"></span><span><img src="images/zabbix.png" alt="Zabbix"></span><span><img src="images/prometheus.png" alt="Prometheus"></span></div>
-        </div>
-      </div>
+      <div class="pc rv" data-cat="automation"><div class="pbody"><div class="ptech"><span><img src="images/bash.png" alt="Bash"></span></div></div></div>
+      <div class="pc rv" data-cat="automation"><div class="pbody"><div class="ptech"><span><img src="images/ansible.png" alt="Ansible"></span></div></div></div>
 
-      <div class="pc rv" data-cat="automation">
-        <div class="pbody">
-          <div class="ptech"><span><img src="images/bash.png" alt="Bash"></span><span><img src="images/python.png" alt="Python"></span><span><img src="images/git.png" alt="Git"></span><span><img src="images/powershell.png" alt="PowerShell"></span><span><img src="images/ansible.png" alt="Automation"></span></div>
-        </div>
-      </div>
+      <div class="pc rv" data-cat="langtools"><div class="pbody"><div class="ptech"><span><img src="images/python.png" alt="Python"></span></div></div></div>
+      <div class="pc rv" data-cat="langtools"><div class="pbody"><div class="ptech"><span><img src="images/powershell.png" alt="PowerShell"></span></div></div></div>
+      <div class="pc rv" data-cat="langtools"><div class="pbody"><div class="ptech"><span><img src="images/git.png" alt="Git"></span></div></div></div>
+      <div class="pc rv" data-cat="langtools"><div class="pbody"><div class="ptech"><span><img src="images/postgresql.png" alt="PostgreSQL"></span></div></div></div>
+      <div class="pc rv" data-cat="langtools"><div class="pbody"><div class="ptech"><span><img src="images/mariadb.png" alt="MariaDB"></span></div></div></div>
+      <div class="pc rv" data-cat="langtools"><div class="pbody"><div class="ptech"><span><img src="images/oracle.png" alt="Oracle"></span></div></div></div>
 
-      <div class="pc rv" data-cat="virtualization">
-        <div class="pbody">
-          <div class="ptech"><span><img src="images/proxmox.png" alt="Proxmox"></span><span><img src="images/vmware.png" alt="VMware"></span><span><img src="images/docker.png" alt="Docker"></span></div>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="networking">
-        <div class="pbody">
-          <div class="ptech"><span><img src="images/wireshark.svg" alt="Wireshark"></span><span><img src="images/asterisk.png" alt="Asterisk"></span><span><img src="images/cisco.png" alt="Cisco"></span></div>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="data">
-        <div class="pbody">
-          <div class="ptech"><span><img src="images/postgresql.png" alt="PostgreSQL"></span><span><img src="images/mariadb.png" alt="MariaDB"></span><span><img src="images/oracle.png" alt="Oracle"></span></div>
-        </div>
-      </div>
+      <div class="pc rv" data-cat="ia"><div class="pbody"><div class="ptech"><span><img src="images/python.png" alt="Python"></span></div></div></div>
     </div>
   </div>
 </section>
@@ -105,5 +91,10 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+document.querySelectorAll('.pc').forEach(c => {
+  c.style.display = c.dataset.cat === 'sysnet' ? 'flex' : 'none';
+});
+</script>
 </body>
 </html>

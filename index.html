@@ -15,11 +15,10 @@
   <a class="logo" href="index.html">&lt; 2RANDI /&gt;</a>
   <ul class="nl" id="nl">
     <li><a href="index.html" class="cur"><i class="fas fa-home"></i> Home</a></li>
-    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
     <li><a href="skills.html"><i class="fas fa-layer-group"></i> Skills</a></li>
     <li><a href="tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
     <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
-    <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
     <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
     <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
   </ul>
@@ -35,40 +34,30 @@
   <div class="hglow2"></div>
   <div class="wrap hero-in">
     <div class="hleft">
-      <div class="badge">
-        <span class="dot"></span>
-        <span>Open to work · Available immediately</span>
-      </div>
+      <p class="htitle">Systems &amp; Networks Engineer</p>
 
       <h1>RANDRIAMISAINA<br><span>Tsiory Fanomezana</span></h1>
 
-      <div class="htyp">
-        <span class="typed" id="typed"></span><span class="cur">|</span>
-      </div>
-      <p class="hdesc">
-        Master's in Computer Science - University of Montpellier
-      </p>
-      <div class="hbtns">
-        <a href="resume.html" class="btn gbtn"><i class="fas fa-file-alt"></i> View Resume</a>
-        <a href="contact.html" class="btn obtn"><i class="fas fa-envelope"></i> Contact me</a>
+      <p class="haccroche">Telecommunications engineer with experience in Linux and Windows environments, virtualization and storage. Administration of VoIP servers, firewalls and monitoring systems. Recent internship at IRD on the European Horizon Eco2Adapt project, where I designed a GraphRAG system prototype.</p>
+
+      <p class="hdesc">Master's degree in Computer Science - University of Montpellier</p>
+    </div>
+    <div class="hphoto-col">
+      <a href="RANDRIAMISAINA_CV.pdf" download class="resume-file">
+        <i class="fas fa-file-pdf"></i> RANDRIAMISAINA_CV.pdf
+      </a>
+      <div class="hphoto">
+        <div class="pring"></div>
+        <div class="pring2"></div>
+        <div class="pcircle">
+          <img src="profile.png" alt="Tsiory Fanomezana RANDRIAMISAINA"/>
+        </div>
       </div>
       <div class="soc">
         <a href="https://github.com/2Randi" target="_blank" rel="noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/t-fanomezana-r/" target="_blank" rel="noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         <a href="mailto:fano.randriamisaina@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.instagram.com/tsiory_randi/" target="_blank" rel="noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
-    </div>
-    <div class="hphoto">
-      <div class="pring"></div>
-      <div class="pring2"></div>
-      <div class="pcircle">
-        <img src="profile.png" alt="Tsiory Fanomezana RANDRIAMISAINA"/>
-      </div>
-      <div class="ptag pt1"><i class="fab fa-linux"></i> <span>Systems</span></div>
-      <div class="ptag pt2"><i class="fas fa-network-wired"></i> <span>Networks</span></div>
-      <div class="ptag pt3"><i class="fas fa-shield-alt"></i> <span>Security</span></div>
-      <div class="ptag pt4"><i class="fas fa-server"></i> <span>Virtualization</span></div>
     </div>
   </div>
   
@@ -85,16 +74,5 @@
 </footer>
 
 <script src="script.js"></script>
-<script>
-const words=['Systems Administrator','Networks Administrator','Infrastructure Engineer'];
-let wi=0,ci=0,del=false,pause=false;
-function tick(){
-  if(pause){pause=false;setTimeout(tick,1900);return}
-  const w=words[wi];
-  if(!del){document.getElementById('typed').textContent=w.slice(0,++ci);if(ci===w.length){pause=true;del=true}setTimeout(tick,75)}
-  else{document.getElementById('typed').textContent=w.slice(0,--ci);if(ci===0){del=false;wi=(wi+1)%words.length}setTimeout(tick,42)}
-}
-tick();
-</script>
 </body>
 </html>

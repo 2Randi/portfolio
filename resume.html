@@ -15,11 +15,10 @@
   <a class="logo" href="index.html">&lt; 2RANDI /&gt;</a>
   <ul class="nl" id="nl">
     <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
     <li><a href="skills.html"><i class="fas fa-layer-group"></i> Skills</a></li>
     <li><a href="tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
     <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
-    <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
     <li><a href="resume.html" class="cur"><i class="fas fa-file-alt"></i> Resume</a></li>
     <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
   </ul>
@@ -33,59 +32,27 @@
   <div class="wrap">
     <span class="stag">// resume</span>
     <h1>My Resume</h1>
-    <p>Download or view my full CV</p>
+    <p>You need a new colleague? Let's discuss!</p>
   </div>
 </div>
 
 <section>
   <div class="wrap">
-    <div class="resume-layout">
-
-      <div class="resume-side rv">
-        <div class="rcard">
-          <h3>Download</h3>
-          <a href="RANDRIAMISAINA_CV.pdf" download="RANDRIAMISAINA_Tsiory_CV.pdf"
-             class="btn gbtn" style="width:100%;justify-content:center;margin-bottom:12px">
+    <div class="rv">
+      <div class="resume-embed" id="pdf-wrap">
+        <div class="pdf-topbar">
+          <a href="RANDRIAMISAINA_CV.pdf" download class="resume-file">
+            <i class="fas fa-file-pdf"></i> Download
+        </div>
+        <iframe src="RANDRIAMISAINA_CV.pdf" title="CV RANDRIAMISAINA Tsiory" id="pdf-frame"></iframe>
+        <div id="pdf-fallback" style="display:none;text-align:center;padding:20px">
+          <i class="fas fa-file-pdf" style="font-size:4rem;color:var(--accent);margin-bottom:20px;display:block"></i>
+          <p style="font-size:1.1rem;margin-bottom:24px">Your browser cannot display PDFs inline.</p>
+          <a href="RANDRIAMISAINA_CV.pdf" download class="btn gbtn">
             <i class="fas fa-download"></i> Download PDF
           </a>
-          <a href="RANDRIAMISAINA_CV.pdf" target="_blank"
-             class="btn obtn" style="width:100%;justify-content:center">
-            <i class="fas fa-external-link-alt"></i> Open in new tab
-          </a>
         </div>
-        <div class="rcard">
-          <h3>Summary</h3>
-          <ul>
-            <li><i class="fas fa-map-marker-alt"></i> Montpellier, France</li>
-            <li><i></i> Available immediately</li>
-            <li><i class="fas fa-graduation-cap"></i> Master's Degree</li>
-          </ul>
-        </div>
-        <div class="rcard">
-
-          <h3>Key skills</h3>
-          <ul>
-            <li><i class="fab fa-linux"></i> Linux administration</li>
-            <li><i class="fas fa-server"></i> Virtualization</li>
-            <li><i class="fas fa-eye"></i> Scripting </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="rv">
-        <div class="resume-embed" id="pdf-wrap">
-          <iframe src="RANDRIAMISAINA_CV.pdf" title="CV RANDRIAMISAINA Tsiory" id="pdf-frame"></iframe>
-          <div id="pdf-fallback" style="display:none;text-align:center;padding:20px">
-            <i class="fas fa-file-pdf" style="font-size:4rem;color:var(--org);margin-bottom:20px;display:block"></i>
-            <p style="font-size:1.1rem;margin-bottom:24px">Your browser cannot display PDFs inline.</p>
-            <a href="RANDRIAMISAINA_CV.pdf" download class="btn gbtn">
-              <i class="fas fa-download"></i> Download PDF
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
+      </div></div>
   </div>
 </section>
 

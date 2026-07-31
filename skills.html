@@ -15,11 +15,10 @@
   <a class="logo" href="index.html">&lt; 2RANDI /&gt;</a>
   <ul class="nl" id="nl">
     <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
     <li><a href="skills.html" class="cur"><i class="fas fa-layer-group"></i> Skills</a></li>
     <li><a href="tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
     <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
-    <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
     <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
     <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
   </ul>
@@ -32,246 +31,75 @@
 <div class="pgbanner">
   <div class="wrap">
     <span class="stag">// skills</span>
-    <h1>Technical skills</h1>
-    <p>Tools and technologies I work with</p>
+    <h1>Technical Skills</h1>
+    <p>Areas of expertise</p>
   </div>
 </div>
 
 <section>
   <div class="wrap">
-    <div class="pf">
-      <button class="pfb on" data-cat="sysnet">Systems & Networks</button>
-      <button class="pfb" data-cat="monitoring">Monitoring</button>
-      <button class="pfb" data-cat="automation">Automation</button>
-      <button class="pfb" data-cat="langtools">Programming languages & Tools</button>
-      <button class="pfb" data-cat="data">AI / Data</button>
-      <button class="pfb" data-cat="all">All</button>
-    </div>
+    <div class="sk-grid">
 
-    <div class="pg" id="skill-grid">
-      <div class="pc rv" data-cat="sysnet">
-        <div class="pbanner pb6"><i class="fab fa-linux" style="color:#4ade80"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fab fa-linux"></i></div><h3>Linux Systems</h3></div>
-          <span class="pcat">Systems</span>
-          <p>Ubuntu, Debian, RedHat, CentOS plus systemd and package management</p>
-          <div class="ptech"><span><i class="fab fa-ubuntu"></i>Ubuntu</span><span><i class="fab fa-debian"></i>Debian</span><span><i class="fab fa-redhat"></i>RedHat</span><span><i class="fas fa-terminal"></i>systemd</span></div>
-        </div>
+      <div class="sk-domain rv">
+        <h3><i class="fas fa-network-wired"></i> Systems &amp; Networks</h3>
+        <ul>
+          <li>Linux - Ubuntu, Debian, RedHat</li>
+          <li>Windows Server, Active Directory</li>
+          <li>TCP/IP, OSI, VLAN, routing, DNS, DHCP</li>
+          <li>Traffic analysis, Wireshark</li>
+        </ul>
       </div>
 
-      <div class="pc rv" data-cat="sysnet">
-        <div class="pbanner pb2"><i class="fab fa-windows" style="color:#a78bfa"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fab fa-windows"></i></div><h3>Windows Server</h3></div>
-          <span class="pcat">Systems</span>
-          <p>Active Directory, GPO, DNS/DHCP, file services and server administration</p>
-          <div class="ptech"><span><i class="fab fa-windows"></i>Server 2012/2022</span><span><i></i>Active Directory</span><span><i></i>GPO</span><span><i></i>DNS / DHCP</span></div>
-        </div>
+      <div class="sk-domain rv">
+        <h3><i class="fas fa-layer-group"></i> Virtualization &amp; Storage</h3>
+        <ul>
+          <li>Proxmox VE, VMware ESXi</li>
+          <li>KVM, Docker, LXC</li>
+          <li>RAID, LVM, NAS</li>
+          <li>High availability</li>
+        </ul>
       </div>
 
-      <div class="pc rv" data-cat="sysnet">
-        <div class="pbanner pb1"><i class="fas fa-hdd" style="color:#4ade80"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-hdd"></i></div><h3>Storage & Hardware</h3></div>
-          <span class="pcat">Systems</span>
-          <p>Server chassis, RAID arrays, NAS/SAN storage and hardware-level infrastructure</p>
-          <div class="ptech"><span><i class="fas fa-server"></i>PowerEdge</span><span><i class="fas fa-server"></i>ProLiant</span><span><i class="fas fa-hdd"></i>RAID</span><span><i class="fas fa-database"></i>NAS / SAN</span></div>
-        </div>
+      <div class="sk-domain rv">
+        <h3><i class="fas fa-terminal"></i> Development &amp; Scripting</h3>
+        <ul>
+          <li>Python, Java</li>
+          <li>Bash, PowerShell</li>
+          <li>REST APIs, automation scripts</li>
+          <li>Git, GitLab</li>
+        </ul>
       </div>
 
-      <div class="pc rv" data-cat="sysnet">
-        <div class="pbanner pb5"><i class="fas fa-cubes" style="color:#94a3b8"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-cubes"></i></div><h3>Proxmox VE</h3></div>
-          <span class="pcat">Virtualization</span>
-          <p>Clustered virtualization, live migration, vzdump backups and virtual networking</p>
-          <div class="ptech"><span><i></i>Proxmox</span><span><i></i>Live migration</span><span><i></i>VZDUMP</span><span><i></i>Virtual machines</span></div>
-        </div>
+      <div class="sk-domain rv">
+        <h3><i class="fas fa-shield-alt"></i> Security</h3>
+        <ul>
+          <li>Firewall - pfSense, iptables</li>
+          <li>VPN - OpenVPN, IPSec</li>
+          <li>Identity &amp; access - Active Directory</li>
+          <li>IDS - Snort</li>
+        </ul>
       </div>
 
-      <div class="pc rv" data-cat="sysnet">
-        <div class="pbanner pb3"><i class="fas fa-layer-group" style="color:#60a5fa"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-layer-group"></i></div><h3>VMware / KVM</h3></div>
-          <span class="pcat">Virtualization</span>
-          <p>ESXi, vSphere, KVM/QEMU and VM templates for high-availability virtualization</p>
-          <div class="ptech"><span><i class="fas fa-desktop"></i>ESXi</span><span><i></i>KVM</span><span><i></i>Snapshots</span><span><i></i>Templates</span></div>
-        </div>
+      <div class="sk-domain rv">
+        <h3><i class="fas fa-database"></i> Databases &amp; Monitoring</h3>
+        <ul>
+          <li>Oracle, MariaDB, PostgreSQL, PL/SQL</li>
+          <li>MongoDB, RDF/SKOS</li>
+          <li>Zabbix, Prometheus, Grafana</li>
+          <li>GLPI, ITSM</li>
+        </ul>
       </div>
 
-      <div class="pc rv" data-cat="sysnet">
-        <div class="pbanner pb4"><i class="fab fa-docker" style="color:#fb923c"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fab fa-docker"></i></div><h3>Docker & Containers</h3></div>
-          <span class="pcat">Virtualization</span>
-          <p>Docker, Compose and container hardening for portable service deployment</p>
-          <div class="ptech"><span><i class="fab fa-docker"></i>Docker</span><span><i></i>Compose</span><span><i></i>LXC</span></div>
-        </div>
+      <div class="sk-domain rv">
+        <h3><i class="fas fa-cogs"></i> Automation &amp; Deployment</h3>
+        <ul>
+          <li>Ansible</li>
+          <li>Docker, Kubernetes</li>
+          <li>GitLab CI/CD</li>
+          <li>LangChain, ChromaDB, RAG systems</li>
+        </ul>
       </div>
 
-      <div class="pc rv" data-cat="sysnet">
-        <div class="pbanner pb2"><i class="fas fa-sitemap" style="color:#a78bfa"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-sitemap"></i></div><h3>Network Architecture</h3></div>
-          <span class="pcat">Networking</span>
-          <p>TCP/IP, VLANs, routing, OSI model and core network services</p>
-          <div class="ptech"><span><i></i>VLAN</span><span><i></i>OSPF</span><span><i></i>DNS / DHCP</span><span><i></i>NAT</span></div>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="sysnet">
-        <div class="pbanner pb1"><i class="fas fa-fire" style="color:#4ade80"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-fire"></i></div><h3>Firewall & Security</h3></div>
-          <span class="pcat">Security</span>
-          <p>pfSense, iptables, VPNs, IDS and network hardening practices</p>
-          <div class="ptech"><span><i></i>pfSense</span><span><i></i>VPN</span><span><i></i>iptables</span><span><i></i>IDS</span></div>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="sysnet">
-        <div class="pbanner pb2"><i class="fas fa-phone-alt" style="color:#a78bfa"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-phone-alt"></i></div><h3>Telecom & VoIP</h3></div>
-          <span class="pcat">Networking</span>
-          <p>Asterisk PBX, SIP/RTP, Wireshark troubleshooting and voice infrastructure</p>
-          <div class="ptech"><span><i></i>Asterisk</span><span><i></i>SIP</span><span><i></i>Wireshark</span><span><i></i>RTP</span></div>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="monitoring">
-        <div class="pbanner pb3"><i class="fas fa-eye" style="color:#60a5fa"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-eye"></i></div><h3>Zabbix Monitoring</h3></div>
-          <span class="pcat">Monitoring</span>
-          <p>Agent deployment, SNMP polling, triggers and alerting for servers and network devices.</p>
-          <div class="ptech"><span><i></i>Agents</span><span><i></i>SNMP</span><span><i></i>Alerts</span><span><i></i>Templates</span></div>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="monitoring">
-        <div class="pbanner pb3"><i class="fas fa-chart-bar" style="color:#60a5fa"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-chart-bar"></i></div><h3>Grafana Dashboards</h3></div>
-          <span class="pcat">Monitoring</span>
-          <p>Custom dashboards, data sources, Prometheus integration and alert rules</p>
-          <div class="ptech"><span><i></i>Dashboards</span><span><i></i>Prometheus</span><span><i></i>Data sources</span><span><i></i>Alerts</span></div>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="monitoring">
-        <div class="pbanner pb7"><i class="fas fa-clipboard-list" style="color:#c084fc"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-clipboard-list"></i></div><h3>ITSM & Helpdesk</h3></div>
-          <span class="pcat">Monitoring</span>
-          <p>GLPI, ticketing, incident management and documentation for support workflows</p>
-          <div class="ptech"><span><i></i>GLPI</span><span><i></i>Incident N1/N2</span><span><i></i>Documentation</span><span><i></i>Ticketing</span></div>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="automation">
-        <div class="pbanner pb4"><i class="fas fa-terminal" style="color:#fb923c"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-terminal"></i></div><h3>Bash Automation</h3></div>
-          <span class="pcat">Automation</span>
-          <p>Scripts for backups, cron jobs, rsync, log parsing and system maintenance</p>
-          <div class="ptech"><span><i></i>Bash</span><span><i></i>cron</span><span><i></i>Backups</span><span><i></i>Logs</span></div>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="automation">
-        <div class="pbanner pb1"><i class="fab fa-python" style="color:#4ade80"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fab fa-python"></i></div><h3>Python Scripting</h3></div>
-          <span class="pcat">Automation</span>
-          <p>Scripts for REST APIs, log analysis, Slack alerts, and system automation</p>
-          <div class="ptech"><span><i class="fab fa-python"></i>Python</span><span><i></i>APIs</span><span><i></i>Logs</span><span><i></i>Alerts</span></div>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="automation">
-        <div class="pbanner pb2"><i class="fab fa-windows" style="color:#fb923c"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fab fa-windows"></i></div><h3>PowerShell</h3></div>
-          <span class="pcat">Automation</span>
-          <p>AD automation, CSV imports, task scheduling and mailbox alerts</p>
-          <div class="ptech"><span><i class="fab fa-windows"></i>PowerShell</span><span><i></i>CSV</span><span><i></i>Tasks</span></div>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="langtools">
-        <div class="pbanner pb4"><i class="fas fa-terminal" style="color:#fb923c"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-terminal"></i></div><h3>Bash</h3></div>
-          <span class="pcat">Language</span>
-          <p>Shell scripting, cron, rsync, log parsing</p>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="langtools">
-        <div class="pbanner pb1"><i class="fab fa-python" style="color:#4ade80"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fab fa-python"></i></div><h3>Python</h3></div>
-          <span class="pcat">Language</span>
-          <p>REST APIs, automation, data processing, RAG</p>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="langtools">
-        <div class="pbanner pb2"><i class="fab fa-windows" style="color:#fb923c"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fab fa-windows"></i></div><h3>PowerShell</h3></div>
-          <span class="pcat">Language</span>
-          <p>AD automation, CSV imports, task scheduling</p>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="langtools">
-        <div class="pbanner pb8"><i class="fas fa-database" style="color:#60a5fa"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-database"></i></div><h3>SQL</h3></div>
-          <span class="pcat">Language</span>
-          <p>PostgreSQL, MariaDB, SQL Server, PL/SQL</p>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="langtools">
-        <div class="pbanner pb5"><i class="fab fa-git-alt" style="color:#f05032"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fab fa-git-alt"></i></div><h3>Git</h3></div>
-          <span class="pcat">Tool</span>
-          <p>Version control, branching, merge, GitHub</p>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="langtools">
-        <div class="pbanner pb3"><i class="fab fa-java" style="color:#60a5fa"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fab fa-java"></i></div><h3>Java</h3></div>
-          <span class="pcat">Language</span>
-          <p>OOP, data structures, algorithms</p>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="data">
-        <div class="pbanner pb8"><i class="fas fa-database" style="color:#60a5fa"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-database"></i></div><h3>Relational Databases</h3></div>
-          <span class="pcat">Data / AI</span>
-          <p>PostgreSQL, MariaDB/MySQL and SQL Server with core query and schema skills</p>
-          <div class="ptech"><span><i class="fas fa-database"></i>PostgreSQL</span><span><i class="fas fa-database"></i>MariaDB</span><span><i class="fas fa-database"></i>SQL Server</span><span><i class="fas fa-code"></i>PL/SQL</span></div>
-        </div>
-      </div>
-
-      <div class="pc rv" data-cat="data">
-        <div class="pbanner pb7"><i class="fas fa-brain" style="color:#c084fc"></i></div>
-        <div class="pbody">
-          <div class="phead"><div class="ico"><i class="fas fa-brain"></i></div><h3>NoSQL & AI</h3></div>
-          <span class="pcat">Data / AI</span>
-          <p>MongoDB, RAG systems, knowledge graphs and analytics tooling</p>
-          <div class="ptech"><span><i></i>MongoDB</span><span><i></i>RAG</span><span><i></i>Knowledge Graph</span><span><i></i>Analytics</span></div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -287,10 +115,5 @@
 </footer>
 
 <script src="script.js"></script>
-<script>
-document.querySelectorAll('.pc').forEach(c => {
-  c.style.display = c.dataset.cat === 'sysnet' ? 'flex' : 'none';
-});
-</script>
 </body>
 </html>
